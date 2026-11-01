@@ -8,6 +8,7 @@ as the `munkachy/sbp` site. Br. Augustine, OSB (webmaster) asked for it on 1 Nov
 `claude/saint-photo-identification-ksp79d` (PR #1 in munkachy/newmonksite). `git pull` before you start and before
 you push; commit and push after every finished piece, and tick it off below with a line in the log at the bottom.
 Take one job at a time, mark it `[~] taken (date, who)` and push that mark first so two accounts don't do the same job.
+If a job marked taken has had no commit for two hours, the session that took it has probably hit a limit: take it over.
 
 ## What Br. Augustine asked for
 
@@ -58,9 +59,11 @@ end of it under a comment with your page's name, or in a `<style>` block in your
   real page. Images in `assets/img/` (see the list in `assets/img/README.md`).
 - [ ] **2. The Grotto** (`grotto/`): Br. Joseph's life, the miniatures, visiting info, shop link, Library of Congress
   photos (`_notes/research-img/`, credits in its `CREDITS.md`).
-- [ ] **3. Monks at Work** (`work/`): Br. Joseph, Br. Jude, the craftsmen of the past (names only where public; the
+- [~] **3. Monks at Work** *(taken by the first session, 1 Nov 2026)* (`work/`): Br. Joseph, Br. Jude, the craftsmen of the past (names only where public; the
   Necrology names marked "to confirm"), and the works of today: bakery, woodworks, Scriptorium, farm, Grotto, school.
-- [~] **4. Relics** *(taken by the first session, 1 Nov 2026)* (`relics/index.html`): from `_notes/relic-groups.json` and `relics/README.md`: groups as cards
+- [x] **4. Relics**: done 1 Nov 2026. Cards built by a script from `_notes/relic-groups.json` (cover = first photo of each
+  group, `assets/img/relics/`); when the photographer's pictures come, replace `assets/img/relics/<group-id>.jpg`, drop
+  the "Placeholder photo" badges, and put the altar long shot in the dashed `.altar-slot`. (`relics/index.html`): from `_notes/relic-groups.json` and `relics/README.md`: groups as cards
   (placeholder photo marked "Photo to come"), each with its saints; a slot for the long shot on the altar.
   Make web copies of the chosen photos in `assets/img/relics/`. Keep `relics/README.md` as the full catalogue.
 - [ ] **5. The monastery and prayer** (`monastery/`, `pray/`): the monks (9 profiles in
@@ -88,3 +91,4 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 1 Nov 2026: job 1 done: home page (hero loop, two works, craftsman monks, the film, prayer times live in Central
   time, relics, three asks), shared CSS/JS, starter pages. Tested at 1440 and 390: no console errors, no sideways
   scroll. Preview: serve the parent folder (`cd .. && python3 -m http.server 8770`), open /newmonksite/.
+- 1 Nov 2026: job 4 done (relics page, 14 reliquaries, all 122 photos as thumbnails linking to the labeled copies). Job 3 taken.
