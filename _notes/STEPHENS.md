@@ -111,6 +111,77 @@ Selection: ~16,700 photos in 61 galleries. Every gallery was sampled (all photos
 Folders: 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026 (by year) and *Misc Photos of Abbey Life* (Places, Things, People at Mass, People, Church Interior, Church Exterior, Monastic Choir). Dates are the cameras' dates (some galleries mix in older photos, e.g. *Monk Headshots* 2022-2024, *July 2024 Works* includes the Nativity painting photographed Oct 2025). Two galleries are almost the same set: *31 October 2021* and *31 October 2021 Mass and More*.
 
 
+## Not downloaded (for later)
+
+Downloading stopped at 417 files (~410 MB) so the repo stays under GitHub's ~1 GB guideline for Pages. Everything below is still on SmugMug, public, at up to 4K/5K. To fetch more, open the gallery URL. Script-friendly route (used here): the site's own public web API, `https://annestephens.smugmug.com/api/v2/album/<AlbumKey>!images?_expand=ImageSizeDetails&APIKey=<the key in the page source>` (send a normal browser User-Agent and `Accept: application/json`), and take the `ImageSizeX4Large` URL.
+
+| # | Gallery | Not downloaded | What's there | URL |
+|---|---|---|---|---|
+| 0 | 2018 July - Father Bernard's First Mass | 525 of 528 | Fr. Bernard's first Mass (green vestments): Mass, sanctuary, greetings and family photos after Mass. Fr. Bernard is not on the 2026 roster | https://annestephens.smugmug.com/2018/2018-July-Father-Bernards-First-Mass |
+| 1 | 2018 July - Bernard's Ordination to the Priesthood | 694 of 699 | Priestly ordination of Fr. Bernard: laying on of hands, prostration, vesting, embraces, chalices, group photos with the bishop | https://annestephens.smugmug.com/2018/2018-July-Bernards-Ordination-to-the-Priesthood |
+| 2 | 2018 March Solemn Vows - Dominic Paschal Pachomius | 858 of 866 | Solemn vows of Dominic, Paschal and Pachomius: outdoor procession, signing of vows, prostration, clothing in the cowl, the abbot, family groups | https://annestephens.smugmug.com/2018/2018-March-Solemn-Vows-Dominic-Paschal-Pachomius |
+| 3 | All Saints Day Mass 2021 | 242 of 247 | All Saints Mass 2021: readers, homily, incensing, Eucharistic prayer, monks in choir | https://annestephens.smugmug.com/2021/All-Saints-Day-Mass-2021 |
+| 4 | 31 October 2021 | 117 of 125 | 31 Oct 2021: Mass in green, greetings after Mass, then the fall event (hayride tractor, vendor tents, costume), woods paths, cemetery and chapel | https://annestephens.smugmug.com/2021/31-October-2021 |
+| 5 | 31 October 2021 Mass and More | 111 of 113 | Near-duplicate of the gallery above (same day, same Mass and grounds) | https://annestephens.smugmug.com/2021/31-October-2021-Mass-and-More |
+| 6 | 2021 March Br Dominic Diaconate Ordination | 671 of 676 | Br. Dominic's diaconate ordination in Lent 2021: purple veil, litany, laying on of hands, vesting, family groups, organist | https://annestephens.smugmug.com/2021/2021-March-Br-Dominic-Diaconate-Ordination |
+| 7 | 2021 March Reception of the Bishop | 39 of 45 | Reception of the bishop in Lent 2021: cloister, procession, the bishop praying before the veiled altar, monks in choir | https://annestephens.smugmug.com/2021/2021-March-Reception-of-the-Bishop |
+| 8 | 2021 February 28 Mass | 226 of 234 | Lenten Mass, 28 Feb 2021: readers, homily, monks bowing, old books and chant book, the church exterior in winter | https://annestephens.smugmug.com/2021/2021-February-28-Mass |
+| 9 | 2021 February 27 Mass and Chickens | 210 of 218 | Mass (purple) and the abbey chickens: priest at altar, crucifix, students with hens, eggs and roosters | https://annestephens.smugmug.com/2021/2017-February-Mass-and-Chickens |
+| 10 | 2019 March - New Names - Isaac-Lazarus-Andrew | 81 of 84 | Novices receive new names (Isaac, Lazarus, Andrew) from Abbot Cletus in chapter, 2019; these novices are no longer at the abbey | https://annestephens.smugmug.com/2019/2019-March-New-Names-Isaac-Lazarus-Andrew |
+| 11 | 2019 March 21 - First Vows Cassian Paul Simeon | 810 of 814 | First vows of Cassian, Paul and Simeon, 2019 (no longer at the abbey): vows, signing, family groups | https://annestephens.smugmug.com/2019/2019-March-21-First-Vows-Cassian-Paul-Simeon2019-March-1st |
+| 12 | 2019 July - Abbot Cletus Last Mass as Abbot | 426 of 429 | Abbot Cletus's last Mass as abbot (July 2019): Mass, greetings outside, family groups | https://annestephens.smugmug.com/2019/2019-July-Abbot-Cletus-Last-Mass-as-Abbot |
+| 13 | 13 October 2019 - Mass with Fr. Bernard | 170 of 172 | Mass with Fr. Bernard, Oct 2019: Mass in green, monks seated, a window view | https://annestephens.smugmug.com/2019/13-October-201-Mass-with-Fr-Bernard |
+| 14 | October 2019 - Abbot Marcus's Abbatial Blessing Mass | 756 of 761 | Abbot Marcus's abbatial blessing Mass, Oct 2019: outdoor procession, rite, embraces, many concelebrants, crowd | https://annestephens.smugmug.com/2019/October-2019-Abbot-Marcuss-Abbatial-Blessing-Mass |
+| 15 | 2019 October - Abbot Marcus's Abbatial Blessing Mass 2 | 210 of 213 | Second part of the blessing Mass: Eucharistic prayer, recessional, group photos of abbots and monks | https://annestephens.smugmug.com/2019/2019-October-Abbot-Marcuss-Abbatial-Blessing-Mass-2 |
+| 16 | 2019 October - Blessing of Abbot's Mitre, Ring, Crozier and Dinner Party | 144 of 152 | Blessing of the abbot's mitre, ring and crozier, then the festive dinner with monks talking | https://annestephens.smugmug.com/2019/2019-October-Blessing-of-Abbots-Mitre-Ring-Crozier-and |
+| 17 | Places | 9 of 22 | Places: statues, crosses, pond and farm landscapes, barn, cows | https://annestephens.smugmug.com/Misc-Photos-of-Abbey-Life/Places |
+| 18 | Things | 7 of 9 | Things: cruets, lavabo, palms | https://annestephens.smugmug.com/Misc-Photos-of-Abbey-Life/Things |
+| 19 | People at Mass | 55 of 65 | People at Mass: monks reading, the organ, priests at the altar | https://annestephens.smugmug.com/Misc-Photos-of-Abbey-Life/People-at-Mass |
+| 20 | People | 27 of 41 | People: candid portraits of monks, a funeral procession, monks at meals | https://annestephens.smugmug.com/Misc-Photos-of-Abbey-Life/People |
+| 21 | Church Interior | 22 of 31 | Church interior: Christmas decorations, carved stone saints, crucifixes, statues | https://annestephens.smugmug.com/Misc-Photos-of-Abbey-Life/Church-Interior |
+| 22 | Church Exterior | 16 of 24 | Church exterior: the church and bell tower by day and by night | https://annestephens.smugmug.com/Misc-Photos-of-Abbey-Life/Church-Exterior |
+| 23 | Monastic Choir | 5 of 9 | Monastic choir: monks at prayer in the stalls | https://annestephens.smugmug.com/Misc-Photos-of-Abbey-Life/Monastic-Choir |
+| 24 | 6 August 2022 - Fr Dominic Ordination | 749 of 754 | Fr. Dominic's priestly ordination, Aug 2022: full church, laying on of hands, first blessings, family groups | https://annestephens.smugmug.com/2022/6-August-2022-Fr-Dominic-Ordination |
+| 25 | 5 August 2022 - Blessing of Fr. Dominic's Paten and Chalice | 75 of 79 | Blessing of Fr. Dominic's chalice, paten and vestments; incense; cloister | https://annestephens.smugmug.com/2022/Father-Dominic-Blessing-Paten-Chalice |
+| 26 | 2022  Palm Sunday | 384 of 393 | Palm Sunday 2022: blessing of palms outdoors, procession across the lawn, Mass under the purple veil | https://annestephens.smugmug.com/2022/2022-Palm-Sunday |
+| 27 | Brothers Paschal and Pachomius Diaconate Ordination | 826 of 831 | Diaconate ordination of Brs. Paschal and Pachomius, Apr 2022: litany, laying on of hands, new deacons, family groups | https://annestephens.smugmug.com/2022/Brothers-Paschal-and-Pachomius-Diaconate-Ordination |
+| 28 | 12 June 2023 Father Paschal Mass at Cathedral of St Paul | 121 of 121 | Fr. Paschal's Mass at the Cathedral of St. Paul (Minnesota), June 2023: not the abbey | https://annestephens.smugmug.com/2023/12-June-2023-Father-Paschal-Mass-at-Cathedral-of-St-Paul |
+| 29 | 11 June 2023 - Father Paschal's 1st Mass 2 After Mass Photos | 227 of 230 | After Fr. Paschal's first Mass: many family and friends group photos with Fr. Paschal | https://annestephens.smugmug.com/2023/11-June-2023-Father-Paschals-1st-Mass-2-After-Mass-Photos |
+| 30 | 12 June 2023 Father Pachomius's 1st Mass | 331 of 337 | Fr. Pachomius's first Mass, June 2023: Mass, sanctuary, greetings | https://annestephens.smugmug.com/2023/12-June-2023-Father-Pachomiuss-1st-Mass |
+| 31 | 11 June 2023 - Father Paschal's 1st Mass  and Corpus Christi | 655 of 662 | Fr. Paschal's first Mass and the Corpus Christi procession outdoors | https://annestephens.smugmug.com/2023/11-June-2023-Father-Paschals-1st-Mass-and-Corpus-Christi- |
+| 32 | 10 June 2023 Ordination Reception Blessings | 40 of 42 | First blessings given by the new priests at the reception, June 2023 | https://annestephens.smugmug.com/2023/10-June-2023-Ordination-Reception-Blessings |
+| 33 | 10 June 2023 Priestly Ordination of Paschal and Pachomius 1 | 1324 of 1329 | Priestly ordination of Paschal and Pachomius, June 2023: the whole rite, embraces, group photos | https://annestephens.smugmug.com/2023/10-June-2023-Priestly-Ordination-of-Paschal-and-Pachomius-1 |
+| 34 | Fathers Paschal and Pachomius Ordination | 11 of 12 | A few photos of the two new priests, June 2023 | https://annestephens.smugmug.com/2023/Fathers-Paschal-and-Pachomius-Ordination |
+| 35 | 9 June 2023 - Blessing of Chalices and Patens | 187 of 193 | Blessing of chalices and patens, then a Mass in the choir; monks preparing the altar, empty choir views | https://annestephens.smugmug.com/2023/9-June-2023-Blessing-of-Chalices-and-Patens |
+| 36 | July 2024 Works | 116 of 134 | Bakery (bread and cookies, monks with a student), monk at the chicken coop, chickens, bagged loaves, the round Holy Family/Christ-with-children painting | https://annestephens.smugmug.com/2024/July-2024-Works |
+| 37 | 2024 July 22 Cows | 98 of 107 | Cows in the abbey pastures, farm volunteer, barns and farm machinery | https://annestephens.smugmug.com/2024/2024-July-22-Cows |
+| 38 | 2024 July 21 Mass | 107 of 113 | Mass in green, July 2024: readers, homily, altar, greetings | https://annestephens.smugmug.com/2024/2024-July-21-Mass |
+| 39 | 2024 July 20 Cross Restoration - Crucifixion | 75 of 78 | Conservator restoring the painted crucifix (corpus) on the floor of a workshop | https://annestephens.smugmug.com/2024/2024-July-21-Cross-Restoration-Crucifixion |
+| 40 | 2024 July SBA Misc Photos | 91 of 103 | Bell tower and lawn, church interior views, the brick barn, pastures, pond, cemetery chapel window, cows | https://annestephens.smugmug.com/2024/2024-July-SBA-Misc-Photos |
+| 41 | 2024 July 19 - Cross Restoration Crucifix 1 | 13 of 16 | Restoration details: painted Mary and St. John on the crucifix | https://annestephens.smugmug.com/2024/2024-July-19-Cross-Restoration-Crucifix-1 |
+| 42 | 2024 July 19 Return of the Last Supper | 91 of 96 | The Last Supper painting brought back and re-hung in the refectory by monks and helpers | https://annestephens.smugmug.com/2024/2024-July-19-Return-of-the-Last-Supper |
+| 43 | 17 July 2024 Cross Restoration - Varnish 2 | 62 of 62 | Conservator varnishing the crucifix (second day); nothing downloaded | https://annestephens.smugmug.com/2024/17-July-2024-Cross-Restoration-Varnish-2 |
+| 44 | 16 July 2024 Abbey Cross Varnish | 94 of 95 | Conservator varnishing the crucifix and the painted risen Christ on its back | https://annestephens.smugmug.com/2024/16-July-2024-Abbey-Cross-Varnish |
+| 45 | 16 JULY 2024 Removal of Abbey Cross | 364 of 369 | Removal of the great crucifix from the sanctuary: lowering, carrying out, loading on a trailer | https://annestephens.smugmug.com/2024/16-JULY-2024-Removal-of-Abbey-Cross |
+| 46 | Cross removal cell Photos (mostly by Diann) | 19 of 22 | Phone photos (mostly by Diann) of the cross removal | https://annestephens.smugmug.com/2024/Cross-remove-cell-Photos-mostly-by-Diann |
+| 47 | June 6 2024 | 156 of 169 | June 6 2024: monks on the steps, Abbot Cletus outdoors, Mass and readers, the June 2024 community group photo | https://annestephens.smugmug.com/2024/June-6-2024- |
+| 48 | June 2024 | 464 of 478 | June 2024: Mass and Benediction, woodshop (Br. Joseph), early morning farm and grounds | https://annestephens.smugmug.com/2024/June-2024 |
+| 49 | Monk Headshots | 111 of 149 | Named headshots of 21 monks (2022-2024), 4-12 frames each; 2 per monk downloaded (1 for Br. Joseph and Br. Jude) | https://annestephens.smugmug.com/2024/Monk-Headshots |
+| 50 | April 2024 | 86 of 101 | April 2024: campus in spring, Marian statue, monks at work in offices, teaching St. Bernard Prep classes | https://annestephens.smugmug.com/2024/April-2024 |
+| 51 | 23 March 2025 Mass | 95 of 99 | Lenten Mass, March 2025: procession, readings, abbot preaching, altar | https://annestephens.smugmug.com/2025/23-March-2025-Mass |
+| 52 | 23 March 2025 Tour of Monastery Renovation | 41 of 47 | Tour of the monastery renovation, March 2025: new corridors, rooms, door name plates, exterior | https://annestephens.smugmug.com/2025/23-March-2025-Tour-of-Monastery-Renovation |
+| 53 | 2026 July 29 Thanksgiving Service Abbot Brendan | 430 of 440 | Thanksgiving service for Abbot Brendan, July 2026: monks greeting him, bishops, group photos, family groups | https://annestephens.smugmug.com/2026/2026-July-29-Abbot-Brendan |
+| 54 | 2026 March 21 - Brs Damien and Raphael make 1st vows | 413 of 419 | First vows of Brs. Damien and Raphael, March 2026: chapter and church, signing, embraces, family groups | https://annestephens.smugmug.com/2026/2026-March-21-Brs-Damien-and-Raphael-make-1st-vows |
+| 55 | 2026 March 20 - Brs Nicholas Boniface and Gabriel Enter Novitiate | 428 of 435 | Novices Nicholas, Boniface and Gabriel enter the novitiate, March 2026: clothing in the habit in the chapter room, group photos. Br. Gabriel has left: avoid photos of him | https://annestephens.smugmug.com/2026/2026-March-20-Novitiate |
+| 56 | Abbey Chapel for Brother Leo | 53 of 62 | The cemetery chapel (2008-2009): stained glass, chapel and crucifix in all seasons including snow, a monk in a golf cart | https://annestephens.smugmug.com/Abbey-Chapel |
+| 57 | 2018 Places and People | 144 of 169 | 2018: farm and winter landscapes, church interior in golden light, statues, the cemetery, bakery (bread), the pond at sunrise | https://annestephens.smugmug.com/2018-Places-and-People |
+| 58 | 2024 July 26  - Cross Install Cell Phone | 10 of 12 | Phone photos of mounting the restored cross, July 2024 | https://annestephens.smugmug.com/2024-July-26-Cross-Install-Cell-Phone- |
+| 59 | 2024 July 26  Raising the Cross | 203 of 207 | Raising the restored crucifix back into the church, July 2024 | https://annestephens.smugmug.com/2024-July-26-Raising-the-Cross |
+| 60 | Nativity Painting | 18 of 18 | Photos of the Nativity painting (Oct 2025); the same photos are also in July 2024 Works, and 1 is downloaded from there | https://annestephens.smugmug.com/Nativity-Painting |
+
+In total about 16,300 photos are not downloaded. Most are near-duplicate burst frames of the same liturgies and family/guest group photos. The best places to look for more good pictures of the monks: #47 and #48 (June 2024 community, outdoors and woodshop), #36 (bakery), #50 (school), #53–#55 (2026 liturgies), and #49 (other frames of the headshots).
+
+
 ## Downloaded files by gallery
 
 Label = gallery number . position in the sample (for finding the contact sheet again). ★ = among the 30 best.
