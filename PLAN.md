@@ -13,7 +13,7 @@ If a job marked taken has had no commit for two hours, the session that took it 
 ## What Br. Augustine asked for
 
 1. **Theme: a tradition of craftsman monks.** Br. Joseph Zoettl (Ave Maria Grotto) is only the most famous; feature
-   him much more, and show the others (Br. Jude Johnston, Br. Nicholas, and the rest; see `_notes/CRAFTSMEN-public.md`).
+   him much more, and show the others (Br. Jude Johnston, Br. Nicholas, and the rest; see `_notes/CRAFTSMEN.md`).
    This list will grow later.
 2. **Two faces, like the sign on the highway: Ave Maria Grotto and St. Bernard Prep.** Craftsmen and a school.
 3. **The monks' film** featured like the virtual tour on the sbp site: a still under a soft veil with a big "Play"
@@ -24,7 +24,7 @@ If a job marked taken has had no commit for two hours, the session that took it 
 5. Learn from good monastery sites, especially **St. Michael's Abbey** (Norbertines, Silverado CA). Research done:
    `_notes/MONASTERIES.md` (ideas to borrow, recommended navigation and home-page order, pitfalls, screenshots were
    taken but are not kept).
-6. Look at the Ave Maria Grotto site and its gift shop (facts in `_notes/CRAFTSMEN-public.md`).
+6. Look at the Ave Maria Grotto site and its gift shop (facts in `_notes/CRAFTSMEN.md`).
 
 ## Decisions (keep to these unless Br. Augustine says otherwise)
 
@@ -44,8 +44,9 @@ If a job marked taken has had no commit for two hours, the session that took it 
   `monastery/` (the monks, daily life, history, vocations, oblates), `pray/` (schedule, Divine Office), `relics/`,
   `visit/` (Grotto visit, retreat center, directions), `give/` (Donorbox, will, Mass intentions, Clairvaux Society).
   Shared: `assets/site.css`, `assets/site.js`, `assets/img/` (web-sized images, ≤ 1800 px, JPEG q≈80).
-- **Facts**: only from `_notes/ABBEY-FACTS.md`, `_notes/CRAFTSMEN-public.md`, `relics/README.md` or a cited public
-  source. Never quote the Necrology without the abbot's approval. Mark anything uncertain for Br. Augustine.
+- **Facts**: only from `_notes/ABBEY-FACTS.md`, `_notes/CRAFTSMEN.md`, `relics/README.md` or a cited
+  source. The abbey Necrology is public (Br. Augustine, 1 Nov 2026): quote it, citing "the abbey Necrology". Mark
+  anything uncertain for Br. Augustine.
 - **Don't**: animations that hide content when JS is off, pop-ups, carousels, dated widgets that go stale, 24-hour
   times. Test at 1440 and 390 wide, light only, no console errors, no sideways scroll (see sbp CLAUDE.md "Testing").
 
@@ -59,10 +60,9 @@ end of it under a comment with your page's name, or in a `<style>` block in your
   real page. Images in `assets/img/` (see the list in `assets/img/README.md`).
 - [ ] **2. The Grotto** (`grotto/`): Br. Joseph's life, the miniatures, visiting info, shop link, Library of Congress
   photos (`_notes/research-img/`, credits in its `CREDITS.md`).
-- [x] **3. Monks at Work**: done 1 Nov 2026 (Rule ch. 57, Br. Joseph with timeline, Br. Jude, the builders of the past
-  marked "to confirm", the work today). Wanted: a photo of Br. Jude or his work (the picture there is a placeholder),
-  the names of living craftsman monks, and the abbot's yes on the Necrology names. (`work/`): Br. Joseph, Br. Jude, the craftsmen of the past (names only where public; the
-  Necrology names marked "to confirm"), and the works of today: bakery, woodworks, Scriptorium, farm, Grotto, school.
+- [x] **3. Monks at Work** (`work/`): done 1 Nov 2026: Rule ch. 57, Br. Joseph with a timeline and his own words, Br. Jude,
+  the builders of the past, the work today. Wanted: a photo of Br. Jude or his work (the picture there is a placeholder)
+  and the names of living craftsman monks.
 - [x] **4. Relics**: done 1 Nov 2026. Cards built by a script from `_notes/relic-groups.json` (cover = first photo of each
   group, `assets/img/relics/`); when the photographer's pictures come, replace `assets/img/relics/<group-id>.jpg`, drop
   the "Placeholder photo" badges, and put the altar long shot in the dashed `.altar-slot`. (`relics/index.html`): from `_notes/relic-groups.json` and `relics/README.md`: groups as cards
@@ -80,7 +80,7 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 
 ## For Br. Augustine to decide or supply
 
-- Permission to use photos of Br. Joseph (Grotto archive, ADAH, Troy University) and to quote the Necrology.
+- Permission to use photos of Br. Joseph (Grotto archive, ADAH, Troy University).
 - Who drew the campus map ("Br. Nicholas", living), and which living monks are craftsmen today.
 - The 78-second trailer on YouTube (`9HsUwl-Prf0`) could not be downloaded here; the full film is used instead.
 - Whether the site keeps Donorbox for gifts.
@@ -88,10 +88,11 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 ## Log
 
 - 1 Nov 2026: research done (abbey site crawled: `_source/`; monastery sites: `_notes/MONASTERIES.md`; craftsmen:
-  `_notes/CRAFTSMEN-public.md`); film re-encoded (`media/film-720.mp4`, 53 MB), hero loop cut (`media/hero-*.mp4`),
+  `_notes/CRAFTSMEN.md`); film re-encoded (`media/film-720.mp4`, 53 MB), hero loop cut (`media/hero-*.mp4`),
   stills (`media/film-still-*.jpg`). Plan written. Starting job 1.
 - 1 Nov 2026: job 1 done: home page (hero loop, two works, craftsman monks, the film, prayer times live in Central
   time, relics, three asks), shared CSS/JS, starter pages. Tested at 1440 and 390: no console errors, no sideways
   scroll. Preview: serve the parent folder (`cd .. && python3 -m http.server 8770`), open /newmonksite/.
 - 1 Nov 2026: job 4 done (relics page, 14 reliquaries, all 122 photos as thumbnails linking to the labeled copies). Job 3 taken.
 - 1 Nov 2026: job 3 done (work/). Jobs 2, 5, 6, 7, 8, 9 are open.
+- 1 Nov 2026: the Necrology is public (Br. Augustine): full craftsmen notes now in `_notes/CRAFTSMEN.md`; Br. Joseph's own words added to work/.
