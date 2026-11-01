@@ -1,0 +1,46 @@
+# Echoing God's Poetry | Saint Bernard Abbey
+
+URL: https://www.stbernardabbey.com/blog/tags/echoing-god-s-poetry
+
+
+# St. Bernard Abbey
+
+Benedictine Monks | Cullman, AL
+
+- [About Us](https://www.stbernardabbey.com/)
+- [Vocations](https://www.stbernardabbey.com/)
+- [Guests](https://www.stbernardabbey.com/guests)
+- [School](https://stbernardprep.com/)
+- [Support Us](https://www.stbernardabbey.com/donate-now)
+- [All Posts](https://www.stbernardabbey.com/blog)
+- [Spirituality](https://www.stbernardabbey.com/blog/categories/spirituality)
+![Benedictines: Keepers of Sacred Time and the Song of the Spirit](https://static.wixstatic.com/media/662bb2_b1c87e3931d141bba6e719f6b931c688~mv2.png/v1/fill/w_454,h_238,fp_0.50_0.50,q_95,enc_avif,quality_auto/662bb2_b1c87e3931d141bba6e719f6b931c688~mv2.png)
+
+## Benedictines: Keepers of Sacred Time and the Song of the Spirit
+
+Saint Benedict's Rule established the Liturgy of the Hours, a daily cycle of prayers and psalms that became the core rhythm of monastic...
+
+###### Address
+
+###### Phone numbers
+
+St. Bernard Abbey
+
+1600 St. Bernard Drive, S.E.
+
+Cullman, Alabama 35055
+
+United States
+
+
+​​Monastery: [256-734-8291](tel:256-734-8291)
+
+Retreat Center: [256-734-3946](tel:256-734-3946)
+
+Ave Maria Grotto: [256-734-4110](tel:256-734-4110)
+
+School: [256-739-6682](tel:256-739-6682)
+
+[Contact Us](https://www.stbernardabbey.com/about-4)
+[Donate Now](https://www.stbernardabbey.com/donate-now)
+© 2025 St. Bernard Abbey
