@@ -69,6 +69,11 @@ only, no custom-work offer); Br. Joseph Goode (gone to another monastery) and Br
 site; novices may be shown; Br. Damien and Br. Raphael are juniors; photos by Anne Stephens and Josh Viola may be used
 with credit. Publishing: commit on the work branch, then push the same commit to `main` (Pages).
 
+**Repo size (1 Nov 2026): about 940 MB, at GitHub's ~1 GB guideline for a Pages repo.** Do NOT add more raw photos or
+video to the repo. Keep raw sources in Google Drive (the "Relics" folder's parent, or a new "Abbey website sources"
+folder) and commit only web-sized copies used on the site (`assets/img/`, ≤ 1800 px, q≈80). Slimming the history
+(removing `_source/stephens` etc. from past commits) needs a force-push to `main`: only with Br. Augustine's yes.
+
 ## Jobs
 
 Jobs 2–8 can run in parallel once job 1 is pushed (they share only `assets/site.css`; add page-specific styles at the
