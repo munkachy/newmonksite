@@ -59,7 +59,9 @@ end of it under a comment with your page's name, or in a `<style>` block in your
   real page. Images in `assets/img/` (see the list in `assets/img/README.md`).
 - [ ] **2. The Grotto** (`grotto/`): Br. Joseph's life, the miniatures, visiting info, shop link, Library of Congress
   photos (`_notes/research-img/`, credits in its `CREDITS.md`).
-- [~] **3. Monks at Work** *(taken by the first session, 1 Nov 2026)* (`work/`): Br. Joseph, Br. Jude, the craftsmen of the past (names only where public; the
+- [x] **3. Monks at Work**: done 1 Nov 2026 (Rule ch. 57, Br. Joseph with timeline, Br. Jude, the builders of the past
+  marked "to confirm", the work today). Wanted: a photo of Br. Jude or his work (the picture there is a placeholder),
+  the names of living craftsman monks, and the abbot's yes on the Necrology names. (`work/`): Br. Joseph, Br. Jude, the craftsmen of the past (names only where public; the
   Necrology names marked "to confirm"), and the works of today: bakery, woodworks, Scriptorium, farm, Grotto, school.
 - [x] **4. Relics**: done 1 Nov 2026. Cards built by a script from `_notes/relic-groups.json` (cover = first photo of each
   group, `assets/img/relics/`); when the photographer's pictures come, replace `assets/img/relics/<group-id>.jpg`, drop
@@ -92,3 +94,4 @@ end of it under a comment with your page's name, or in a `<style>` block in your
   time, relics, three asks), shared CSS/JS, starter pages. Tested at 1440 and 390: no console errors, no sideways
   scroll. Preview: serve the parent folder (`cd .. && python3 -m http.server 8770`), open /newmonksite/.
 - 1 Nov 2026: job 4 done (relics page, 14 reliquaries, all 122 photos as thumbnails linking to the labeled copies). Job 3 taken.
+- 1 Nov 2026: job 3 done (work/). Jobs 2, 5, 6, 7, 8, 9 are open.

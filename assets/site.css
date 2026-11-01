@@ -248,3 +248,20 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .altar-slot { min-height: 22rem; display: grid; place-items: center; text-align: center; padding: 2rem; border: 1px dashed rgba(29,27,23,.35); border-radius: 4px; background: var(--paper-2); color: var(--muted); }
 .altar-slot p { margin-top: .8rem; font-family: var(--serif); font-size: 1.3rem; font-style: italic; }
 @media (max-width: 48em) { .relic { grid-template-columns: 1fr; } }
+
+/* ---- Monks at Work page (work/index.html) ---- */
+.timeline { display: grid; grid-template-columns: repeat(8, 1fr); gap: 1px; margin-top: 3.5rem; background: var(--line); border: 1px solid var(--line); }
+.timeline li { background: var(--paper-2); padding: 1.1rem 1rem; }
+.timeline b { display: block; font: 400 1.6rem/1 var(--serif); color: var(--gold-ink); margin-bottom: .45rem; }
+.timeline span { font-size: .88rem; color: var(--ink-soft); line-height: 1.4; display: block; }
+.makers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 2.5rem; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.12); }
+.makers li { background: var(--night); padding: 1.6rem 1.5rem; }
+.makers b { display: block; font: 400 1.55rem/1.15 var(--serif); color: #fff; margin-bottom: .6rem; }
+.makers span { color: rgba(239,233,220,.78); font-size: .98rem; }
+.works { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(1.5rem, 3vw, 2.5rem); margin-top: 3rem; }
+.work { display: grid; grid-template-columns: 11rem 1fr; gap: 1.4rem; align-items: start; scroll-margin-top: 6rem; }
+.work img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 3px; }
+.work .h-sm { margin-bottom: .5rem; }
+.work p { color: var(--ink-soft); font-size: 1.02rem; }
+@media (max-width: 64em) { .timeline { grid-template-columns: repeat(4, 1fr); } .makers { grid-template-columns: 1fr 1fr; } .works { grid-template-columns: 1fr; } }
+@media (max-width: 48em) { .timeline { grid-template-columns: 1fr 1fr; } .makers { grid-template-columns: 1fr; } .work { grid-template-columns: 6.5rem 1fr; } }
