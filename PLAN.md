@@ -61,8 +61,7 @@ phone menu fixed; all links checked. **Four research helpers were running** when
 `_notes/briefs/README.md`): Facebook monk posts (→ `_notes/MONKS.md`), Anne Stephens photos (→ `_notes/STEPHENS.md`),
 Josh Viola photos (→ `_notes/VIOLA.md`), Br. Leo / Fr. John / Br. Jude (→ `_notes/CRAFTSMEN.md`). If those files are
 missing or unfinished, rerun the brief. **Next after research**: (a) job 5b "Get to know the monks" in `monastery/`;
-(b) add Br. Leo (Scriptorium, ceramics), Fr. John O'Donnell (painted ceramic churches), Br. Nicholas Smith (novice
-artist, follows Br. Nicholas Weiss) and more on Br. Jude to `work/`; (c) swap placeholder pictures for Stephens/Viola
+(b) DONE: Br. Leo, Fr. John, Br. Nicholas and more on Br. Jude are on `work/` ("The craftsmen today"); (c) swap placeholder pictures for Stephens/Viola
 photos with credits; then jobs 2, 6, 7, 9.
 
 **Facts given by Br. Augustine (1 Nov 2026)**: the Necrology is public; no carpenter at present (woodshop = tradition
@@ -128,3 +127,4 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 1 Nov 2026: Josh Viola's photographs (pic-time portfolio) may be used with credit "Photo: Josh Viola".
 - 1 Nov 2026: Br. Gabriel Maddox (novice) has left: leave him off the site. Br. Joseph Goode has gone to another monastery: leave him off too.
 - 1 Nov 2026: novices may be named and shown; Br. Damien and Br. Raphael are juniors (simple vows).
+- 1 Nov 2026: work/ gets "The craftsmen today" (Br. Leo Borelli, Fr. John O'Donnell, Br. Nicholas Smith) and more on Br. Jude (Meštrović, Pratt, Yale, his own words; abbey's portrait). Wanted: photos of Br. Leo's ceramics, Fr. John's painted churches, Br. Nicholas's art.
