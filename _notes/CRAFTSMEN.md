@@ -350,3 +350,31 @@ The Grotto's own archive photographs, the documentary's "voluminous archival foo
 - **Fr. John O'Donnell** paints small ceramic church models sold at the Grotto; there is an interview with him
   (Br. Augustine). Research in progress.
 - **Br. Jude**: Wallace State exhibit page https://www.wallacestate.edu/news/2026/04/01/jude-johnston_exhibit.html
+
+### Research results, 1 Nov 2026 (public sources)
+
+**Br. Leo Borelli, O.S.B.** On the Diocese of Birmingham list of religious, Oct 2026 (bhmdiocese.org/documents/2026/10/
+RELIGIOUS%20ORDER%20LISTINGS%20UPDATED%2010-05-2026%201.pdf; Prior there: Fr. Bede Marcy; Subprior: Fr. Dominic Lee).
+St. Bernard Prep blog (stbernardprep.blogspot.com/search?q=Leo): was the school librarian, then taught Latin (c. 2012);
+29 Apr 2013 "three of his students had won gold medals" on the National Latin Exam. Cullman Tribune 12 Sep 2015
+(Walk to End Alzheimer's): "I'm walking to help reclaim the future for millions…". Not found in print: prior years,
+ceramics teaching, hermitage, Scriptorium (these come from Br. Augustine). Scriptorium books (Grotto shop c14, all
+sold out now): Abbot Ambrose Reger, *The Benedictines in Alabama*, *Seeing Europe After 40 Years*; Fr. Aloysius
+Plaisance, *An Alabama Monk in the Holy Land*, *…Bicycles the British Isles*, *…Hikes the Smokies*, *The Dear Editor
+Monk*. Cover images in `research-img/grotto-scriptorium-*.jpg` (the Grotto's own; ask before use).
+
+**Fr. John O'Donnell, O.S.B.** Cullman Tribune 22 May 2017, "Profiles in Faith: Catching up with Father John
+O'Donnell": "A Philadelphia native, he attended St. Bernard during its days as a college, and has been a monk at the
+Abbey since the 1980s"; former Grotto manager and Prep athletic director; associate pastor of Sacred Heart, Cullman
+(~16 years); jail and recovery ministry; subprior; pastor of St. Michael, St. Florian from 2016. Quote: "I enjoy the
+inner discipline of the monastery. The monastic life is focused on prayer." The ceramics interview was NOT found;
+no pieces listed in the Grotto shop online (ceramic church painting: from Br. Augustine).
+
+**Br. Jude Johnston** (more): CBS 42 / alabamas42.com, Drew Taylor, 23 Jun 2025: "By 1961, Johnston began studying
+sculpture at Notre Dame under Ivan Mestrovic"; architecture instructor at Pratt Institute 1970–71, taught at Yale;
+1961 Tribune: works in the halls of St. Bernard: "a full length statue of the Sacred Heart, a life size portraiture of
+the Madonna, and a portrait of St. Benedict"; 2017 Good Life Magazine: "My work will, I hope, demonstrate in some way
+what I desire to become, a new being." Wallace State 1 Apr 2026: the exhibit shows "numerous drawings, architectural
+forms, and additional works spanning more than 70 years"; later work in CADD "into his '80s and '90s". Photo:
+`research-img/cbs42-jude-johnston-courtesy-abbey.jpg` ("Courtesy of St. Bernard Abbey"). Lead: Good Life Magazine
+Winter 2017 (issuu.com/the-good-life-magazine/docs/cc_20winter_20website).
