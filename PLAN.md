@@ -53,13 +53,14 @@ Take one job at a time, mark it `[~] taken (date, who)` and push that mark first
 Jobs 2–8 can run in parallel once job 1 is pushed (they share only `assets/site.css`; add page-specific styles at the
 end of it under a comment with your page's name, or in a `<style>` block in your page, to avoid merge conflicts).
 
-- [ ] **1. Foundation** (`assets/site.css`, `assets/site.js`, header/footer, home page `index.html`). *Taken by the
-  first session, 1 Nov 2026.*
+- [x] **1. Foundation** (`assets/site.css`, `assets/site.js`, header/footer, home page `index.html`). Done 1 Nov 2026.
+  Every section folder has a starter `index.html` with the shared header and footer: replace its `<main>` with the
+  real page. Images in `assets/img/` (see the list in `assets/img/README.md`).
 - [ ] **2. The Grotto** (`grotto/`): Br. Joseph's life, the miniatures, visiting info, shop link, Library of Congress
   photos (`_notes/research-img/`, credits in its `CREDITS.md`).
 - [ ] **3. Monks at Work** (`work/`): Br. Joseph, Br. Jude, the craftsmen of the past (names only where public; the
   Necrology names marked "to confirm"), and the works of today: bakery, woodworks, Scriptorium, farm, Grotto, school.
-- [ ] **4. Relics** (`relics/index.html`): from `_notes/relic-groups.json` and `relics/README.md`: groups as cards
+- [~] **4. Relics** *(taken by the first session, 1 Nov 2026)* (`relics/index.html`): from `_notes/relic-groups.json` and `relics/README.md`: groups as cards
   (placeholder photo marked "Photo to come"), each with its saints; a slot for the long shot on the altar.
   Make web copies of the chosen photos in `assets/img/relics/`. Keep `relics/README.md` as the full catalogue.
 - [ ] **5. The monastery and prayer** (`monastery/`, `pray/`): the monks (9 profiles in
@@ -84,3 +85,6 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 1 Nov 2026: research done (abbey site crawled: `_source/`; monastery sites: `_notes/MONASTERIES.md`; craftsmen:
   `_notes/CRAFTSMEN-public.md`); film re-encoded (`media/film-720.mp4`, 53 MB), hero loop cut (`media/hero-*.mp4`),
   stills (`media/film-still-*.jpg`). Plan written. Starting job 1.
+- 1 Nov 2026: job 1 done: home page (hero loop, two works, craftsman monks, the film, prayer times live in Central
+  time, relics, three asks), shared CSS/JS, starter pages. Tested at 1440 and 390: no console errors, no sideways
+  scroll. Preview: serve the parent folder (`cd .. && python3 -m http.server 8770`), open /newmonksite/.
