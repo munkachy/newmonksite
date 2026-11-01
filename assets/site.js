@@ -12,6 +12,10 @@
     menuBtn.addEventListener('click', function () {
       var open = document.body.classList.toggle('menu-open');
       menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Menu');
+    });
+    document.querySelectorAll('#nav a').forEach(function (a) {
+      a.addEventListener('click', function () { if (document.body.classList.contains('menu-open')) menuBtn.click(); });
     });
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && document.body.classList.contains('menu-open')) { menuBtn.click(); menuBtn.focus(); }

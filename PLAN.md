@@ -101,3 +101,4 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 1 Nov 2026: job 3 done (work/). Jobs 2, 5, 6, 7, 8, 9 are open.
 - 1 Nov 2026: the Necrology is public (Br. Augustine): full craftsmen notes now in `_notes/CRAFTSMEN.md`; Br. Joseph's own words added to work/.
 - 1 Nov 2026: published to main at Br. Augustine's request; live at https://munkachy.github.io/newmonksite/ (home, work, relics; other pages are starters).
+- 1 Nov 2026: fixes from Br. Augustine's phone: heading words glued when the line break is hidden on phones (space before every <br>), and the phone menu trapped inside the header by `backdrop-filter` (removed; the menu now covers the screen and shows an X). QA script: every page at 1440 and 390, images, overflow, all 166 links and #anchors: clean. Added real Mass-intention, giving, vocation and oblate sections so the home page's links land. CSS/JS now ?v=2.

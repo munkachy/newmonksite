@@ -84,7 +84,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .util .wrap { display: flex; flex-wrap: wrap; gap: .3rem 1.4rem; justify-content: flex-end; padding-block: .45rem; }
 .util b { color: #fff; font-weight: 600; }
 .util a { color: var(--gold); text-decoration: none; }
-.header { position: sticky; top: 0; z-index: 40; background: rgba(247, 242, 232, .96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.header { position: sticky; top: 0; z-index: 40; background: var(--paper); border-bottom: 1px solid var(--line); }
 .header .wrap { display: flex; align-items: center; gap: 1.5rem; min-height: 4.6rem; }
 .brand { display: flex; align-items: center; gap: .8rem; text-decoration: none; margin-right: auto; }
 .brand img { width: 1.95rem; height: auto; }
@@ -207,7 +207,10 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 /* ---------- Tablet and phone ---------- */
 @media (max-width: 64em) {
   .nav { display: none; position: fixed; inset: 0; z-index: 50; background: var(--paper); flex-direction: column; align-items: flex-start; justify-content: center; gap: 1.1rem; padding: 6rem var(--gut) 3rem; }
-  .menu-open .nav { display: flex; }
+  .menu-open .nav { display: flex; overflow-y: auto; }
+  .menu-open .menu-btn .ic-open { display: none; }
+  .menu-btn .ic-close { display: none; }
+  .menu-open .menu-btn .ic-close { display: block; }
   .nav a { font: 400 2.2rem/1.1 var(--serif); }
   .nav .btn { font: 600 1rem/1 var(--sans); margin-top: 1rem; }
   .menu-btn { display: grid; position: relative; z-index: 60; }
