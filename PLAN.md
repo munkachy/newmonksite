@@ -93,7 +93,7 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - Who drew the campus map ("Br. Nicholas", living), and which living monks are craftsmen today.
 - The 78-second trailer on YouTube (`9HsUwl-Prf0`) could not be downloaded here; the full film is used instead.
 - Whether the site keeps Donorbox for gifts.
-- May novices (Br. Nicholas Smith, Br. Boniface Boland, Br. Gabriel Maddox) be named and shown on the site?
+- May novices (Br. Nicholas Smith, Br. Boniface Boland) be named and shown on the site?
 
 ## Log
 
@@ -110,3 +110,4 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 1 Nov 2026: fixes from Br. Augustine's phone: heading words glued when the line break is hidden on phones (space before every <br>), and the phone menu trapped inside the header by `backdrop-filter` (removed; the menu now covers the screen and shows an X). QA script: every page at 1440 and 390, images, overflow, all 166 links and #anchors: clean. Added real Mass-intention, giving, vocation and oblate sections so the home page's links land. CSS/JS now ?v=2.
 - 1 Nov 2026: roster (Mar 2026) in `_notes/ROSTER.md`; Anne Stephens's SmugMug photos may be used with credit; the abbey's Facebook monk posts may be used. Research running on: the Facebook posts, the SmugMug galleries, Br. Leo Borelli, Fr. John O'Donnell, Br. Jude. No current carpenter: woodshop shown as tradition only.
 - 1 Nov 2026: Josh Viola's photographs (pic-time portfolio) may be used with credit "Photo: Josh Viola".
+- 1 Nov 2026: Br. Gabriel Maddox (novice) has left: leave him off the site. Br. Joseph Goode has gone to another monastery: leave him off too.

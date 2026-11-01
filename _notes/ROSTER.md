@@ -29,7 +29,7 @@ From the printed list "Monks of St. Bernard Abbey, Cullman, Alabama, 2026 · Ple
 | 22 | Br. Raphael Ray, O.S.B. | simple profession 21 Mar 2026 |
 | 23 | Novice Br. Nicholas Smith | artist; born Austin; took the name to follow Br. Nicholas Weiss (Br. Augustine) |
 | 24 | Novice Br. Boniface Boland | |
-| 25 | Novice Br. Gabriel Maddox | |
+| 25 | ~~Novice Br. Gabriel Maddox~~ | has left (Br. Augustine, 1 Nov 2026): not on the site |
 
 Photographs: Anne Stephens, a friend of the abbey, https://annestephens.smugmug.com/ : may be used on the site,
 credited "Photo: Anne Stephens" (Br. Augustine, 1 Nov 2026).
