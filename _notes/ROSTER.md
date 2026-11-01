@@ -32,5 +32,7 @@ From the printed list "Monks of St. Bernard Abbey, Cullman, Alabama, 2026 · Ple
 | 25 | Novice Br. Gabriel Maddox | |
 
 Photographs: Anne Stephens, a friend of the abbey, https://annestephens.smugmug.com/ : may be used on the site,
-credited "Photo: Anne Stephens" (Br. Augustine, 1 Nov 2026). Biographical posts about the monks are on the abbey's
+credited "Photo: Anne Stephens" (Br. Augustine, 1 Nov 2026).
+Photographs: Josh Viola, https://joshuapaulviola.pic-time.com/portfolio : may be used on the site, credited
+"Photo: Josh Viola" (Br. Augustine, 1 Nov 2026). Catalogue in `_notes/VIOLA.md`, files in `_source/viola/`. Biographical posts about the monks are on the abbey's
 Facebook page, https://www.facebook.com/stbernardabbey/ (written by Br. Augustine).
