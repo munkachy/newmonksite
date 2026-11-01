@@ -79,7 +79,8 @@ end of it under a comment with your page's name, or in a `<style>` block in your
   roster (`_notes/ROSTER.md`) with a photo and a few lines, drawn from the abbey's own Facebook posts (written by
   Br. Augustine; gathered in `_notes/MONKS.md`) and Anne Stephens's photographs (`_notes/STEPHENS.md`,
   `_source/stephens/`; credit "Photo: Anne Stephens") and Josh Viola's (`_notes/VIOLA.md`, `_source/viola/`; credit "Photo: Josh Viola"). Like Saint Louis Abbey's "Meet our family": face, name,
-  hometown, work, feast day. Novices only with Br. Augustine's yes.
+  hometown, work, feast day. Show them in groups: solemnly professed monks, juniors (simple vows: Br. Damien,
+  Br. Raphael), novices (Br. Nicholas, Br. Boniface: may be shown).
 - [ ] **6. Visit and Give** (`visit/`, `give/`).
 - [ ] **7. The School** (`school/`): a short page on St. Bernard Prep as a work of the monks, linking to
   stbernardprep.com (and to the sbp preview when it goes live).
@@ -93,7 +94,6 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - Who drew the campus map ("Br. Nicholas", living), and which living monks are craftsmen today.
 - The 78-second trailer on YouTube (`9HsUwl-Prf0`) could not be downloaded here; the full film is used instead.
 - Whether the site keeps Donorbox for gifts.
-- May novices (Br. Nicholas Smith, Br. Boniface Boland) be named and shown on the site?
 
 ## Log
 
@@ -111,3 +111,4 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 1 Nov 2026: roster (Mar 2026) in `_notes/ROSTER.md`; Anne Stephens's SmugMug photos may be used with credit; the abbey's Facebook monk posts may be used. Research running on: the Facebook posts, the SmugMug galleries, Br. Leo Borelli, Fr. John O'Donnell, Br. Jude. No current carpenter: woodshop shown as tradition only.
 - 1 Nov 2026: Josh Viola's photographs (pic-time portfolio) may be used with credit "Photo: Josh Viola".
 - 1 Nov 2026: Br. Gabriel Maddox (novice) has left: leave him off the site. Br. Joseph Goode has gone to another monastery: leave him off too.
+- 1 Nov 2026: novices may be named and shown; Br. Damien and Br. Raphael are juniors (simple vows).

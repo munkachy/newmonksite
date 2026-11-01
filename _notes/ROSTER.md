@@ -25,8 +25,8 @@ From the printed list "Monks of St. Bernard Abbey, Cullman, Alabama, 2026 · Ple
 | 18 | Fr. Pachomius Alvarado, O.S.B. | |
 | 19 | Br. Joseph Goode, O.S.B. | has since gone to another monastery (Br. Augustine, Nov 2026); was the carpenter |
 | 20 | Br. Augustine Munkachy, O.S.B. | webmaster; solemn vows 2025 |
-| 21 | Br. Damien Jackson, O.S.B. | simple profession 21 Mar 2026 |
-| 22 | Br. Raphael Ray, O.S.B. | simple profession 21 Mar 2026 |
+| 21 | Br. Damien Jackson, O.S.B. | junior monk (simple vows 21 Mar 2026) |
+| 22 | Br. Raphael Ray, O.S.B. | junior monk (simple vows 21 Mar 2026) |
 | 23 | Novice Br. Nicholas Smith | artist; born Austin; took the name to follow Br. Nicholas Weiss (Br. Augustine) |
 | 24 | Novice Br. Boniface Boland | |
 | 25 | ~~Novice Br. Gabriel Maddox~~ | has left (Br. Augustine, 1 Nov 2026): not on the site |
@@ -36,3 +36,5 @@ credited "Photo: Anne Stephens" (Br. Augustine, 1 Nov 2026).
 Photographs: Josh Viola, https://joshuapaulviola.pic-time.com/portfolio : may be used on the site, credited
 "Photo: Josh Viola" (Br. Augustine, 1 Nov 2026). Catalogue in `_notes/VIOLA.md`, files in `_source/viola/`. Biographical posts about the monks are on the abbey's
 Facebook page, https://www.facebook.com/stbernardabbey/ (written by Br. Augustine).
+
+Novices Br. Nicholas Smith and Br. Boniface Boland may be named and shown on the site (Br. Augustine, 1 Nov 2026).
