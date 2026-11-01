@@ -139,3 +139,4 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 1 Nov 2026: novices may be named and shown; Br. Damien and Br. Raphael are juniors (simple vows).
 - 1 Nov 2026: work/ gets "The craftsmen today" (Br. Leo Borelli, Fr. John O'Donnell, Br. Nicholas Smith) and more on Br. Jude (Meštrović, Pratt, Yale, his own words; abbey's portrait). Wanted: photos of Br. Leo's ceramics, Fr. John's painted churches, Br. Nicholas's art.
 - 1 Nov 2026: Br. Augustine asked for a media/photos page and a picture pass over the whole site with the new photos (jobs 10 and 11).
+- 1 Nov 2026: Facebook research done: `_notes/MONKS.md` (16 monks with plenty, 2 thin, 4 nothing: Br. Damien, Br. Raphael, Br. Nicholas, Br. Boniface). Facebook can't be read without login: Br. Augustine may export or paste his monk posts. Photos in `_notes/monk-img/` (abbey's own).
