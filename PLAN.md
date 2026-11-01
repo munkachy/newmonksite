@@ -57,7 +57,7 @@ If a job marked taken has had no commit for two hours, the session that took it 
 ## Where things stand (read first)
 
 *Last updated 1 Nov 2026, evening.* Live: https://munkachy.github.io/newmonksite/ . Done: home, Monks at Work, Relics;
-phone menu fixed; all links checked. **Four research helpers were running** when this was written (briefs in
+phone menu fixed; all links checked. **The four research helpers have finished** (1 Nov 2026) (briefs in
 `_notes/briefs/README.md`): Facebook monk posts (→ `_notes/MONKS.md`), Anne Stephens photos (→ `_notes/STEPHENS.md`),
 Josh Viola photos (→ `_notes/VIOLA.md`), Br. Leo / Fr. John / Br. Jude (→ `_notes/CRAFTSMEN.md`). If those files are
 missing or unfinished, rerun the brief. **Next after research**: (a) job 5b "Get to know the monks" in `monastery/`;
@@ -146,3 +146,4 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 1 Nov 2026: Br. Augustine asked for a media/photos page and a picture pass over the whole site with the new photos (jobs 10 and 11).
 - 1 Nov 2026: Facebook research done: `_notes/MONKS.md` (16 monks with plenty, 2 thin, 4 nothing: Br. Damien, Br. Raphael, Br. Nicholas, Br. Boniface). Facebook can't be read without login: Br. Augustine may export or paste his monk posts. Photos in `_notes/monk-img/` (abbey's own).
 - 1 Nov 2026: Viola research done: only the Abbot Marcus Thanksgiving Mass gallery (137 photos, 1600 px) is public; Abbot Brendan, Fr. Pachomius, Br. Augustine's solemn profession and MonkMindset are behind Pic-Time's login (covers only). Ask Josh for those galleries or files. 30 best flagged ★ in `_notes/VIOLA.md`.
+- 1 Nov 2026: Stephens research done: 417 photos (~410 MB) in `_source/stephens/`, catalogue `_notes/STEPHENS.md` (61 galleries, ~16,700 photos on SmugMug; "Monk Headshots" gallery names 20 monks for sure; 30 best flagged; no Grotto photos, few school). All four research jobs done; next: job 5b (Get to know the monks), job 10 (picture pass), job 11 (photos page). Br. Augustine to check: who the bakers are; faces marked "unsure".
