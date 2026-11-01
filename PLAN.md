@@ -4,6 +4,10 @@ A new version of stbernardabbey.com (now on Wix), built here as plain HTML, CSS 
 **relative paths** (so it works at `munkachy.github.io/newmonksite/` now and at the domain root later), the same way
 as the `munkachy/sbp` site. Br. Augustine, OSB (webmaster) asked for it on 1 Nov 2026.
 
+**Live preview: https://munkachy.github.io/newmonksite/** (GitHub Pages serves `main`, root folder; it rebuilds in a
+minute or two after each push). To publish, test, then fast-forward `main` to the work branch. Folders starting with
+`_` (`_notes/`, `_source/`) are not published.
+
 **Anyone picking this up (another Claude account or session):** read this file first, then `_notes/`. Work on branch
 `claude/saint-photo-identification-ksp79d` (PR #1 in munkachy/newmonksite). `git pull` before you start and before
 you push; commit and push after every finished piece, and tick it off below with a line in the log at the bottom.
@@ -96,3 +100,4 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 1 Nov 2026: job 4 done (relics page, 14 reliquaries, all 122 photos as thumbnails linking to the labeled copies). Job 3 taken.
 - 1 Nov 2026: job 3 done (work/). Jobs 2, 5, 6, 7, 8, 9 are open.
 - 1 Nov 2026: the Necrology is public (Br. Augustine): full craftsmen notes now in `_notes/CRAFTSMEN.md`; Br. Joseph's own words added to work/.
+- 1 Nov 2026: published to main at Br. Augustine's request; live at https://munkachy.github.io/newmonksite/ (home, work, relics; other pages are starters).
