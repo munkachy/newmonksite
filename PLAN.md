@@ -54,6 +54,22 @@ If a job marked taken has had no commit for two hours, the session that took it 
 - **Don't**: animations that hide content when JS is off, pop-ups, carousels, dated widgets that go stale, 24-hour
   times. Test at 1440 and 390 wide, light only, no console errors, no sideways scroll (see sbp CLAUDE.md "Testing").
 
+## Where things stand (read first)
+
+*Last updated 1 Nov 2026, evening.* Live: https://munkachy.github.io/newmonksite/ . Done: home, Monks at Work, Relics;
+phone menu fixed; all links checked. **Four research helpers were running** when this was written (briefs in
+`_notes/briefs/README.md`): Facebook monk posts (→ `_notes/MONKS.md`), Anne Stephens photos (→ `_notes/STEPHENS.md`),
+Josh Viola photos (→ `_notes/VIOLA.md`), Br. Leo / Fr. John / Br. Jude (→ `_notes/CRAFTSMEN.md`). If those files are
+missing or unfinished, rerun the brief. **Next after research**: (a) job 5b "Get to know the monks" in `monastery/`;
+(b) add Br. Leo (Scriptorium, ceramics), Fr. John O'Donnell (painted ceramic churches), Br. Nicholas Smith (novice
+artist, follows Br. Nicholas Weiss) and more on Br. Jude to `work/`; (c) swap placeholder pictures for Stephens/Viola
+photos with credits; then jobs 2, 6, 7, 9.
+
+**Facts given by Br. Augustine (1 Nov 2026)**: the Necrology is public; no carpenter at present (woodshop = tradition
+only, no custom-work offer); Br. Joseph Goode (gone to another monastery) and Br. Gabriel Maddox (left) stay off the
+site; novices may be shown; Br. Damien and Br. Raphael are juniors; photos by Anne Stephens and Josh Viola may be used
+with credit. Publishing: commit on the work branch, then push the same commit to `main` (Pages).
+
 ## Jobs
 
 Jobs 2–8 can run in parallel once job 1 is pushed (they share only `assets/site.css`; add page-specific styles at the
