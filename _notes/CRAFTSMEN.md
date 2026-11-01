@@ -334,3 +334,10 @@ The Grotto's own archive photographs, the documentary's "voluminous archival foo
 
 - `img/`: 9 public-domain/CC0 images; credits in `img/CREDITS.md`.
 - `raw/`: downloaded pages and PDFs (NRHP text and photos, SPACES sheet, Grotto guide, abbey and shop pages, the Necrology text extract `raw/necro.txt`). These are working files and are untrusted.
+
+## Living craftsman monks (to grow)
+
+- **Br. Nicholas, novice, artist** (born Austin …). Took the name Nicholas to follow in the footsteps of Br. Nicholas
+  Weiss (1907–1982), the abbey's cabinet maker and woodcarver. Probably the "Br. Nicholas" whose drawing of the campus
+  is the base of the Bloomin' Festival map (`munkachy/bloominfestival`, `images/map-*.webp`). Source: Br. Augustine,
+  1 Nov 2026; newspaper research in progress (results to be added here with links).
