@@ -341,3 +341,12 @@ The Grotto's own archive photographs, the documentary's "voluminous archival foo
   Weiss (1907–1982), the abbey's cabinet maker and woodcarver. Probably the "Br. Nicholas" whose drawing of the campus
   is the base of the Bloomin' Festival map (`munkachy/bloominfestival`, `images/map-*.webp`). Source: Br. Augustine,
   1 Nov 2026; newspaper research in progress (results to be added here with links).
+
+- **The woodshop** (Br. Augustine, 1 Nov 2026): there is no carpenter at present (Br. Joseph Goode, who did the
+  carpentry, has gone to another monastery; not for the website). Use the woodshop photos as the tradition, but don't
+  offer custom work or the carpenter@ address.
+- **Br. Leo** runs the St. Bernard Scriptorium; a hermit living in a trailer by the cemetery; formerly prior; used to
+  teach ceramics classes (Br. Augustine). Research in progress.
+- **Fr. John O'Donnell** paints small ceramic church models sold at the Grotto; there is an interview with him
+  (Br. Augustine). Research in progress.
+- **Br. Jude**: Wallace State exhibit page https://www.wallacestate.edu/news/2026/04/01/jude-johnston_exhibit.html
