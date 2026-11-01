@@ -101,6 +101,16 @@ end of it under a comment with your page's name, or in a `<style>` block in your
   stbernardprep.com (and to the sbp preview when it goes live).
 - [ ] **8. Pictures**: choose the best photos in `_source/abbey-img/` (see its `INDEX.md`) for each page, make web
   copies in `assets/img/`, and list each with its page in `assets/img/README.md`.
+- [ ] **10. Picture pass over the whole site** (after `_notes/STEPHENS.md` and `_notes/VIOLA.md` are finished): go page
+  by page and choose the best picture for every slot from all sources (Stephens, Viola, Facebook monk photos, the old
+  site in `_source/abbey-img/`, Library of Congress, the film stills). Prefer real monks at work and prayer over
+  empty rooms; faces for "Get to know the monks"; the Grotto photos for `grotto/`. Make web copies in `assets/img/`
+  (≤ 1800 px, q≈80), credit every photo under it ("Photo: Anne Stephens", "Photo: Josh Viola"), and update
+  `assets/img/README.md`. Br. Augustine asked for this, 1 Nov 2026.
+- [ ] **11. Media page** (`media/` is taken by the video files, so use `photos/`): a gallery of good photos not used
+  elsewhere, grouped (the community, liturgy, the church and grounds, the Grotto, the school, at work), each with
+  photographer credit; plus the film and the Facebook/Instagram/YouTube links. Thumbnails ~600 px, lazy-loaded,
+  opening the 1800 px copy. Link it from the footer. Br. Augustine asked for this, 1 Nov 2026.
 - [ ] **9. Check everything**: Playwright at 1440 and 390, every link, then a short report for Br. Augustine.
 
 ## For Br. Augustine to decide or supply
@@ -128,3 +138,4 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 1 Nov 2026: Br. Gabriel Maddox (novice) has left: leave him off the site. Br. Joseph Goode has gone to another monastery: leave him off too.
 - 1 Nov 2026: novices may be named and shown; Br. Damien and Br. Raphael are juniors (simple vows).
 - 1 Nov 2026: work/ gets "The craftsmen today" (Br. Leo Borelli, Fr. John O'Donnell, Br. Nicholas Smith) and more on Br. Jude (Meštrović, Pratt, Yale, his own words; abbey's portrait). Wanted: photos of Br. Leo's ceramics, Fr. John's painted churches, Br. Nicholas's art.
+- 1 Nov 2026: Br. Augustine asked for a media/photos page and a picture pass over the whole site with the new photos (jobs 10 and 11).
