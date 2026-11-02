@@ -302,3 +302,13 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .prose a.btn-ink { color: var(--paper); }
 .prose a.btn-gold { color: var(--night); }
 .prose a.btn-line { color: inherit; }
+/* ---- Monastery: the stages of formation ---- */
+.stages { list-style: none; padding: 0; margin: 2.5rem 0 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(1rem, 2.5vw, 2rem); }
+.stages figure img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 4px; }
+.stages b { display: block; font: 500 1.45rem/1.2 var(--serif); margin-top: .9rem; color: var(--gold-ink); }
+.stages p { font-size: 1rem; line-height: 1.6; color: var(--ink-soft); margin-top: .4rem; }
+.stage-nophoto { aspect-ratio: 4 / 5; display: grid; place-items: center; align-content: center; gap: .9rem; background: var(--paper); border: 1px dashed var(--line); border-radius: 4px; }
+.stage-nophoto img { width: 3.2rem !important; aspect-ratio: auto !important; opacity: .45; }
+.stage-nophoto figcaption { font: 600 .72rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.split figcaption { font-size: .8rem; color: var(--muted); margin-top: .6rem; }
+@media (max-width: 64em) { .stages { grid-template-columns: 1fr 1fr; } }
