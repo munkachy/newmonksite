@@ -6,7 +6,8 @@ Uses Facebook's Graph API, the official way for a Page's admins to read their ow
    - Go to https://developers.facebook.com/tools/explorer/ (log in as a Page admin; if it asks, create a free
      "app" of type Business, then choose it in the Explorer).
    - Under "User or Page", choose "Get Page Access Token" and pick Saint Bernard Abbey.
-   - Add the permissions pages_read_engagement and pages_show_list, then "Generate Access Token" and copy it.
+   - Add the permissions pages_show_list, pages_read_engagement and pages_read_user_content, then "Generate
+     Access Token", tick the Page in the pop-up, and copy the token.
 2. Run (the token is read from the environment and never printed or saved):
        FB_TOKEN='...' python3 _notes/tools/fb_page_export.py OUT_DIR
    Optional: --since 2015-01-01 to limit the date range.
@@ -24,7 +25,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-API = "https://graph.facebook.com/v21.0/"
+API = "https://graph.facebook.com/v26.0/"
 
 
 def get(path_or_url, token, **params):
