@@ -32,3 +32,4 @@ Carol M. Highsmith, public domain: credit "Photo: Carol M. Highsmith, Library of
 | choir-1950s.jpg, choir-2013.jpg | Archives (Arc.zip) 'Monks in prayer 1950s', 'Monks at prayer 2013', 4:5 crops, graded 0.35/0.5 | home (Pray with us) |
 | heroes.jpg | Archives (Arc.zip) 'St Bernard monks around early 1900s', 3:4 crop, graded 0.4 | home (Heroes tile) |
 | church-world/*.jpg | Archives photos from Br. Augustine's Drive (Francis 2016, John Paul II, Mother Angelica 1982 ×2, RFK), graded 0.3 | monastery (#wider-church) |
+| monks/face/*.jpg | face crops (300×300) of monks/*.jpg for the round faces | school |
