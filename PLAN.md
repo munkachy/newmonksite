@@ -38,7 +38,7 @@ If a job marked taken has had no commit for two hours, the session that took it 
   the school only): **Cormorant Garamond** (headings) and **Source Sans 3** (text). Crest: `_source/abbey-img/logo.jpg`.
 - **Navigation**: The Grotto · Monks at Work · The School · Pray with Us · Visit · ♥ Give (pill). Utility line above:
   today's Grotto hours and the next prayer time (computed in JS from the tables below, Central time).
-- **Home page order**: (1) hero: silent loop `media/hero-720/1080.mp4` (24 s, cut from the film; pause button;
+- **Home page order**: (1) hero: silent loop `media/hero-720/1080.mp4` (21.6 s, cut from the film; title card removed 2 Nov 2026; pause button;
   still `media/film-still-33.jpg` for reduced motion) with the abbey's name and one line; (2) "Two works, one house":
   equal cards for the Grotto and the Prep; (3) Monks at work: Br. Joseph first, then the strip "A Builder / A Carver /
   A Baker / A Scribe / A Teacher"; (4) the film (sbp tour pattern; `media/film-720.mp4`, 8:30, poster
