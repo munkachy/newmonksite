@@ -312,3 +312,9 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .stage-nophoto figcaption { font: 600 .72rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
 .split figcaption { font-size: .8rem; color: var(--muted); margin-top: .6rem; }
 @media (max-width: 64em) { .stages { grid-template-columns: 1fr 1fr; } }
+/* ---- Monks at Work: those who served ---- */
+.served { margin-top: 2.5rem; max-width: 52rem; padding: 2rem; border: 1px solid var(--line); border-radius: 4px; background: #fffdf8; }
+.served > p { color: var(--ink-soft); margin-top: .6rem; }
+.served ul { list-style: none; padding: 0; margin: 1rem 0 0; }
+.served li { padding: .9rem 0; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 1rem; line-height: 1.65; }
+.served li b { color: var(--ink); }
