@@ -44,7 +44,7 @@ Damien 10 May (**of Molokai**) · Nicholas 6 Dec (of Myra) · Boniface 5 Jun.
 
 ## New facts about the monks (posts 2024–2026)
 
-- **Fr. Dominic Lee named Prior**, announced after Compline 7 Aug 2026; still assistant headmaster (discipline) and teaching.
+- **Fr. Dominic Lee named Prior**, announced after Compline 7 Aug 2026 (Facebook). **Since then Fr. Bede Marcy and Fr. Dominic have switched: Fr. Bede is Prior, Fr. Dominic Subprior** (Br. Augustine, 2 Nov 2026). Fr. Dominic is still assistant headmaster (discipline) and teaching.
 - **Br. Christopher McBride** (Montgomery, AL; vows 16 Aug 2014): guestmaster (2026); earlier ran the cookie business,
   kept the chickens and was the community's mailman.
 - **Br. Michael Gregersen** (New Orleans; Air Force; vows 21 Mar 2006): sacristan for many years.
@@ -62,15 +62,15 @@ Damien 10 May (**of Molokai**) · Nicholas 6 Dec (of Myra) · Boniface 5 Jun.
 - **Br. Benedict Dyar**: head baker, "a skilled chanter", oblate director.
 - **Fr. Paschal Pautler**: St. Rose Academy (Nashville Dominicans); led the recent fundraising; development director.
 
-## Disagreements to settle (Br. Augustine)
+## Disagreements (settled by Br. Augustine, 2 Nov 2026, unless marked open)
 
 - Br. Augustine: the name-day posts say **born in Pittsburgh**, grew up in Dayton, San Angelo, the Azores and Wichita
-  Falls; the Cullman Tribune (2021) says born in Prattville. The card says "From Prattville".
+  Falls; the Cullman Tribune (2021) says born in Prattville. **Settled: born in Pittsburgh** (Prattville is where his parents live). Card: Pittsburgh.
 - Fr. Patrick Egan: Meet the Monks (2014) gives hometown **Sheffield**, AL (the card: Florence), professed 21 Mar 2003,
-  **ordained 2 Jun 2008** (so 5 Jun 2006 was his solemn vows, not ordination).
-- Br. Thomas Jones: 2014 hometown **Jasper**, AL (the card: Homewood, where he was born).
-- Fr. Linus: 2014 hometown Buffalo, NY; 2023–26 posts and the card: Allentown, PA.
-- Abbot Brendan: name-day posts say New Albany, IN; the abbey's election notice and the card: Lanesville, IN.
+  **ordained 2 Jun 2008** (so 5 Jun 2006 was his solemn vows, not ordination). **Settled: as the 2014 post says.** Card: Sheffield.
+- Br. Thomas Jones: 2014 hometown **Jasper**, AL (the card: Homewood, where he was born). **Open.**
+- Fr. Linus: 2014 hometown Buffalo, NY; 2023–26 posts and the card: Allentown, PA. Card kept (recent posts).
+- Abbot Brendan: name-day posts say New Albany, IN; the abbey's election notice and the card: Lanesville, IN. **Settled: Lanesville.**
 
 ## Meet the Monks Mondays (2013–2014), for the history pages
 
@@ -110,5 +110,5 @@ Worth using later (files by name in photos.json): the cattle in the pasture (202
 SmugMug); the cemetery and campus in snow (2025-01-10); the northern lights over the abbey (2025-11-19, Ed Huddleston);
 the restoration of the great crucifix (2024-07-23); archival black-and-white portraits of Abbot Victor (2024-01-29);
 the many 2023–2026 name-day portraits (most are Anne Stephens's headshots, already used). The novices' clothing photos
-(2026-03-23) carry no names and include Br. Gabriel: ask who is who before using. Group photos from 2024–2026 may
+(2026-03-23) carry no names and include Br. Gabriel (dark hair and beard; Br. Augustine): Br. Nicholas is the one with auburn hair and a full beard, Br. Boniface the clean-shaven red-haired one (Br. Augustine, 2 Nov 2026). Their cards use crops of their family photos (2026-03-23). Group photos from 2024–2026 may
 include Br. Joseph Goode or Br. Gabriel: check before using. Ask Ed Huddleston before using more of his photos.

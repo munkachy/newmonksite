@@ -22,3 +22,4 @@ Carol M. Highsmith, public domain: credit "Photo: Carol M. Highsmith, Library of
 | cemetery-stars.jpg | Facebook, 2025-09-11, Ed Huddleston (credited on the Page). Credit "Photo: Ed Huddleston" | visit |
 | monks/irenaeus.jpg | Facebook, 2025-06-28 name-day post (abbey photo) | monastery |
 | monks/raphael.jpg, monks/damien.jpg | Stephens first-vows DSC09609, split (identified from the abbey's Facebook posts) | monastery |
+| monks/nicholas.jpg, monks/boniface.jpg | Facebook 2026-03-23 clothing-day family photos, cropped to the novice alone (identified by Br. Augustine), 480x600 | monastery |

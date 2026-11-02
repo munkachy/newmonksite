@@ -8,7 +8,7 @@ From the printed list "Monks of St. Bernard Abbey, Cullman, Alabama, 2026 · Ple
 | 1 | Br. Prior Brendan Seipel, O.S.B., Superior | Elected 11th Abbot 29 July 2026 (stbernardabbey.com) |
 | 2 | Rt. Rev. Cletus D. Meagher, O.S.B. | 9th Abbot (1995–2019) |
 | 3 | Rt. Rev. Abbot Marcus J. Voss, O.S.B. | 10th Abbot (2019–2025) |
-| 4 | Fr. Joel Martin, O.S.B., Subprior | |
+| 4 | Fr. Joel Martin, O.S.B., Subprior | Since Aug–Nov 2026: Fr. Bede Marcy is Prior and Fr. Dominic Lee Subprior (Br. Augustine, 2 Nov 2026) |
 | 5 | Br. Charles Manning, O.S.B. | |
 | 6 | Fr. John O'Donnell, O.S.B. | paints small ceramic church models sold at the Grotto (Br. Augustine) |
 | 7 | Br. Leo Borelli, O.S.B. | St. Bernard Scriptorium; hermit; former prior; taught ceramics (Br. Augustine) |
