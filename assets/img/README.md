@@ -30,3 +30,4 @@ Carol M. Highsmith, public domain: credit "Photo: Carol M. Highsmith, Library of
 | church-snow.jpg | Archives (Arc.zip) 'snow of 2014' | not yet used |
 | then/*.jpg | Archives (Arc.zip): monks c. 1900, admin building c. 1900, solemn vows 1937, monks in prayer 1950s, graded 0.4 | monastery (#history) |
 | choir-1950s.jpg, choir-2013.jpg | Archives (Arc.zip) 'Monks in prayer 1950s', 'Monks at prayer 2013', 4:5 crops, graded 0.35/0.5 | home (Pray with us) |
+| heroes.jpg | Archives (Arc.zip) 'St Bernard monks around early 1900s', 3:4 crop, graded 0.4 | home (Heroes tile) |
