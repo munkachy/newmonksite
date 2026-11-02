@@ -6,7 +6,7 @@ left the abbey.
 
 ## What could and could not be read
 
-- **The abbey's Facebook page could not be read.** Every route (desktop and phone user agents in Playwright, m., mbasic.,
+- **Update 2 Nov 2026: the whole Page has now been read through the Graph API; see `FACEBOOK.md`, which corrects several items below (name days, hometowns, Br. Nicholas).** Earlier: **The abbey's Facebook page could not be read.** Every route (desktop and phone user agents in Playwright, m., mbasic.,
   the page-plugin embed and curl) redirected to Facebook's login page before any post loaded. Search engines index none of
   its posts. The only text found is a search-engine snippet of the page: "Abbatial Blessing of Abbot Brendan on November
   21!" (no year shown; https://www.facebook.com/stbernardabbey/). **No Facebook post is quoted below.** To use the posts,

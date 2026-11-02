@@ -18,4 +18,7 @@ Carol M. Highsmith, public domain: credit "Photo: Carol M. Highsmith, Library of
 | monks/*.jpg (19) | _source/stephens/Monk-Headshots (18 named headshots), 2026-July-29-Abbot-Brendan (brendan), 2026-March-21 first vows DSC09609 (damien-raphael); 600x750, q80. Credit "Photo: Anne Stephens" | monastery (#monks) |
 | choir.jpg (replaced 2 Nov 2026) | Stephens 2022-Palm-Sunday DSC08984, graded with `_notes/tools/grade.py`. Credit "Photo: Anne Stephens" | home, pray |
 | br-joseph-statue.jpg (regraded) | Highsmith LOC 2010640619, graded | home, grotto |
-| choir-nave, school-teaching, church-spring, church-night, cemetery | Stephens DSC-0937-Hb9bTcj, April-2024 DSC08124, DSC08208, Church-Exterior DSC5603, 31-October-2021 DSC06835; all graded. Credit "Photo: Anne Stephens" | pray, school, visit |
+| choir-nave, school-teaching, church-spring, church-night | Stephens DSC-0937-Hb9bTcj, April-2024 DSC08124, DSC08208, Church-Exterior DSC5603; all graded. Credit "Photo: Anne Stephens" | pray, school, visit |
+| cemetery-stars.jpg | Facebook, 2025-09-11, Ed Huddleston (credited on the Page). Credit "Photo: Ed Huddleston" | visit |
+| monks/irenaeus.jpg | Facebook, 2025-06-28 name-day post (abbey photo) | monastery |
+| monks/raphael.jpg, monks/damien.jpg | Stephens first-vows DSC09609, split (identified from the abbey's Facebook posts) | monastery |

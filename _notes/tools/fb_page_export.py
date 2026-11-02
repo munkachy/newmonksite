@@ -8,8 +8,13 @@ Uses Facebook's Graph API, the official way for a Page's admins to read their ow
    - Under "User or Page", choose "Get Page Access Token" and pick Saint Bernard Abbey.
    - Add the permissions pages_show_list, pages_read_engagement and pages_read_user_content, then "Generate
      Access Token", tick the Page in the pop-up, and copy the token.
+   A user token works as well (the script finds the Page's own token), but the user must have ticked the Page and,
+   for a Page held in a Meta business portfolio, the business ("business_management") when generating it.
+   For other sessions: make it long-lived with "Extend Access Token" at
+   https://developers.facebook.com/tools/debug/accesstoken/ (about 60 days; a Page token taken from it does not
+   expire) and store it as the environment variable FB_PAGE_TOKEN in the cloud environment's settings.
 2. Run (the token is read from the environment and never printed or saved):
-       FB_TOKEN='...' python3 _notes/tools/fb_page_export.py OUT_DIR
+       FB_PAGE_TOKEN='...' python3 _notes/tools/fb_page_export.py OUT_DIR
    Optional: --since 2015-01-01 to limit the date range.
 
 Writes OUT_DIR/posts.json (every post: date, text, link, the photos it carries), OUT_DIR/photos.json (every
@@ -28,7 +33,7 @@ import urllib.request
 API = "https://graph.facebook.com/v26.0/"
 
 
-def get(path_or_url, token, **params):
+def get(path_or_url, token, soft=False, **params):
     if path_or_url.startswith("http"):
         url = path_or_url  # a "next" link already carries its own parameters and token
     else:
@@ -43,6 +48,8 @@ def get(path_or_url, token, **params):
             if e.code in (429, 500, 502, 503) and attempt < 4:
                 time.sleep(5 * (attempt + 1)); continue
             # never echo the URL: it contains the token
+            if soft:
+                return {"error": body[:200]}
             sys.exit(f"Facebook said {e.code}: {body[:400]}")
         except urllib.error.URLError:
             if attempt < 4:
@@ -70,10 +77,16 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("out")
     ap.add_argument("--since", help="YYYY-MM-DD: only posts and photos from this date on")
+    ap.add_argument("--page", default="Saint Bernard Abbey", help="which Page, when the token is a user token")
     a = ap.parse_args()
-    token = os.environ.get("FB_TOKEN")
+    token = os.environ.get("FB_PAGE_TOKEN") or os.environ.get("FB_TOKEN")
     if not token:
-        sys.exit("Set FB_TOKEN to a Page access token (see the top of this file).")
+        sys.exit("Set FB_PAGE_TOKEN (or FB_TOKEN) to an access token (see the top of this file).")
+    # A user token works too: ask Facebook for the Page's own token (needs pages_show_list).
+    pages = get("me/accounts", token, soft=True, fields="name,access_token").get("data", [])
+    match = [x for x in pages if a.page.lower() in x["name"].lower() and x.get("access_token")]
+    if match:
+        token = match[0]["access_token"]
     os.makedirs(os.path.join(a.out, "img"), exist_ok=True)
     extra = {"since": a.since} if a.since else {}
 
@@ -108,7 +121,7 @@ def main():
     # Photos in posts that were not in the uploaded list (e.g. shared albums): fetch their sizes too.
     known = {p["id"] for p in photos}
     for pid in {i for p in posts for i in p["photos"]} - known:
-        d = get(pid, token, fields="id,name,created_time,link,images")
+        d = get(pid, token, soft=True, fields="id,name,created_time,link,images")
         if "images" in d:
             photos.append({"id": pid, "date": d.get("created_time"), "caption": d.get("name", ""),
                            "album": None, "link": d.get("link"), "src": largest(d["images"])})
