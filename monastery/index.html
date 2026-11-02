@@ -31,7 +31,8 @@
 .monk-role { font: 600 .74rem/1.4 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--gold-ink); margin-top: .4rem; }
 .monk-meta { font-size: .9rem; color: var(--muted); margin-top: .3rem; }
 .monk-body p:last-child { font-size: 1rem; line-height: 1.6; color: var(--ink-soft); margin-top: .6rem; }
-.monks-wide { grid-template-columns: minmax(0, 26rem); }
+.monks-wide { grid-template-columns: minmax(0, 34rem); }
+.monk-group-photo img { aspect-ratio: 8 / 7 !important; }
 @media (max-width: 40rem) { .monk figure img, .monk-nophoto { aspect-ratio: 1; } .monk-nophoto img { aspect-ratio: auto; } }
 </style>
 </head>
@@ -294,27 +295,17 @@
     </ul>
     <h3 class="h-sm monk-group">Novices</h3>
     <p class="small monk-group-note">A year of prayer, work and study in the habit before first vows.</p>
-    <ul class="monks" role="list">
+    <ul class="monks monks-wide" role="list">
       <li class="monk">
-        <figure><img src="../assets/img/monks/nicholas.jpg" alt="Br. Nicholas Smith" width="600" height="750" loading="lazy"><figcaption class="credit">Photo: Anne Stephens</figcaption></figure>
+        <figure class="monk-group-photo"><img src="../assets/img/novices-2026.jpg" alt="Br. Nicholas Smith and Br. Boniface Boland, with Abbot Brendan behind them" width="1400" height="1223" loading="lazy"><figcaption class="credit">Photo: Anne Stephens</figcaption></figure>
         <div class="monk-body">
-          <h4>Br. Nicholas Smith</h4>
-          <p class="monk-role">Novice · artist</p>
-          <p class="monk-meta"><span>Name day: St. Nicholas of Myra, 6 December</span></p>
-          <p>Austin Smith before he received the habit, he took his name to follow Br. Nicholas Weiss (1907–1982), the abbey's woodcarver, and like him he draws: the map of the campus for the Bloomin' Festival is his. The abbey's original campus map was probably drawn by the first Br. Nicholas.</p>
-        </div>
-      </li>
-      <li class="monk">
-        <figure><img src="../assets/img/monks/boniface.jpg" alt="Br. Boniface Boland" width="600" height="750" loading="lazy"><figcaption class="credit">Photo: St. Bernard Abbey</figcaption></figure>
-        <div class="monk-body">
-          <h4>Br. Boniface Boland</h4>
-          <p class="monk-role">Novice</p>
-          <p class="monk-meta"><span>Name day: St. Boniface, 5 June</span></p>
-          <p>Timothy Boland before he received the habit, he entered the novitiate with Br. Nicholas on 21 March 2026.</p>
+          <h4>Br. Nicholas Smith and Br. Boniface Boland</h4>
+          <p class="monk-role">Novices since 21 March 2026</p>
+          <p>Austin Smith and Timothy Boland received the habit together on the feast of the passing of St. Benedict, with Abbot Brendan, then the community's superior, standing behind them here. Br. Nicholas, an artist, took his name to follow Br. Nicholas Weiss (1907–1982), the abbey's woodcarver; he drew the campus map for the Bloomin' Festival, and the abbey's original campus map was probably drawn by the first Br. Nicholas. Br. Boniface is named for the Apostle of Germany. Name days: St. Nicholas of Myra, 6 December; St. Boniface, 5 June.</p>
         </div>
       </li>
     </ul>
-    <p class="credit" style="margin-top:2.5rem">Portraits: Anne Stephens, except Br. Irenaeus and Br. Boniface (St. Bernard Abbey). Words in quotation marks are the monks' own, from the abbey's website and the Cullman papers.</p>
+    <p class="credit" style="margin-top:2.5rem">Portraits: Anne Stephens, except Br. Irenaeus (St. Bernard Abbey). Words in quotation marks are the monks' own, from the abbey's website and the Cullman papers.</p>
   </div>
 </section>
 <section class="sec on-stone" id="day" aria-labelledby="day-h">
@@ -398,12 +389,12 @@
     <div class="split" style="margin-top:3rem">
       <figure>
         <img src="../assets/img/formation-scapular.jpg" alt="A folded habit and scapular laid out on a table, labelled for Postulant Timothy" loading="lazy" width="900" height="1350" style="aspect-ratio:9/8">
-        <figcaption>Laid out for the clothing, 21 March 2026: the habit for Postulant Timothy, who that day became Br. Boniface. Photo: Anne Stephens.</figcaption>
+        <figcaption>Laid out for the clothing, 21 March 2026: the habit for Postulant Timothy, who that day became Br. Boniface. Photos in this section: Anne Stephens.</figcaption>
       </figure>
-      <figure>
-        <img src="../assets/img/novices-2026.jpg" alt="Two smiling novices in their new habits" loading="lazy" width="1400" height="1241" style="aspect-ratio:9/8">
-        <figcaption>Br. Boniface and Br. Nicholas, newly clothed as novices. Photos on this page: Anne Stephens.</figcaption>
-      </figure>
+      <div class="prose">
+        <p>On the feast of the passing of St. Benedict each spring, the community gathers as postulants receive the habit and novices make their first vows. Our two novices this year, Br. Nicholas and Br. Boniface, are on the page above with the other monks.</p>
+        <a class="more" href="#monks">Meet the monks <svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
     </div>
     <div class="btn-row"><a class="btn btn-ink" href="https://www.stbernardabbey.com/vocation-inquiry">Write to the vocation director</a></div>
   </div>
