@@ -328,3 +328,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .then img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 3px; }
 .then figcaption { font-size: .82rem; color: var(--muted); margin-top: .4rem; }
 @media (max-width: 64em) { .then { grid-template-columns: 1fr 1fr; } }
+/* ---- Home: then and now in the choir ---- */
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+.pair img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 4px; }
+.pair figcaption { margin-top: .4rem; }
