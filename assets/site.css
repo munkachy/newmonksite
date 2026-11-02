@@ -332,3 +332,9 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .pair { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
 .pair img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 4px; }
 .pair figcaption { margin-top: .4rem; }
+/* ---- Monastery: St. Bernard and the wider Church ---- */
+.moments { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(1rem, 2vw, 1.6rem); margin-top: 2.5rem; align-items: start; }
+.moments img { width: 100%; height: auto; border-radius: 4px; }
+.moments figcaption { font-size: .95rem; line-height: 1.55; color: var(--ink-soft); margin-top: .7rem; }
+.moments figcaption b { color: var(--ink); font-weight: 600; }
+@media (max-width: 64em) { .moments { grid-template-columns: 1fr 1fr; } }
