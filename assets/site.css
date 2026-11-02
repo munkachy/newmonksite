@@ -338,3 +338,12 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .moments figcaption { font-size: .95rem; line-height: 1.55; color: var(--ink-soft); margin-top: .7rem; }
 .moments figcaption b { color: var(--ink); font-weight: 600; }
 @media (max-width: 64em) { .moments { grid-template-columns: 1fr 1fr; } }
+/* ---- Lightbox for the archive faces ---- */
+img[data-full] { cursor: zoom-in; transition: transform .2s; }
+img[data-full]:hover { transform: scale(1.06); }
+.lightbox { position: fixed; inset: 0; z-index: 100; background: rgba(10, 12, 14, .92); display: grid; place-items: center; padding: 3.5rem 1rem 1.5rem; cursor: zoom-out; }
+.lightbox[hidden] { display: none; }
+.lightbox figure { margin: 0; max-width: min(56rem, 100%); text-align: center; }
+.lightbox img { max-width: 100%; max-height: 78vh; width: auto; height: auto; margin: 0 auto; border-radius: 4px; box-shadow: 0 10px 40px rgba(0,0,0,.5); }
+.lightbox figcaption { color: #efe9dc; font: 400 1.3rem/1.3 var(--serif); margin-top: .9rem; }
+.lightbox-close { position: absolute; top: 1rem; right: 1rem; width: 2.75rem; height: 2.75rem; display: grid; place-items: center; border-radius: 50%; background: rgba(255,255,255,.15); color: #fff; }

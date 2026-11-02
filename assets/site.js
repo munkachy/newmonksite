@@ -105,3 +105,27 @@
     document.querySelectorAll('.rise').forEach(function (el) { el.classList.add('in'); });
   }
 })();
+
+// ---- Faces: click a small portrait to see the whole photograph ----
+(function () {
+  var faces = document.querySelectorAll('img[data-full]');
+  if (!faces.length) return;
+  var box = document.createElement('div');
+  box.className = 'lightbox'; box.hidden = true;
+  box.setAttribute('role', 'dialog'); box.setAttribute('aria-modal', 'true'); box.setAttribute('aria-label', 'Photograph');
+  box.innerHTML = '<figure><img alt=""><figcaption></figcaption></figure>' +
+    '<button class="lightbox-close" aria-label="Close"><svg class="ic"><use href="#i-close"/></svg></button>';
+  document.body.appendChild(box);
+  var big = box.querySelector('img'), cap = box.querySelector('figcaption'), closeBtn = box.querySelector('button'), opener = null;
+  function open(img) {
+    opener = img; big.src = img.getAttribute('data-full'); big.alt = img.alt || '';
+    cap.textContent = img.alt || ''; box.hidden = false; document.body.classList.add('menu-open'); closeBtn.focus();
+  }
+  function close() { box.hidden = true; big.src = ''; document.body.classList.remove('menu-open'); if (opener) opener.focus(); }
+  faces.forEach(function (img) {
+    img.addEventListener('click', function () { open(img); });
+    img.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(img); } });
+  });
+  box.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (!box.hidden && e.key === 'Escape') close(); });
+})();
