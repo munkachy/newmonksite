@@ -318,3 +318,8 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .served ul { list-style: none; padding: 0; margin: 1rem 0 0; }
 .served li { padding: .9rem 0; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 1rem; line-height: 1.65; }
 .served li b { color: var(--ink); }
+/* ---- Faces from the abbey archives (work, school) ---- */
+.card .face { width: 4.75rem; height: 4.75rem; border-radius: 50%; object-fit: cover; object-position: center 22%; margin-bottom: 1rem; box-shadow: 0 0 0 3px var(--paper-2); }
+.faces { list-style: none; padding: 0; margin: 1.2rem 0 .4rem; display: flex; flex-wrap: wrap; gap: 1rem 1.2rem; }
+.faces li { width: 5.5rem; text-align: center; font-size: .78rem; line-height: 1.3; color: var(--muted); }
+.faces img { width: 4.25rem; height: 4.25rem; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto .4rem; }
