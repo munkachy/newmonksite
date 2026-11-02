@@ -60,7 +60,7 @@ If a job marked taken has had no commit for two hours, the session that took it 
 phone menu fixed; all links checked. **The four research helpers have finished** (1 Nov 2026) (briefs in
 `_notes/briefs/README.md`): Facebook monk posts (→ `_notes/MONKS.md`), Anne Stephens photos (→ `_notes/STEPHENS.md`),
 Josh Viola photos (→ `_notes/VIOLA.md`), Br. Leo / Fr. John / Br. Jude (→ `_notes/CRAFTSMEN.md`). If those files are
-missing or unfinished, rerun the brief. **Next after research**: (a) job 5b "Get to know the monks" in `monastery/`;
+missing or unfinished, rerun the brief. **Next after research**: (a) DONE 2 Nov 2026: job 5b "Get to know the monks" (`monastery/#monks`);
 (b) DONE: Br. Leo, Fr. John, Br. Nicholas and more on Br. Jude are on `work/` ("The craftsmen today"); (c) swap placeholder pictures for Stephens/Viola
 photos with credits; then jobs 2, 6, 7, 9.
 
@@ -95,7 +95,10 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - [ ] **5. The monastery and prayer** (`monastery/`, `pray/`): the monks (9 profiles in
   `_source/abbey-pages/monk-profiles.md`), a day in the life, formation, FAQ (visible, not hidden), oblates,
   history (Metten → St. Vincent → 1891), the abbots, the live schedule.
-- [ ] **5b. Get to know the monks** (in `monastery/`, perhaps also a strip on the home page): every monk on the
+- [x] **5b. Get to know the monks** (done 2 Nov 2026: `monastery/#monks`, 22 cards in three groups, portraits in
+  `assets/img/monks/` cut from Anne Stephens's *Monk Headshots*; to do: photos of Br. Irenaeus and the two novices, the
+  feast day of each monk's name saint (only Br. Augustine's is known), more on Br. Michael and Br. Christopher, a strip
+  on the home page if wanted) (in `monastery/`, perhaps also a strip on the home page): every monk on the
   roster (`_notes/ROSTER.md`) with a photo and a few lines, drawn from the abbey's own Facebook posts (written by
   Br. Augustine; gathered in `_notes/MONKS.md`) and Anne Stephens's photographs (`_notes/STEPHENS.md`,
   `_source/stephens/`; credit "Photo: Anne Stephens") and Josh Viola's (`_notes/VIOLA.md`, `_source/viola/`; credit "Photo: Josh Viola"). Like Saint Louis Abbey's "Meet our family": face, name,
@@ -147,3 +150,4 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 1 Nov 2026: Facebook research done: `_notes/MONKS.md` (16 monks with plenty, 2 thin, 4 nothing: Br. Damien, Br. Raphael, Br. Nicholas, Br. Boniface). Facebook can't be read without login: Br. Augustine may export or paste his monk posts. Photos in `_notes/monk-img/` (abbey's own).
 - 1 Nov 2026: Viola research done: only the Abbot Marcus Thanksgiving Mass gallery (137 photos, 1600 px) is public; Abbot Brendan, Fr. Pachomius, Br. Augustine's solemn profession and MonkMindset are behind Pic-Time's login (covers only). Ask Josh for those galleries or files. 30 best flagged ★ in `_notes/VIOLA.md`.
 - 1 Nov 2026: Stephens research done: 417 photos (~410 MB) in `_source/stephens/`, catalogue `_notes/STEPHENS.md` (61 galleries, ~16,700 photos on SmugMug; "Monk Headshots" gallery names 20 monks for sure; 30 best flagged; no Grotto photos, few school). All four research jobs done; next: job 5b (Get to know the monks), job 10 (picture pass), job 11 (photos page). Br. Augustine to check: who the bakers are; faces marked "unsure".
+- 2 Nov 2026: job 5b done: "Get to know the monks" on `monastery/` (replaces the "Page being built" placeholder; vocations and oblates kept). 18 Stephens headshots + the Damien/Raphael first-vows photo (one joint card, since which is which is unsure), cropped 4:5 at 600x750 in `assets/img/monks/` (~1 MB); Br. Irenaeus, Br. Nicholas, Br. Boniface show "Photo to come". Text only from `_notes/MONKS.md`; left out what it marks unconfirmed (Br. Nicholas and the campus map, Br. Christopher's coffee). Styles in a `<style>` block in the page. Tested at 1440 and 390: no console errors, no sideways scroll, all images load. Br. Augustine to check: the cards' wording, Br. Leo's line (from the roster note), Fr. Bede's current work.

@@ -15,3 +15,4 @@ Carol M. Highsmith, public domain: credit "Photo: Carol M. Highsmith, Library of
 | choir, church, church-tower, campus-aerial, monks-walking, elder-and-young | the-divine-office-05, home-01, create-a-will-01, home-03, a-day-in-the-life-01, clairvaux-society-02 | home, pray, visit, give, monastery |
 | historic-plough, historic-porch | _work-02, community-02 | work |
 | relics-bernard, relics-royal | relics/originals IMG_4885, IMG_4913 (placeholders) | home, relics |
+| monks/*.jpg (19) | _source/stephens/Monk-Headshots (18 named headshots), 2026-July-29-Abbot-Brendan (brendan), 2026-March-21 first vows DSC09609 (damien-raphael); 600x750, q80. Credit "Photo: Anne Stephens" | monastery (#monks) |
