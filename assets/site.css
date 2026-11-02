@@ -359,3 +359,7 @@ img[data-full]:hover { transform: scale(1.06); }
 .cem-photos .tall img { aspect-ratio: auto; height: 100%; }
 .cem-photos figure:nth-child(1) { grid-column: 1; grid-row: 1; }
 .cem-photos figure:nth-child(2) { grid-column: 1; grid-row: 2; }
+/* ---- Relics: saints' portraits in the name pills ---- */
+.saints li { display: inline-flex; align-items: center; gap: .45rem; }
+.saints li:has(.saint-face) { padding-left: .25rem; }
+.saint-face { width: 1.9rem; height: 1.9rem; border-radius: 50%; object-fit: cover; flex: none; }
