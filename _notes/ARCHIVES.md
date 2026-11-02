@@ -49,3 +49,20 @@ Used (cropped to the face with `opencv` + `_notes/tools/grade.py` at 0.5): work/
 
 Leads: the Kentucky missions (Abbot Ambrose Reger, St. Camillus Academy, Corbin) and Fr. Baasen could become history
 pieces; the card catalog could answer questions about any monk or event.
+
+## Arc.zip (12 photos, 2 Nov 2026)
+
+Geerken and others (a monks' room, 1960s?), Historic Admin Bldg (small), **Monks at Prayer-web.webp (watermarked
+"HistoricImages": a dealer's copy, do not use)**, Monks at prayer 2013, 2016, 2017 (choir), Monks in prayer 1950s (old
+chapel), Our Lady of Sorrows in Birmingham AL (a pontifical Mass there, early 20th c.), Solemn vows 1937 of Matthew, Mark
+and Luke, St Bernard monks around early 1900s, photo of admin building around 1900, snow of 2014 (the church). Used: the
+four historic ones on monastery/#history; the snow photo is ready as `assets/img/church-snow.jpg`.
+
+## The Abbey Church: what is known (research 2 Nov 2026)
+
+Built 1964 (Cullman Tribune, 2023 ornament article), in Abbot Bede Luibel's building campaign begun 1957 (Necrology).
+Native sandstone quarried on the monastery grounds (ADAH postcard, digital.archives.alabama.gov photo 22277). Statues
+carved by Herbert Jogerst (German POW at Camp Breckinridge, Ky.; St. Meinrad; *Christ of the Ohio*, 1957; d. 1993), with
+Br. Jude Johnston as apprentice (Br. Jude's obituaries). Great Cross: painted wood by Gloria Thomas (Kentucky), ~400 lb,
+on aircraft cable; restored 2024 by Gary Chapman (CNHI). **Not found: the architect, the exact dedication date, which
+saints the carvings show** (the 2016 campus history tour by Fr. Joel explained the statues: ask him or the archives).

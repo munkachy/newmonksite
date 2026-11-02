@@ -26,3 +26,6 @@ Carol M. Highsmith, public domain: credit "Photo: Carol M. Highsmith, Library of
 | br-joseph-workshop.jpg | Abbey Archives, 'Br. Joseph in workshop', graded 0.4. Credit "Photo: St. Bernard Abbey Archives" | work, grotto |
 | past/*.jpg (19) | Abbey Archives portraits (OneDrive_1_11-2-2026.zip), face crops 300×300, graded 0.5 | work, school |
 | alive.jpg | Abbey Archives portrait 'Bichler' (Br. John Bichler), 3:4 | home (Men fully alive tile) |
+| church-facade, church-nave, church-saint, church-benedict | Stephens DSC04402, DSC08998, DSC-0153, DSC04783-Copy, graded 0.6 | pray (#church) |
+| church-snow.jpg | Archives (Arc.zip) 'snow of 2014' | not yet used |
+| then/*.jpg | Archives (Arc.zip): monks c. 1900, admin building c. 1900, solemn vows 1937, monks in prayer 1950s, graded 0.4 | monastery (#history) |
