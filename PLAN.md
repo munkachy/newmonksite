@@ -82,7 +82,7 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - [x] **1. Foundation** (`assets/site.css`, `assets/site.js`, header/footer, home page `index.html`). Done 1 Nov 2026.
   Every section folder has a starter `index.html` with the shared header and footer: replace its `<main>` with the
   real page. Images in `assets/img/` (see the list in `assets/img/README.md`).
-- [ ] **2. The Grotto** (`grotto/`): Br. Joseph's life, the miniatures, visiting info, shop link, Library of Congress
+- [x] **2. The Grotto** (`grotto/`, done 2 Nov 2026): Br. Joseph's life, the miniatures, visiting info, shop link, Library of Congress
   photos (`_notes/research-img/`, credits in its `CREDITS.md`).
 - [x] **3. Monks at Work** (`work/`): done 1 Nov 2026: Rule ch. 57, Br. Joseph with a timeline and his own words, Br. Jude,
   the builders of the past, the work today. Wanted: a photo of Br. Jude or his work (the picture there is a placeholder)
@@ -92,7 +92,7 @@ end of it under a comment with your page's name, or in a `<style>` block in your
   the "Placeholder photo" badges, and put the altar long shot in the dashed `.altar-slot`. (`relics/index.html`): from `_notes/relic-groups.json` and `relics/README.md`: groups as cards
   (placeholder photo marked "Photo to come"), each with its saints; a slot for the long shot on the altar.
   Make web copies of the chosen photos in `assets/img/relics/`. Keep `relics/README.md` as the full catalogue.
-- [ ] **5. The monastery and prayer** (`monastery/`, `pray/`): the monks (9 profiles in
+- [x] **5. The monastery and prayer** (`monastery/`, `pray/`, done 2 Nov 2026): the monks (9 profiles in
   `_source/abbey-pages/monk-profiles.md`), a day in the life, formation, FAQ (visible, not hidden), oblates,
   history (Metten → St. Vincent → 1891), the abbots, the live schedule.
 - [x] **5b. Get to know the monks** (done 2 Nov 2026: `monastery/#monks`, 22 cards in three groups, portraits in
@@ -104,8 +104,8 @@ end of it under a comment with your page's name, or in a `<style>` block in your
   `_source/stephens/`; credit "Photo: Anne Stephens") and Josh Viola's (`_notes/VIOLA.md`, `_source/viola/`; credit "Photo: Josh Viola"). Like Saint Louis Abbey's "Meet our family": face, name,
   hometown, work, feast day. Show them in groups: solemnly professed monks, juniors (simple vows: Br. Damien,
   Br. Raphael), novices (Br. Nicholas, Br. Boniface: may be shown).
-- [ ] **6. Visit and Give** (`visit/`, `give/`).
-- [ ] **7. The School** (`school/`): a short page on St. Bernard Prep as a work of the monks, linking to
+- [x] **6. Visit and Give** (`visit/`, `give/`, done 2 Nov 2026).
+- [x] **7. The School** (`school/`, done 2 Nov 2026): a short page on St. Bernard Prep as a work of the monks, linking to
   stbernardprep.com (and to the sbp preview when it goes live).
 - [ ] **8. Pictures**: choose the best photos in `_source/abbey-img/` (see its `INDEX.md`) for each page, make web
   copies in `assets/img/`, and list each with its page in `assets/img/README.md`.
@@ -151,3 +151,4 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 1 Nov 2026: Viola research done: only the Abbot Marcus Thanksgiving Mass gallery (137 photos, 1600 px) is public; Abbot Brendan, Fr. Pachomius, Br. Augustine's solemn profession and MonkMindset are behind Pic-Time's login (covers only). Ask Josh for those galleries or files. 30 best flagged ★ in `_notes/VIOLA.md`.
 - 1 Nov 2026: Stephens research done: 417 photos (~410 MB) in `_source/stephens/`, catalogue `_notes/STEPHENS.md` (61 galleries, ~16,700 photos on SmugMug; "Monk Headshots" gallery names 20 monks for sure; 30 best flagged; no Grotto photos, few school). All four research jobs done; next: job 5b (Get to know the monks), job 10 (picture pass), job 11 (photos page). Br. Augustine to check: who the bakers are; faces marked "unsure".
 - 2 Nov 2026: job 5b done: "Get to know the monks" on `monastery/` (replaces the "Page being built" placeholder; vocations and oblates kept). 18 Stephens headshots + the Damien/Raphael first-vows photo (one joint card, since which is which is unsure), cropped 4:5 at 600x750 in `assets/img/monks/` (~1 MB); Br. Irenaeus, Br. Nicholas, Br. Boniface show "Photo to come". Text only from `_notes/MONKS.md`; left out what it marks unconfirmed (Br. Nicholas and the campus map, Br. Christopher's coffee). Styles in a `<style>` block in the page. Tested at 1440 and 390: no console errors, no sideways scroll, all images load. Br. Augustine to check: the cards' wording, Br. Leo's line (from the roster note), Fr. Bede's current work.
+- 2 Nov 2026: jobs 2, 5, 6, 7 done: grotto/, pray/, school/, visit/ written; monastery/ gets an overview, a day in the life, history (with the 1891 founding story from Br. Augustine's Facebook export), formation and FAQ; give/ loses its placeholder. Name days added to the monk cards (Br. Augustine: put them in from the names; my choices for ambiguous names: Joel 19 Oct, John the Apostle, Thomas the Apostle, Damien of Molokai, Nicholas of Myra). Br. Nicholas drew the Bloomin' Festival campus map (the original campus map probably by Br. Nicholas Weiss). New photo grade `_notes/tools/grade.py` (warm, softened colour, ink blacks, cream whites, light vignette): the old choir photo is replaced by Anne Stephens's Palm Sunday 2022 choir, and the Br. Joseph statue regraded to match; new graded web copies for pray, school, visit (choir-nave, school-teaching, church-spring, church-night, cemetery). Left out the 2018 and 2024 group photos: Br. Joseph Goode may be in them. Buttons inside `.prose` were unreadable (link colour won): fixed in site.css (v=3). Tested at 1440 and 390: no errors, no sideways scroll, 151 internal links and anchors resolve. Waiting on: Br. Irenaeus's photo as a file (pasted in chat, not received as a file); Br. Christopher and "Benedictine Brew" coffee; photos of the novices. The Facebook export (FB.zip, Drive) covers only the "Bernard Abbey" profile Nov 2025–Nov 2026, five posts; the monks' posts on the abbey Page need an export of the Page itself.
