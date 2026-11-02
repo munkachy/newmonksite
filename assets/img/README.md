@@ -25,3 +25,4 @@ Carol M. Highsmith, public domain: credit "Photo: Carol M. Highsmith, Library of
 | choir-reading, formation-belts, formation-tonsure, formation-capuche, formation-scapular, novices-2026 | Anne Stephens, novitiate and first vows 20–21 March 2026 (sent by Br. Augustine; tonsure = SmugMug DSC08510, capuche = DSC09196), graded at 0.6; novices-2026 (the novices' card: Br. Boniface and Br. Nicholas with Abbot Brendan behind) cropped to leave out Br. Gabriel | pray, monastery (#vocations) |
 | br-joseph-workshop.jpg | Abbey Archives, 'Br. Joseph in workshop', graded 0.4. Credit "Photo: St. Bernard Abbey Archives" | work, grotto |
 | past/*.jpg (19) | Abbey Archives portraits (OneDrive_1_11-2-2026.zip), face crops 300×300, graded 0.5 | work, school |
+| alive.jpg | Abbey Archives portrait 'Bichler' (Br. John Bichler), 3:4 | home (Men fully alive tile) |

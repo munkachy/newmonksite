@@ -138,7 +138,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .quote { margin-top: 2rem; padding-left: 1.4rem; border-left: 2px solid var(--gold); font-family: var(--serif); font-size: 1.45rem; line-height: 1.4; font-style: italic; }
 
 /* ---------- Monks at work strip ---------- */
-.trades { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; margin-top: 3rem; }
+.trades { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1rem; margin-top: 3rem; }
 .trade { text-decoration: none; }
 .trade img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 3px; filter: grayscale(1) contrast(1.05); transition: filter .5s; }
 .trade:hover img { filter: grayscale(0); }
