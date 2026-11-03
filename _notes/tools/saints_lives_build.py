@@ -52,6 +52,9 @@ def card(e):
     return f"""
 <article class="life" id="{i}">
   <header class="life-head">{face}<div><h3 class="h-sm">{esc(e["name"])}</h3><p class="life-meta">{esc(meta)}</p></div></header>
+  <p class="life-summary">{rich(e.get("summary", ""))}</p>
+  <details class="life-more">
+  <summary><span class="more">Read more</span><span class="less">Show less</span></summary>
   <div class="life-body">
     <div class="prose life-text">{life}</div>
     <aside class="life-side">
@@ -61,6 +64,7 @@ def card(e):
       {check}
     </aside>
   </div>
+  </details>
 </article>"""
 
 def chips(ids):
@@ -87,7 +91,18 @@ STYLE = """<style>
   border-radius: 999px; background: var(--paper); text-decoration: none; }
 .lives-index a:hover { border-color: var(--gold-ink); }
 .lives-intro { max-width: 46rem; margin-top: 1rem; color: var(--ink-soft); }
-.life { border-top: 1px solid var(--line); padding-block: 2.6rem; scroll-margin-top: 5rem; }
+.life { border-top: 1px solid var(--line); padding-block: 1.8rem; scroll-margin-top: 5rem; }
+.life-summary { max-width: 46rem; margin-top: 1rem; }
+.life-more > summary { list-style: none; display: inline-flex; align-items: center; gap: .45rem; margin-top: .9rem;
+  font: 600 .8rem/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--gold-ink);
+  padding: .55rem .9rem; border: 1px solid var(--gold-ink); border-radius: 999px; cursor: pointer; }
+.life-more > summary::-webkit-details-marker { display: none; }
+.life-more > summary::after { content: ""; width: .45rem; height: .45rem; border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor; transform: translateY(-2px) rotate(45deg); }
+.life-more[open] > summary::after { transform: translateY(2px) rotate(-135deg); }
+.life-more > summary:hover { background: var(--gold-ink); color: var(--paper); }
+.life-more .less, .life-more[open] .more { display: none; }
+.life-more[open] .less { display: inline; }
 .life:first-of-type { margin-top: 2rem; }
 .life-head { display: flex; align-items: center; gap: 1.1rem; }
 .life-face { width: 5.2rem; height: 5.2rem; border-radius: 50%; object-fit: cover; flex: none; cursor: zoom-in; }
