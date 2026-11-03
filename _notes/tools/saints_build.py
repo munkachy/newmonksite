@@ -3,8 +3,12 @@ import cv2, numpy as np
 from PIL import Image, ImageOps
 R="/home/user/newmonksite"
 sys.path.insert(0,R+"/_notes/tools"); from grade import grade
-D="/tmp/claude-0/-home-user/235b3368-28c4-5bcb-8643-a876a43e66b2/scratchpad/saints"
-m=json.load(open(D+"/meta.json"))
+"""Portraits of the saints, step 2 of 2: python3 _notes/tools/saints_build.py RAW
+RAW = the folder saints_fetch.py downloaded into. Makes assets/img/saints/<slug>.jpg (160 px face crop) and full/<slug>.jpg,
+adds them beside the names in relics/index.html (only names still without one) and rewrites relics/SAINT-IMAGES.md.
+Portraits already on the site are kept even if their raw file is not in RAW. Needs opencv-python-headless==4.10.0.84."""
+RAW=sys.argv[1] if len(sys.argv)>1 else sys.exit(__doc__)
+m=json.load(open(R+"/_notes/saints/meta.json"))
 os.makedirs(R+"/assets/img/saints/full",exist_ok=True)
 casc=cv2.CascadeClassifier(cv2.data.haarcascades+"haarcascade_frontalface_default.xml")
 PLACES={"The tomb of Our Lord","The Holy House of Loreto","The tomb of Our Lady","The Uganda Martyrs","Sts. Jacinta and Francisco Marto"}
@@ -12,8 +16,10 @@ MAN={"agatha":(0.5,0.33,0.45),"bernard-of-clairvaux":(0.5,0.2,0.5),"bernard":(0.
 slug=lambda n: re.sub(r"[^a-z0-9]+","-",n.lower().replace("st. ","").replace("sts. ","").replace("bl. ","")).strip("-")
 made={}
 for name,v in m.items():
-    f=(D+"/raw/"+re.sub(r"[^a-z0-9]+","-",v["file"].lower())[:60]+".jpg") if v.get("file") else None
-    if not f or not os.path.exists(f): continue
+    f=(RAW+"/"+re.sub(r"[^a-z0-9]+","-",v["file"].lower())[:60]+".jpg") if v.get("file") else None
+    if not f or not os.path.exists(f):
+        if v.get("file") and os.path.exists(f"{R}/assets/img/saints/{slug(name)}.jpg"): made[name]=(slug(name),0)
+        continue
     try: im=ImageOps.exif_transpose(Image.open(f)).convert("RGB")
     except Exception as e: print("bad",name,e); continue
     W,H=im.size; s=slug(name)
