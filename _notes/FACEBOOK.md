@@ -68,7 +68,7 @@ Damien 10 May (**of Molokai**) · Nicholas 6 Dec (of Myra) · Boniface 5 Jun.
   Falls; the Cullman Tribune (2021) says born in Prattville. **Settled: born in Pittsburgh** (Prattville is where his parents live). Card: Pittsburgh.
 - Fr. Patrick Egan: Meet the Monks (2014) gives hometown **Sheffield**, AL (the card: Florence), professed 21 Mar 2003,
   **ordained 2 Jun 2008** (so 5 Jun 2006 was his solemn vows, not ordination). **Settled: as the 2014 post says.** Card: Sheffield.
-- Br. Thomas Jones: 2014 hometown **Jasper**, AL (the card: Homewood, where he was born). **Open.**
+- Br. Thomas Jones: hometown **Jasper**, AL (born in Homewood). Settled 3 Nov 2026: the site says Jasper.
 - Fr. Linus: 2014 hometown Buffalo, NY; 2023–26 posts and the card: Allentown, PA. Card kept (recent posts).
 - Abbot Brendan: name-day posts say New Albany, IN; the abbey's election notice and the card: Lanesville, IN. **Settled: Lanesville.**
 

@@ -360,6 +360,13 @@ img[data-full]:hover { transform: scale(1.06); }
 .cem-photos figure:nth-child(1) { grid-column: 1; grid-row: 1; }
 .cem-photos figure:nth-child(2) { grid-column: 1; grid-row: 2; }
 /* ---- Relics: saints' portraits in the name pills ---- */
+/* Saints with a portrait become tiles (face above name), set before the name-only pills: 3 a row on a phone */
 .saints li { display: inline-flex; align-items: center; gap: .45rem; }
-.saints li:has(.saint-face) { padding-left: .25rem; }
-.saint-face { width: 1.9rem; height: 1.9rem; border-radius: 50%; object-fit: cover; flex: none; }
+.saints li:has(.saint-face) { --n: 3; order: -1; flex-direction: column; justify-content: flex-start; text-align: center;
+  width: calc((100% - (var(--n) - 1) * .45rem) / var(--n)); padding: .7rem .35rem .6rem; border-radius: 10px;
+  font-size: .82rem; line-height: 1.25; gap: .45rem; }
+.saint-face { width: 1.9rem; height: 1.9rem; border-radius: 50%; object-fit: cover; flex: none; cursor: zoom-in; }
+.saints li:has(.saint-face) .saint-face { width: min(100%, 5.6rem); height: auto; aspect-ratio: 1;
+  box-shadow: 0 0 0 2px var(--paper), 0 0 0 3px var(--line); }
+@media (min-width: 30em) { .saints li:has(.saint-face) { --n: 4; } }
+@media (min-width: 64em) { .saints li:has(.saint-face) { --n: 5; } }

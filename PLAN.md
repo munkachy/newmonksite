@@ -63,10 +63,12 @@ request from the cloud session with HTTP 429 (Retry-After 600), at any size, so 
 `pip install opencv-python-headless==4.10.0.84 pillow` and `python3 _notes/tools/saints_build.py /tmp/saints-raw`,
 check the crops (paintings where the face finder fails get a manual crop in `MAN` in `saints_build.py`), run the QA,
 publish. The build adds only names still without a portrait and keeps the credits in `relics/SAINT-IMAGES.md`.
-Still open, waiting on Br. Augustine: the cuculla photo and its pleat count (72 or 73); Br. Thomas's hometown (Jasper
-or Homewood); a Vatican Media credit for the papal photos; the Abbey Church's architect; Abbot Brendan's diaconate
-(20 October?); a photo of Abbot Brendan at the farm; Br. Christopher and "Benedictine Brew" (unconfirmed, not on the
-site). Then jobs 9 (QA report) and 11 (photos page).
+Settled 3 Nov 2026 (Br. Augustine): cuculla has 73 pleats, one per chapter of the Rule (photo still to come);
+Br. Thomas is from Jasper; papal photos credited "© Vatican Media"; Abbey Church architect unknown, so the site names
+none; leave Abbot Brendan's diaconate out (only his election matters); Abbot Brendan is the man on the right, in the
+cap, in `farm.jpg` (work/#farm); Br. Christopher does not roast coffee (drop it). The relics page shows saints with
+portraits as a grid of tiles (3 a row on a phone), name-only saints as pills after them.
+Then jobs 9 (QA report) and 11 (photos page).
 
 *Last updated 1 Nov 2026, evening.* Live: https://munkachy.github.io/newmonksite/ . Done: home, Monks at Work, Relics;
 phone menu fixed; all links checked. **The four research helpers have finished** (1 Nov 2026) (briefs in
