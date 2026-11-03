@@ -71,3 +71,9 @@ Group entries (the Uganda Martyrs; Jacinta and Francisco; Beatrice I and II) are
 Write a JSON array (valid JSON, UTF-8, real characters, not \u escapes) to the file named in your task, in the order
 given. Then validate it with `python3 -c "import json;json.load(open(PATH))"`. Reply with only: the count written,
 and any entries you flagged in "check".
+
+## Summaries (added 3 Nov 2026)
+Each entry also gets a "summary" field: the short version shown on the page before "Read more". 2–3 sentences,
+40–70 words, plain text (<em> allowed). Say who the saint was and what he or she is best known for, name the one or
+two chief patronages, and end with a short clause on why the saint matters to the abbey or the Prep. Same honesty
+as the full text (no legend stated as fact); for saints the label can't identify, say so in a sentence.
