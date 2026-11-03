@@ -54,6 +54,9 @@ If a job marked taken has had no commit for two hours, the session that took it 
 - **No infinite scroll** anywhere (Br. Augustine, 3 Nov 2026). Pages stay long single pages with sections, anchors
   and "Wander further" cards. The photos page uses lazy-loaded images (`loading="lazy"`) with group links at the top;
   if it ever passes ~150 photos, split it into one page per group.
+- **People in photos** (Br. Augustine, 3 Nov 2026): don't worry about who else appears in a group or event photo;
+  people who were here once are part of our memory and are not to be erased. (Br. Joseph Goode and Br. Gabriel
+  Maddox still get no card or write-up of their own.) Bishops not identified: leave unnamed.
 - **Don't**: animations that hide content when JS is off, pop-ups, carousels, dated widgets that go stale, 24-hour
   times. Test at 1440 and 390 wide, light only, no console errors, no sideways scroll (see sbp CLAUDE.md "Testing").
 
@@ -150,6 +153,11 @@ end of it under a comment with your page's name, or in a `<style>` block in your
   row): stopped as Br. Augustine asked. Next try: another day or another machine. Download only the missing ones with a
   filter on `assets/img/saints/<slug>.jpg` (none of the 57 arrived). Br. Augustine's order of jobs after this: his
   Drive photos, the cuculla, 8, 10, 11, 9.
+- [x] **13. Br. Augustine's photos** (3 Nov 2026): the Google Drive connector is not connected in the cloud session,
+  but the photos were already in `_source/stephens/`: Br. Christopher at the hens (work/#chickens), the clothing in
+  the cuculla at the 2018 solemn vows (monastery/#vocations, solemn vows stage). Abbot Brendan stays on the farm card
+  (farm.jpg). Br. Benedict is the baker in bakery.jpg and the July 2024 Works bakery photos.
+- [ ] **14. The cuculla close-up** (73 pleats): waiting for the photo from Br. Augustine.
 - [ ] **9. Check everything**: Playwright at 1440 and 390, every link, then a short report for Br. Augustine.
 
 ## For Br. Augustine to decide or supply
@@ -203,3 +211,4 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 3 Nov 2026 (Br. Augustine): choir photos with Br. Augustine in them taken out; Pray with Us now uses the 2016 and 2017 choir photos from the archives (before he entered).
 - 3 Nov 2026: saints' portraits on the relic cards (small round image in each saint's name; tap opens it): lead images of each saint's Wikipedia article from Wikimedia Commons, public domain or free licence, credits in relics/SAINT-IMAGES.md. Wikimedia rate-limits this session hard (Retry-After up to 600 s): downloads continue in batches; rerun _notes/tools/saints_build.py when more arrive (it adds only missing ones). No image for: Radegund, Contardo d'Este, the Beatrices d'Este, Valerius, John Berchmans; ambiguous labels deliberately left without.
 - 3 Nov 2026: decision recorded: no infinite scroll (long pages, anchors, Wander further; photos page lazy-loaded, split by group past ~150 photos). New QA tool `node _notes/tools/qa.js [page ...]` (1440 and 390 px: overflow, broken images, console errors, links and anchors): whole site clean. Saints' portraits (job 12): Wikimedia allowed 11 downloads, then only 429s; stopped, none of the 57 missing came.
+- 3 Nov 2026: job 13 done: work/#chickens (Br. Christopher, Anne Stephens July 2024) and the solemn vows stage on monastery/#vocations (clothing in the cuculla, solemn vows of Frs. Paschal, Dominic and Pachomius, March 2018; replaces 'Photo to come'). Both graded with grade.py. Settled: other people in event photos are fine; unnamed bishops stay unnamed. QA (qa.js): 10 pages clean at 1440 and 390.
