@@ -129,3 +129,21 @@
   box.addEventListener('click', close);
   document.addEventListener('keydown', function (e) { if (!box.hidden && e.key === 'Escape') close(); });
 })();
+
+/* Choosers (pray/#begin, pray/#psalms): a button [data-choose=ID] shows the element #ID and hides the others of
+   its data-group; the buttons beside it show which is chosen. Without JavaScript every answer simply shows. */
+(function () {
+  var replies = document.querySelectorAll('[data-group]');
+  if (!replies.length) return;
+  replies.forEach(function (r) { r.hidden = true; });
+  document.querySelectorAll('[data-choose]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var t = document.getElementById(b.dataset.choose); if (!t) return;
+      var open = !t.hidden && b.getAttribute('aria-pressed') === 'true';
+      document.querySelectorAll('[data-group="' + t.dataset.group + '"]').forEach(function (r) { r.hidden = true; });
+      b.parentNode.querySelectorAll('[data-choose]').forEach(function (o) { o.setAttribute('aria-pressed', 'false'); });
+      if (!open) { t.hidden = false; b.setAttribute('aria-pressed', 'true'); }
+      if (!open && t.classList.contains('call')) t.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    });
+  });
+})();

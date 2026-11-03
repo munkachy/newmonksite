@@ -56,6 +56,15 @@ If a job marked taken has had no commit for two hours, the session that took it 
 
 ## Where things stand (read first)
 
+**3 Nov 2026: a web of links, and Sing With Us on Pray with Us.** `_notes/tools/crosslink.py` links the first plain
+mention of key names and places on each page (class `xl`; terms in `TERMS`) and adds a "Wander further" row of four
+related pages to every page but home (`WANDER`). **Rerun it after editing any page** (it removes its own links first).
+`pray/#begin` ("Where are you starting from?": the curious, Christian and Catholic doors, with their questions) and
+`pray/#psalms` ("What kind of day are you having?": the mood picker with the opening of each meditation and its tip)
+come from munkachy/sing-with-us (live at munkachy.github.io/sing-with-us, still `noindex` until the abbot approves it);
+rebuild them with `_notes/tools/swu_pray.py SWU_CLONE`. The home page's pray section points to both. Answer buttons:
+`[data-choose]` in `assets/site.js`.
+
 **3 Nov 2026, end of session (saints' portraits).** 28 saints on `relics/` have portraits (commit 901b6a6). 57 more
 have an image listed in `_notes/saints/meta.json` but were not downloaded: Wikimedia's image server answered every
 request from the cloud session with HTTP 429 (Retry-After 600), at any size, so the downloader was stopped. To resume:

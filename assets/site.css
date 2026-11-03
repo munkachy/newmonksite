@@ -370,3 +370,44 @@ img[data-full]:hover { transform: scale(1.06); }
   box-shadow: 0 0 0 2px var(--paper), 0 0 0 3px var(--line); }
 @media (min-width: 30em) { .saints li:has(.saint-face) { --n: 4; } }
 @media (min-width: 64em) { .saints li:has(.saint-face) { --n: 5; } }
+/* ---- Pray: where are you starting from (#begin) and the psalm calls (#psalms), from Sing With Us ---- */
+.picks { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+.pick { min-height: 2.6rem; padding: .5rem 1.05rem; border: 1px solid var(--line); border-radius: 999px; background: #fffdf8; font-weight: 600; font-size: .98rem; transition: background .2s, color .2s, border-color .2s; }
+.pick:hover { border-color: var(--blue); }
+.pick[aria-pressed="true"] { background: var(--blue); border-color: var(--blue); color: #fff; }
+.gates { margin-top: 1.4rem; }
+.gates .pick { font-size: 1.08rem; padding: .7rem 1.4rem; }
+.reply { margin-top: .9rem; }
+p.reply { padding: .7rem 1rem; border-left: 3px solid var(--gold); background: rgba(201,162,74,.1); font-style: italic; }
+.gate { margin-top: 1.6rem; padding: clamp(1.1rem, 3vw, 2rem); background: #fffdf8; border: 1px solid var(--line); border-radius: 6px; }
+.gate > p + p, .gate > * + p { margin-top: .9rem; }
+.gate-lead { font-family: var(--serif); font-size: 1.6rem; line-height: 1.25; }
+.gate-quote { margin: 1.2rem 0; font-family: var(--serif); font-size: 1.4rem; line-height: 1.35; color: var(--blue); }
+.gate-quote cite { display: block; margin-top: .4rem; font: 400 .9rem/1.5 var(--sans); color: var(--muted); }
+.ask { margin-top: 1.3rem; }
+.ask-q { font-weight: 600; }
+.gate .btn-row { margin-top: 1.4rem; }
+.moods .pick { font-size: .92rem; }
+.call { margin-top: 1.6rem; padding: clamp(1.1rem, 3vw, 2rem); background: #fffdf8; border: 1px solid var(--line); border-radius: 6px; scroll-margin-top: 6rem; }
+.call h3 { margin-top: .3rem; }
+.call .small { margin-top: .5rem; color: var(--muted); }
+.psalm-verse { margin-top: 1.1rem; padding: .8rem 1rem; background: var(--paper-2); border-radius: 4px; font-family: var(--serif); font-size: 1.25rem; line-height: 1.4; }
+.psalm-verse cite { display: block; margin-top: .3rem; font: 400 .82rem/1.4 var(--sans); color: var(--muted); font-style: normal; }
+.voice { margin-top: .7rem; padding-left: 1rem; border-left: 3px solid var(--line); }
+.voice .who { display: block; font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.voice-god { border-color: var(--gold); }
+.voice-god .who { color: var(--gold-ink); }
+.call-tip { margin-top: 1.3rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: 1rem; }
+.call-tip .who { font-weight: 700; margin-bottom: .3rem; }
+.call-note { margin-top: 1rem; font-size: 1rem; padding: .7rem 1rem; background: rgba(31,61,115,.07); border-radius: 4px; }
+/* ---- Every page: links woven into the text (class xl) and "Wander further" (_notes/tools/crosslink.py) ---- */
+a.xl { color: var(--blue); text-decoration-color: rgba(31,61,115,.4); }
+.on-dark a.xl, .page-hero a.xl { color: var(--gold); text-decoration-color: rgba(201,162,74,.5); }
+a.xl:hover { text-decoration-color: currentColor; }
+.wander { border-top: 1px solid var(--line); padding-block: clamp(3rem, 6vw, 5rem); }
+.wander-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: .8rem; margin-top: 1.3rem; }
+.wander-card { display: flex; flex-direction: column; gap: .3rem; padding: 1.1rem 1.2rem; background: #fffdf8; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; transition: border-color .2s, transform .2s; }
+.wander-card:hover { border-color: var(--gold); transform: translateY(-2px); }
+.wander-card b { font: 600 1.3rem/1.2 var(--serif); color: var(--blue); }
+.wander-card b::after { content: " →"; }
+.wander-card span { font-size: .95rem; color: var(--ink-soft); line-height: 1.45; }
