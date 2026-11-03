@@ -145,8 +145,11 @@ end of it under a comment with your page's name, or in a `<style>` block in your
   elsewhere, grouped (the community, liturgy, the church and grounds, the Grotto, the school, at work), each with
   photographer credit; plus the film and the Facebook/Instagram/YouTube links. Thumbnails ~600 px, lazy-loaded,
   opening the 1800 px copy. Link it from the footer. Br. Augustine asked for this, 1 Nov 2026.
-- [~] **12. The 57 saints' portraits still missing on `relics/`** (steps in "Where things stand"): taken 3 Nov 2026
-  (cloud session, Br. Augustine's order of jobs: 12, then his Drive photos, the cuculla, 8, 10, 11, 9).
+- [ ] **12. The 57 saints' portraits still missing on `relics/`** (steps in "Where things stand"). Tried 3 Nov 2026
+  afternoon: Wikimedia gave 11 images (all saints already on the site) and then only 429s (Retry-After 600, four in a
+  row): stopped as Br. Augustine asked. Next try: another day or another machine. Download only the missing ones with a
+  filter on `assets/img/saints/<slug>.jpg` (none of the 57 arrived). Br. Augustine's order of jobs after this: his
+  Drive photos, the cuculla, 8, 10, 11, 9.
 - [ ] **9. Check everything**: Playwright at 1440 and 390, every link, then a short report for Br. Augustine.
 
 ## For Br. Augustine to decide or supply
@@ -199,3 +202,4 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 2 Nov 2026 (Br. Augustine): main menu kept simple: The Grotto, The School, Pray with Us, Visit, Give (Monks at Work taken out). Deeper pages are reached from the home page and the footer: the monks section now ends 'not only craftsmen and teachers…' with 'Meet the monks at work' and 'The heroes of our house'; a new home section '135 years on this hill' has 'Learn more about our history' (history/) and 'Popes, Mother Angelica and a Kennedy' (monastery/#wider-church).
 - 3 Nov 2026 (Br. Augustine): choir photos with Br. Augustine in them taken out; Pray with Us now uses the 2016 and 2017 choir photos from the archives (before he entered).
 - 3 Nov 2026: saints' portraits on the relic cards (small round image in each saint's name; tap opens it): lead images of each saint's Wikipedia article from Wikimedia Commons, public domain or free licence, credits in relics/SAINT-IMAGES.md. Wikimedia rate-limits this session hard (Retry-After up to 600 s): downloads continue in batches; rerun _notes/tools/saints_build.py when more arrive (it adds only missing ones). No image for: Radegund, Contardo d'Este, the Beatrices d'Este, Valerius, John Berchmans; ambiguous labels deliberately left without.
+- 3 Nov 2026: decision recorded: no infinite scroll (long pages, anchors, Wander further; photos page lazy-loaded, split by group past ~150 photos). New QA tool `node _notes/tools/qa.js [page ...]` (1440 and 390 px: overflow, broken images, console errors, links and anchors): whole site clean. Saints' portraits (job 12): Wikimedia allowed 11 downloads, then only 429s; stopped, none of the 57 missing came.
