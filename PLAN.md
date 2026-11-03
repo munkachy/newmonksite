@@ -161,9 +161,10 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - [ ] **15. Fr. Bede's tailor shop** (Br. Augustine, 3 Nov 2026): Fr. Bede is the abbey's tailor (now on his card and
   in work/'s "Still working with our hands"). To do when Br. Augustine sends photos of the tailor shop: a "The tailor
   shop" card in work/#today (id `tailor`), linking back to Br. Jude, who began in the tailor shop, and Br. Wolfgang
-  Wolf, tailor and botanist. Fr. Bede studied the craft at another monastery about a year ago: which one is not found
-  (web search 3 Nov 2026: nothing on Fr. Bede and tailoring; Saint Meinrad, Mount Angel and St. Bede Abbey run tailor
-  shops with lay or monk tailors, but none mentions St. Bernard). Ask Br. Augustine or Fr. Bede.
+  Wolf, tailor and botanist. Fr. Bede learned the craft about a year ago at **St. Bede Abbey, Peru, Illinois** (Br. Augustine,
+  3 Nov 2026: he joked that his name matched the monastery), taught by two laywomen. St. Bede's shop (abbey blog,
+  "Inside the Tailor Shop at St. Bede Abbey"): run by Beth Welbers, taught one-on-one from 2022 by Eileen Martin, a
+  retired shop tailor; a full habit takes about 40 hours. Names not put on the site until Br. Augustine confirms them.
 - [ ] **9. Check everything**: Playwright at 1440 and 390, every link, then a short report for Br. Augustine.
 
 ## For Br. Augustine to decide or supply
@@ -221,3 +222,4 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 3 Nov 2026: draft page `saints/` ("The saints of our reliquary"): all 100 entries of the relics catalogue, each with a life, patronage, why their prayers matter to the abbey and the Prep, the relic held, and "To check" notes. Text in `_notes/saints-lives/part-*.json` (brief: `BRIEF.md`); build with `python3 _notes/tools/saints_lives_build.py`. **Hidden on purpose: nothing links to it** until it has been read and approved; then add it to the relics page and the footer (and to `PAGES` in crosslink.py).
 - 3 Nov 2026: `saints/` condensed: each saint shows a 40–70 word summary (`summary` in the part files) and a "Read more" button (`<details>`, works without JS) that opens the full life, patronage, "For our abbey and school", the relic and the To-check note. Still not linked anywhere.
 - 3 Nov 2026 (Br. Augustine): Fr. Bede is the abbey's tailor: added to his monk card and to work/. Tailor-shop photos to come (job 15); the monastery where he trained not yet found.
+- 3 Nov 2026 (Br. Augustine): Fr. Bede learned tailoring at St. Bede Abbey, Peru, Illinois, from two laywomen: on his card and on work/.
