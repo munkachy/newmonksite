@@ -51,6 +51,9 @@ If a job marked taken has had no commit for two hours, the session that took it 
 - **Facts**: only from `_notes/ABBEY-FACTS.md`, `_notes/CRAFTSMEN.md`, `relics/README.md` or a cited
   source. The abbey Necrology is public (Br. Augustine, 1 Nov 2026): quote it, citing "the abbey Necrology". Mark
   anything uncertain for Br. Augustine.
+- **No infinite scroll** anywhere (Br. Augustine, 3 Nov 2026). Pages stay long single pages with sections, anchors
+  and "Wander further" cards. The photos page uses lazy-loaded images (`loading="lazy"`) with group links at the top;
+  if it ever passes ~150 photos, split it into one page per group.
 - **Don't**: animations that hide content when JS is off, pop-ups, carousels, dated widgets that go stale, 24-hour
   times. Test at 1440 and 390 wide, light only, no console errors, no sideways scroll (see sbp CLAUDE.md "Testing").
 
@@ -142,6 +145,8 @@ end of it under a comment with your page's name, or in a `<style>` block in your
   elsewhere, grouped (the community, liturgy, the church and grounds, the Grotto, the school, at work), each with
   photographer credit; plus the film and the Facebook/Instagram/YouTube links. Thumbnails ~600 px, lazy-loaded,
   opening the 1800 px copy. Link it from the footer. Br. Augustine asked for this, 1 Nov 2026.
+- [~] **12. The 57 saints' portraits still missing on `relics/`** (steps in "Where things stand"): taken 3 Nov 2026
+  (cloud session, Br. Augustine's order of jobs: 12, then his Drive photos, the cuculla, 8, 10, 11, 9).
 - [ ] **9. Check everything**: Playwright at 1440 and 390, every link, then a short report for Br. Augustine.
 
 ## For Br. Augustine to decide or supply
