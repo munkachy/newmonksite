@@ -158,6 +158,12 @@ end of it under a comment with your page's name, or in a `<style>` block in your
   the cuculla at the 2018 solemn vows (monastery/#vocations, solemn vows stage). Abbot Brendan stays on the farm card
   (farm.jpg). Br. Benedict is the baker in bakery.jpg and the July 2024 Works bakery photos.
 - [ ] **14. The cuculla close-up** (73 pleats): waiting for the photo from Br. Augustine.
+- [ ] **15. Fr. Bede's tailor shop** (Br. Augustine, 3 Nov 2026): Fr. Bede is the abbey's tailor (now on his card and
+  in work/'s "Still working with our hands"). To do when Br. Augustine sends photos of the tailor shop: a "The tailor
+  shop" card in work/#today (id `tailor`), linking back to Br. Jude, who began in the tailor shop, and Br. Wolfgang
+  Wolf, tailor and botanist. Fr. Bede studied the craft at another monastery about a year ago: which one is not found
+  (web search 3 Nov 2026: nothing on Fr. Bede and tailoring; Saint Meinrad, Mount Angel and St. Bede Abbey run tailor
+  shops with lay or monk tailors, but none mentions St. Bernard). Ask Br. Augustine or Fr. Bede.
 - [ ] **9. Check everything**: Playwright at 1440 and 390, every link, then a short report for Br. Augustine.
 
 ## For Br. Augustine to decide or supply
@@ -212,3 +218,4 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 3 Nov 2026: saints' portraits on the relic cards (small round image in each saint's name; tap opens it): lead images of each saint's Wikipedia article from Wikimedia Commons, public domain or free licence, credits in relics/SAINT-IMAGES.md. Wikimedia rate-limits this session hard (Retry-After up to 600 s): downloads continue in batches; rerun _notes/tools/saints_build.py when more arrive (it adds only missing ones). No image for: Radegund, Contardo d'Este, the Beatrices d'Este, Valerius, John Berchmans; ambiguous labels deliberately left without.
 - 3 Nov 2026: decision recorded: no infinite scroll (long pages, anchors, Wander further; photos page lazy-loaded, split by group past ~150 photos). New QA tool `node _notes/tools/qa.js [page ...]` (1440 and 390 px: overflow, broken images, console errors, links and anchors): whole site clean. Saints' portraits (job 12): Wikimedia allowed 11 downloads, then only 429s; stopped, none of the 57 missing came.
 - 3 Nov 2026: job 13 done: work/#chickens (Br. Christopher, Anne Stephens July 2024) and the solemn vows stage on monastery/#vocations (clothing in the cuculla, solemn vows of Frs. Paschal, Dominic and Pachomius, March 2018; replaces 'Photo to come'). Both graded with grade.py. Settled: other people in event photos are fine; unnamed bishops stay unnamed. QA (qa.js): 10 pages clean at 1440 and 390.
+- 3 Nov 2026 (Br. Augustine): Fr. Bede is the abbey's tailor: added to his monk card and to work/. Tailor-shop photos to come (job 15); the monastery where he trained not yet found.
