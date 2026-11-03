@@ -56,7 +56,7 @@ def card(e):
     <div class="prose life-text">{life}</div>
     <aside class="life-side">
       <div class="life-box"><h4>Patron of</h4><ul role="list">{pats}</ul></div>
-      <div class="life-box life-why"><h4>Why we ask for his or her prayers</h4>{why}</div>
+      <div class="life-box life-why"><h4>For our abbey and school</h4>{why}</div>
       <p class="life-relic"><b>In our reliquary.</b> {rich(e.get("relic", ""))}</p>
       {check}
     </aside>
