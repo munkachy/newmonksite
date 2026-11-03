@@ -34,3 +34,4 @@ Carol M. Highsmith, public domain: credit "Photo: Carol M. Highsmith, Library of
 | church-world/*.jpg | Archives photos from Br. Augustine's Drive (Francis 2016, John Paul II, Mother Angelica 1982 ×2, RFK), graded 0.3 | monastery (#wider-church) |
 | monks/face/*.jpg | face crops (300×300) of monks/*.jpg for the round faces | school |
 | cemetery-rows, cemetery-autumn, cemetery-snow, cemetery-funeral | Stephens DSC06835, Abbey-Chapel DSC0458, DSC0189-2, People DSC-0084, graded 0.6 | relics (#witnesses) |
+| choir-2016.jpg, choir-2017.jpg | Archives (Arc.zip) 'monks in prayer 2016', 'Monks at prayer 2017', graded 0.5 (replace choir.jpg and choir-reading.jpg, 3 Nov 2026, at Br. Augustine's request) | pray |
