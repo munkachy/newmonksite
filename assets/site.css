@@ -1,6 +1,6 @@
 /* St. Bernard Abbey: shared styles. Plain CSS, no build step. Colours from the abbey crest (blue, green, gold, red)
-   on cream paper. Restyled from the Ave Maria Grotto sign (Nov 2026): navy and gold, headings in Marcellus (the sign's
-   flared capitals), italics in Cormorant Garamond, text in Source Sans 3 (Google Fonts, linked in each page).
+   on cream paper. Restyled (Nov 2026) from the Ave Maria Grotto sign and the St. Bernard style guide (munkachy/betterBB docs/style-guide.md):
+   navy #004069, gold #D8B95C, Libre Baskerville headings, Noto Sans text (Google Fonts, linked in each page).
    Page-specific styles go at the END of this file under a comment with the page's name (see PLAN.md). */
 
 :root {
@@ -9,19 +9,19 @@
   --ink: #1d1b17;
   --ink-soft: #4a463e;
   --muted: #6b665c;
-  --night: #16203a;
-  --night-2: #223056;
-  --gold: #c9a24a;          /* decoration and text on dark only */
+  --night: #01253d;
+  --night-2: #004069;
+  --gold: #d8b95c;          /* decoration and text on dark only */
   --gold-ink: #7a5b16;      /* gold dark enough for text on cream */
-  --blue: #2e4170;          /* sign navy */
-  --gold-grad: linear-gradient(180deg, #ecd594 0%, #c39a47 52%, #98722f 100%);
+  --blue: #004069;          /* style guide navy */
+  --gold-grad: linear-gradient(180deg, #ecd9a0 0%, #d8b95c 55%, #b8963f 100%);
   --green: #3c6a4e;         /* crest green */
   --red: #9b2226;           /* crest red */
   --line: rgba(29, 27, 23, .14);
-  --serif: "Marcellus", "Cormorant Garamond", Georgia, "Times New Roman", serif;
-  --italic: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-  --caps: "Marcellus SC", "Marcellus", Georgia, serif;
-  --sans: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  --serif: "Libre Baskerville", Georgia, "Times New Roman", serif;
+  --italic: "Libre Baskerville", Georgia, "Times New Roman", serif;
+  --caps: "Libre Baskerville", Georgia, serif;
+  --sans: "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --max: 78rem;
   --gut: clamp(1.25rem, 4vw, 3rem);
   --sec: clamp(4.5rem, 9vw, 8.5rem);
@@ -31,7 +31,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1.125rem/1.7 var(--sans); -webkit-font-smoothing: antialiased; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1.0625rem/1.7 var(--sans); -webkit-font-smoothing: antialiased; }
 body.menu-open { overflow: hidden; }
 img, video { display: block; max-width: 100%; height: auto; }
 a { color: inherit; text-underline-offset: .18em; text-decoration-thickness: 1px; }
@@ -54,11 +54,11 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .eyebrow { font: 400 .82rem/1 var(--serif); letter-spacing: .2em; text-transform: uppercase; color: var(--gold-ink); margin-bottom: 1.25rem; display: flex; align-items: center; gap: .85rem; }
 .eyebrow::before { content: ""; width: 2.2rem; height: 3px; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold); }
 .on-dark .eyebrow, .hero .eyebrow, .page-hero .eyebrow, .film .eyebrow { color: var(--gold); }
-.h-xl, .h-lg, .h-md, .h-sm { font-family: var(--serif); font-weight: 400; line-height: 1.1; letter-spacing: .005em; }
-.h-xl { font-size: clamp(2.7rem, 6.4vw, 5.6rem); }
-.h-lg { font-size: clamp(2.2rem, 4.4vw, 3.8rem); }
-.h-md { font-size: clamp(1.7rem, 2.9vw, 2.4rem); }
-.h-sm { font-size: clamp(1.4rem, 2.1vw, 1.7rem); }
+.h-xl, .h-lg, .h-md, .h-sm { font-family: var(--serif); font-weight: 400; line-height: 1.22; letter-spacing: 0; }
+.h-xl { font-size: clamp(2.3rem, 5.2vw, 4.4rem); }
+.h-lg { font-size: clamp(1.9rem, 3.6vw, 3rem); }
+.h-md { font-size: clamp(1.5rem, 2.5vw, 2rem); }
+.h-sm { font-size: clamp(1.2rem, 1.8vw, 1.45rem); }
 .h-xl em, .h-lg em, .h-md em { font-style: italic; }
 .lead { font-size: clamp(1.15rem, 1.5vw, 1.32rem); line-height: 1.65; color: var(--ink-soft); }
 .on-dark .lead, .hero .lead, .page-hero .lead { color: rgba(239, 233, 220, .9); }
@@ -73,7 +73,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: .55rem; min-height: 2.9rem; padding: .7rem 1.45rem; border-radius: 999px; font: 600 .98rem/1 var(--sans); letter-spacing: .02em; text-decoration: none; white-space: nowrap; transition: background .2s, color .2s, border-color .2s; }
 .btn-gold { background: var(--gold-grad); color: var(--night); }
 .btn-gold:hover { filter: brightness(1.08); }
-.btn-ink { background: var(--blue); color: #fff; box-shadow: inset 0 0 0 1px rgba(201,162,74,.55); }
+.btn-ink { background: var(--blue); color: #fff; box-shadow: inset 0 0 0 1px rgba(216,185,92,.55); }
 .btn-ink:hover { background: var(--night-2); }
 .btn-line { border: 1px solid currentColor; }
 .btn-line:hover { background: rgba(127, 127, 127, .12); }
@@ -92,7 +92,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .header .wrap { display: flex; align-items: center; gap: 1.5rem; min-height: 4.6rem; }
 .brand { display: flex; align-items: center; gap: .8rem; text-decoration: none; margin-right: auto; }
 .brand img { width: 1.95rem; height: auto; }
-.brand-name { font: 400 1.38rem/1 var(--caps); letter-spacing: .06em; color: var(--blue); }
+.brand-name { font: 700 1.05rem/1 var(--caps); letter-spacing: .08em; text-transform: uppercase; color: var(--blue); }
 .brand-sub { display: block; font: 400 .66rem/1.2 var(--serif); letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-top: .3rem; }
 .nav { display: flex; align-items: center; gap: 1.6rem; }
 .nav a { text-decoration: none; font: 400 .98rem/1.4 var(--serif); letter-spacing: .06em; color: var(--blue); padding-block: .4rem; border-bottom: 1px solid transparent; }
@@ -104,7 +104,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 /* ---------- Hero (home) ---------- */
 .hero { position: relative; min-height: min(92vh, 56rem); display: flex; align-items: flex-end; color: #fff; overflow: hidden; background: var(--night); }
 .hero-media, .hero-media video, .hero-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(12, 17, 34, .82) 0%, rgba(12, 17, 34, .35) 45%, rgba(12, 17, 34, .15) 100%); }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(1, 37, 61, .82) 0%, rgba(1, 37, 61, .35) 45%, rgba(1, 37, 61, .15) 100%); }
 .hero .wrap { position: relative; z-index: 1; padding-block: clamp(6rem, 14vh, 9rem) clamp(3rem, 8vh, 5rem); }
 .hero .h-xl { max-width: 15ch; }
 .hero .lead { max-width: 38rem; margin-top: 1.4rem; }
@@ -116,7 +116,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 /* Page hero (inner pages) */
 .page-hero { position: relative; color: #fff; background: var(--night); min-height: 26rem; display: flex; align-items: flex-end; overflow: hidden; }
 .page-hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .5; }
-.page-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(12,17,34,.75), rgba(12,17,34,0) 70%); }
+.page-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(1,37,61,.75), rgba(1,37,61,0) 70%); }
 .page-hero .wrap { z-index: 1; }
 .page-hero .wrap { position: relative; padding-block: 8rem 3.5rem; }
 .page-hero .lead { max-width: 40rem; margin-top: 1rem; }
@@ -125,7 +125,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .twin { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem, 2.5vw, 2rem); margin-top: 3rem; }
 .door { position: relative; display: flex; flex-direction: column; justify-content: flex-end; min-height: clamp(26rem, 44vw, 36rem); color: #fff; text-decoration: none; overflow: hidden; border-radius: 4px; background: var(--night); }
 .door img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .8s ease; }
-.door::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(12,17,34,.94) 0%, rgba(12,17,34,.78) 38%, rgba(12,17,34,.15) 72%); }
+.door::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(1,37,61,.94) 0%, rgba(1,37,61,.78) 38%, rgba(1,37,61,.15) 72%); }
 .door:hover img { transform: scale(1.03); }
 .door-text { position: relative; z-index: 1; padding: clamp(1.5rem, 3vw, 2.5rem); }
 .door-text .h-md { margin-bottom: .6rem; }
@@ -345,7 +345,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 /* ---- Lightbox for the archive faces ---- */
 img[data-full] { cursor: zoom-in; transition: transform .2s; }
 img[data-full]:hover { transform: scale(1.06); }
-.lightbox { position: fixed; inset: 0; z-index: 100; background: rgba(12, 17, 34, .92); display: grid; place-items: center; padding: 3.5rem 1rem 1.5rem; cursor: zoom-out; }
+.lightbox { position: fixed; inset: 0; z-index: 100; background: rgba(1, 37, 61, .92); display: grid; place-items: center; padding: 3.5rem 1rem 1.5rem; cursor: zoom-out; }
 .lightbox[hidden] { display: none; }
 .lightbox figure { margin: 0; max-width: min(56rem, 100%); text-align: center; }
 .lightbox img { max-width: 100%; max-height: 78vh; width: auto; height: auto; margin: 0 auto; border-radius: 4px; box-shadow: 0 10px 40px rgba(0,0,0,.5); }
@@ -382,7 +382,7 @@ img[data-full]:hover { transform: scale(1.06); }
 .gates { margin-top: 1.4rem; }
 .gates .pick { font-size: 1.08rem; padding: .7rem 1.4rem; }
 .reply { margin-top: .9rem; }
-p.reply { padding: .7rem 1rem; border-left: 3px solid var(--gold); background: rgba(201,162,74,.1); font-style: italic; }
+p.reply { padding: .7rem 1rem; border-left: 3px solid var(--gold); background: rgba(216,185,92,.1); font-style: italic; }
 .gate { margin-top: 1.6rem; padding: clamp(1.1rem, 3vw, 2rem); background: #fffdf8; border: 1px solid var(--line); border-radius: 6px; }
 .gate > p + p, .gate > * + p { margin-top: .9rem; }
 .gate-lead { font-family: var(--serif); font-size: 1.6rem; line-height: 1.25; }
@@ -406,7 +406,7 @@ p.reply { padding: .7rem 1rem; border-left: 3px solid var(--gold); background: r
 .call-note { margin-top: 1rem; font-size: 1rem; padding: .7rem 1rem; background: rgba(31,61,115,.07); border-radius: 4px; }
 /* ---- Every page: links woven into the text (class xl) and "Wander further" (_notes/tools/crosslink.py) ---- */
 a.xl { color: var(--blue); text-decoration-color: rgba(31,61,115,.4); }
-.on-dark a.xl, .page-hero a.xl { color: var(--gold); text-decoration-color: rgba(201,162,74,.5); }
+.on-dark a.xl, .page-hero a.xl { color: var(--gold); text-decoration-color: rgba(216,185,92,.5); }
 a.xl:hover { text-decoration-color: currentColor; }
 .wander { border-top: 1px solid var(--line); padding-block: clamp(3rem, 6vw, 5rem); }
 .wander-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: .8rem; margin-top: 1.3rem; }
@@ -419,12 +419,11 @@ a.xl:hover { text-decoration-color: currentColor; }
 
 /* ---- Ave Maria Grotto sign: navy, gold double rules, the flared cross (assets/img/cross.svg) ---- */
 .h-xl em, .h-lg em, .h-md em, .latin, .twin-note, .quote, .motto, .altar-slot p, .words blockquote, .pull, p.reply { font-family: var(--italic); }
-.h-xl em, .h-lg em, .h-md em { font-size: 1.06em; }
 .cross { display: block; width: 1.9rem; height: 1.9rem; background: url("img/cross.svg") center / contain no-repeat; }
 .foot-brand .cross { width: 2.6rem; height: 2.6rem; margin-bottom: 1rem; }
 .foot-brand img { display: none; }
 .rule-cross { display: flex; align-items: center; gap: 1rem; color: var(--gold); margin-block: 1.6rem; }
 .rule-cross::before, .rule-cross::after { content: ""; flex: 1; height: 3px; border-top: 1px solid currentColor; border-bottom: 1px solid currentColor; }
 .rule-cross .cross { width: 1.6rem; height: 1.6rem; }
-.util { border-bottom: 1px solid rgba(201,162,74,.45); }
+.util { border-bottom: 1px solid rgba(216,185,92,.45); }
 .footer { border-top: 3px double var(--gold); }
