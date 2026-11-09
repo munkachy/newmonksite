@@ -427,3 +427,125 @@ a.xl:hover { text-decoration-color: currentColor; }
 .rule-cross .cross { width: 1.6rem; height: 1.6rem; }
 .util { border-bottom: 1px solid rgba(216,185,92,.45); }
 .footer { border-top: 3px double var(--gold); }
+
+/* ======================================================================================================
+   St. Bernard Brand Guide (9.10.2024) pass: flat navy and gold, white, slate (#537889) and pale-blue panels,
+   tracked capitals with hairlines, rectangular buttons, Libre Baskerville display, Noto Sans text.
+   Logos are the guide's own vector files (assets/img/brand/). Navy #004069, gold #D8B95C, accents #01253D #4D81A7 #537889 #A7C4D2.
+   ====================================================================================================== */
+:root { --slate: #537889; --sky: #a7c4d2; --mist: #f3f6f8; --steel: #4d81a7; --deep: #01253d;
+  --gold-grad: #d8b95c; --grad: linear-gradient(118deg, #004069 0%, #003a5f 38%, #01253d 100%); }
+.on-stone { background: var(--mist); }
+.on-slate { background: var(--slate); color: #fefefe; }
+.on-slate .lead, .on-slate p { color: rgba(254,254,254,.9); }
+.on-slate .eyebrow, .on-slate .h-lg, .on-slate .h-md { color: #fefefe; }
+.on-slate .eyebrow::after { background: rgba(254,254,254,.4); }
+.on-slate .prose a, .on-slate a.xl { color: #fff; text-decoration-color: var(--gold); }
+.on-slate .small { color: rgba(254,254,254,.8); }
+.on-dark { background: var(--grad); }
+
+/* Display type: navy on light, white on dark */
+.h-xl, .h-lg, .h-md, .h-sm { color: var(--blue); }
+.on-dark .h-xl, .on-dark .h-lg, .on-dark .h-md, .on-dark .h-sm, .hero .h-xl, .page-hero .h-xl, .page-hero .h-lg, .film .h-lg, .footer .h-sm, .door .h-md { color: #fefefe; }
+.h-xl em, .h-lg em, .h-md em { font-style: italic; color: var(--steel); }
+.on-dark .h-lg em, .hero em, .film em, .page-hero em, .on-slate em { color: var(--gold); }
+.lead { color: #34505f; }
+
+/* Labels: tracked capitals, then a hairline running to the edge (as on the guide's page heads) */
+.eyebrow { font: 600 .74rem/1 var(--sans); letter-spacing: .24em; color: var(--blue); gap: 1.1rem; }
+.eyebrow::before { width: 1.6rem; height: 2px; border: 0; background: var(--gold); }
+.eyebrow::after { content: ""; flex: 1; height: 1px; background: rgba(0,64,105,.28); }
+.on-dark .eyebrow, .hero .eyebrow, .page-hero .eyebrow, .film .eyebrow { color: var(--gold); }
+.on-dark .eyebrow::after, .hero .eyebrow::after, .page-hero .eyebrow::after { background: rgba(216,185,92,.35); }
+.film .eyebrow::after, .film .eyebrow::before { display: none; }
+.film .eyebrow { justify-content: center; }
+
+/* Buttons: rectangular, small capitals */
+.btn { border-radius: 2px; min-height: 2.8rem; padding: .7rem 1.5rem; font: 600 .78rem/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; }
+.btn-gold { background: var(--gold); color: var(--deep); }
+.btn-gold:hover { background: #e3c874; filter: none; }
+.btn-ink { background: var(--blue); color: #fefefe; box-shadow: none; }
+.btn-ink:hover { background: var(--deep); }
+.btn-line { border: 1px solid currentColor; }
+.nav .btn { padding-inline: 1.25rem; min-height: 2.4rem; }
+.more { font: 600 .76rem/1.2 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--blue); border-bottom: 1px solid var(--gold); }
+.on-dark .more, .hero .more { color: var(--gold); }
+
+/* Top bar: slate band between gold hairlines, as on the guide's cover */
+.util { background: var(--slate); color: #fefefe; border-bottom: 1px solid var(--gold); border-top: 1px solid var(--gold); font: 400 .72rem/1.3 var(--sans); letter-spacing: .14em; text-transform: uppercase; }
+.util .wrap { justify-content: space-between; }
+.util a { color: #fefefe; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: .3em; }
+.util b { font-weight: 600; }
+.header { border-bottom: 0; box-shadow: 0 1px 0 var(--line), 0 6px 18px rgba(1,37,61,.05); }
+.header .wrap { min-height: 4.9rem; }
+.brand-logo { height: 2.85rem; width: auto; }
+.nav a { font: 600 .74rem/1.4 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--deep); padding-block: .5rem; border-bottom: 2px solid transparent; }
+.nav a:hover, .nav a[aria-current="page"] { border-bottom-color: var(--gold); }
+.nav .btn { color: #fefefe; border-bottom: 0; }
+
+/* Heroes: navy-to-deep wash with a thin gold frame */
+.hero::after { background: linear-gradient(to top, rgba(1,37,61,.88) 0%, rgba(1,37,61,.42) 46%, rgba(0,64,105,.22) 100%), linear-gradient(105deg, rgba(1,37,61,.55) 0%, rgba(1,37,61,0) 62%); }
+.hero::before, .page-hero::before { content: ""; position: absolute; inset: clamp(.7rem, 1.6vw, 1.4rem); border: 1px solid rgba(216,185,92,.5); z-index: 1; pointer-events: none; }
+.page-hero::after { background: linear-gradient(to top, rgba(1,37,61,.85), rgba(1,37,61,.1) 72%); }
+.page-hero { background: var(--deep); }
+.hero .wrap, .page-hero .wrap { z-index: 2; }
+.hero .h-xl { font-size: clamp(2.4rem, 5.6vw, 4.8rem); line-height: 1.12; }
+
+/* At a glance: gold numerals on navy, hairlines between */
+.glance { background: var(--grad); color: #fefefe; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold); }
+.glance ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); }
+.glance li { text-align: center; padding: 2.2rem .8rem 2rem; border-left: 1px solid rgba(216,185,92,.28); }
+.glance li:first-child { border-left: 0; }
+.glance b { display: block; font: 400 clamp(2rem, 3.6vw, 3rem)/1 var(--serif); color: var(--gold); margin-bottom: .7rem; }
+.glance span { display: block; font: 600 .68rem/1.4 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: rgba(254,254,254,.85); }
+
+/* Cards, doors and tiles */
+.card { background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--blue); border-radius: 0; box-shadow: 0 14px 30px -22px rgba(1,37,61,.45); }
+.card-num { color: var(--gold); font-size: 2.6rem; }
+.card .h-sm::after { content: ""; display: block; width: 2.4rem; height: 2px; background: var(--gold); margin-top: .8rem; }
+.door { border-radius: 0; }
+.door::after { background: linear-gradient(to top, rgba(1,37,61,.95) 0%, rgba(1,37,61,.78) 38%, rgba(0,64,105,.12) 74%); }
+.door::before { content: ""; position: absolute; inset: .9rem; border: 1px solid rgba(216,185,92,0); z-index: 2; transition: border-color .4s; pointer-events: none; }
+.door:hover::before { border-color: rgba(216,185,92,.7); }
+.trade img { border-radius: 0; }
+.trade b { color: var(--blue); }
+.trade span { color: var(--slate); font-size: .86rem; letter-spacing: .02em; }
+.trade { border-bottom: 1px solid transparent; padding-bottom: .9rem; transition: border-color .3s; }
+.trade:hover { border-bottom-color: var(--gold); }
+.twin-note, .quote { color: var(--blue); }
+.quote { border-left-color: var(--gold); }
+.prose a, .more { text-decoration-color: var(--gold); }
+.prose a { color: var(--blue); }
+.on-dark .prose a, .on-dark a.xl { color: var(--gold); }
+.on-stone .hours th, .on-stone .hours td { border-bottom-color: rgba(0,64,105,.14); }
+.now { border-radius: 0; border-color: rgba(216,185,92,.35); }
+.now > div { background: rgba(1,37,61,.55); }
+.now small { color: var(--gold); letter-spacing: .24em; }
+.small { color: var(--slate); }
+img { border-radius: 0; }
+
+/* Footer: deep navy band, the guide's reversed logo, gold hairline */
+.footer { background: var(--deep); border-top: 1px solid var(--gold); box-shadow: inset 0 3px 0 var(--deep), inset 0 4px 0 rgba(216,185,92,.55); padding-top: 5rem; }
+.foot-logo { width: 11.5rem; height: auto; margin: 0 0 .3rem -.4rem; }
+.foot-sub { display: block; font: 600 .7rem/1 var(--sans); letter-spacing: .38em; text-transform: uppercase; color: var(--gold); margin: 0 0 1.4rem .1rem; }
+.foot-brand .cross, .foot-brand img:not(.foot-logo) { display: none; }
+.footer h3 { font: 600 .7rem/1 var(--sans); letter-spacing: .26em; color: var(--gold); padding-bottom: .9rem; margin-bottom: 1.1rem; border-bottom: 1px solid rgba(216,185,92,.3); }
+.motto { font-family: var(--serif); font-style: italic; color: var(--gold); }
+.foot-base { border-top-color: rgba(216,185,92,.25); }
+
+@media (max-width: 64em) { .glance ul { grid-template-columns: repeat(3, 1fr); } .glance li:nth-child(4) { border-left: 0; } .glance li { border-top: 1px solid rgba(216,185,92,.2); } .glance li:nth-child(-n+3) { border-top: 0; } }
+@media (max-width: 48em) {
+  .glance ul { grid-template-columns: repeat(2, 1fr); }
+  .glance li:nth-child(odd) { border-left: 0; } .glance li:nth-child(4) { border-left: 1px solid rgba(216,185,92,.28); }
+  .glance li:nth-child(-n+3) { border-top: 1px solid rgba(216,185,92,.2); } .glance li:nth-child(-n+2) { border-top: 0; }
+  .glance li:last-child { grid-column: 1 / -1; border-left: 0; }
+  .util .wrap { justify-content: center; } .util { letter-spacing: .1em; }
+  .brand-logo { height: 2.4rem; }
+}
+.brand .brand-logo { width: auto; height: 2.85rem; }
+.door .more, .film a, .film .xl, .hero a.xl, .page-hero a.xl { color: var(--gold); }
+.door .more { border-bottom-color: var(--gold); }
+@media (max-width: 48em) { .brand .brand-logo { height: 2.4rem; } }
+.foot-brand img.foot-logo { display: block; width: 11.5rem; }
+.btn { white-space: normal; text-align: center; line-height: 1.3; }
+.nav .btn, .hero-cta .btn { white-space: nowrap; }
