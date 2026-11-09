@@ -64,7 +64,7 @@ DOORS = [
           ("No", "It's simpler than you might think, and very peaceful: mostly psalms, sung back and forth, and a good deal of silence."),
           ("On a recording", "In person is different. You hear the breath, the stone, the silence between verses."),
           ("In person", "Then you know the feeling. Come and feel it again.")]))}
-      <div class="btn-row"><a class="btn btn-ink" href="{SWU}seekers/">A page for the curious</a><a class="btn btn-line" href="#hours-h">What happens at each hour</a><a class="btn btn-line" href="../visit/">Plan a visit</a></div>"""),
+      <div class="btn-row"><a class="btn btn-ink" href="curious/">A page for the curious</a><a class="btn btn-line" href="#hours-h">What happens at each hour</a><a class="btn btn-line" href="../visit/">Plan a visit</a></div>"""),
     ("christian", "A Christian", f"""
       {choices("q-chr", ("One question before anything else: do you believe the Psalms are the inspired, God-breathed word of God?", [
           ("Yes", "So do we. The Psalms are holy ground we share."),
@@ -73,7 +73,7 @@ DOORS = [
       <p>Jesus prayed the Psalms all his life, even on the cross: “My God, my God, why have you forsaken me?” (Matthew 27:46, quoting Psalm 22). Christians are divided, and the world is more divided still. So for a little while, let's set our divisions aside and simply sing to God together. You don't need to be Catholic, and you don't need to ask anyone. Just come in and sit in the pews.</p>
       <p><b>An honest note:</b> besides the Psalms you will hear hymns, Bible readings and prayers for the world, and also hymns to Mary and prayers honoring the saints. If you disagree with those parts, you don't have to sing them. Stay silent and pray to God in your own words.</p>
       <p><b>Did you know?</b> Protestants can become Benedictine oblates: Christians who join their prayer to a monastery's and follow the Rule of St. Benedict in ordinary life. Some of our own oblates are Protestant.</p>
-      <div class="btn-row"><a class="btn btn-ink" href="{SWU}christians/">A page for Christian visitors</a><a class="btn btn-line" href="../monastery/#oblates">About oblates</a><a class="btn btn-line" href="#schedule">Prayer times</a></div>"""),
+      <div class="btn-row"><a class="btn btn-ink" href="christians/">A page for Christian visitors</a><a class="btn btn-line" href="../monastery/#oblates">About oblates</a><a class="btn btn-line" href="#schedule">Prayer times</a></div>"""),
     ("catholic", "A Catholic", f"""
       {choices("q-cat", ("Do you feel called to go deeper in prayer?", [
           ("Yes", "Thanks be to God. That call is his, and he will help you answer it."),
@@ -85,7 +85,7 @@ DOORS = [
           ("Never", "Then this is a beautiful place to begin. You don't need a book or any experience. Just come."),
           ("Sometimes", "Praying it with a choir is different from praying it alone. Come hear it sung."),
           ("Every day", "Then you're already praying with us. Come and pray it with us in person. (Our monastic book is arranged differently from the four-volume breviary, and uses the older psalm numbers.)")]))}
-      <div class="btn-row"><a class="btn btn-ink" href="{SWU}catholics/">A page for Catholics</a><a class="btn btn-line" href="#office">The Divine Office</a><a class="btn btn-line" href="../relics/">The relics</a><a class="btn btn-line" href="../monastery/#oblates">Become an oblate</a></div>"""),
+      <div class="btn-row"><a class="btn btn-ink" href="catholics/">A page for Catholics</a><a class="btn btn-line" href="#office">The Divine Office</a><a class="btn btn-line" href="../relics/">The relics</a><a class="btn btn-line" href="../monastery/#oblates">Become an oblate</a></div>"""),
 ]
 
 begin = f'''<section class="sec" id="begin" aria-labelledby="begin-h">
@@ -110,7 +110,7 @@ def callpanel(pid, d):
     setting = f'<p class="small">{e(d["setting"])}</p>' if d["setting"] else ""
     return (f'<div class="call reply" id="call-{pid}" data-group="call"><p class="eyebrow">{e(d["kicker"])}</p>'
             f'<h3 class="h-sm">{e(d["title"])}</h3>{setting}{ex}'
-            f'<p class="small">… <a href="{SWU}meditations/#{pid}">Read the whole call</a></p>'
+            f'<p class="small">… <a href="psalms/#{pid}">Read the whole call</a></p>'
             + (f'<p class="call-note">{e(d["note"])}</p>' if d["note"] else "") + f'{tip}</div>')
 
 
@@ -123,7 +123,7 @@ psalms = f'''<section class="sec on-stone" id="psalms" aria-labelledby="psalms-h
     <p style="margin-top:1rem">One of our monks prays the Psalms like a phone call. He hears one verse as his own voice and the next as God answering him. Some days the call is sorrowful, some days full of joy. Tap the word that fits today, and he will show you how one of his calls began.</p>
     <div class="picks moods" role="group" aria-label="Choose a mood">{chips}</div>
     {"".join(callpanel(pid, d) for pid, d in calls.items())}
-    <p class="small" style="margin-top:1.4rem">These are one monk's personal meditations, not Church teaching; the psalm text is never changed. Psalm numbers: most Bibles first, our choir book in parentheses. Psalm text: the Grail translation, which our choir sings, © 1963 The Grail (England). <a href="{SWU}meditations/">All the meditations</a> · <a href="{SWU}meditations/tips/">Tips for when prayer is hard</a> · <a href="{SWU}quotes/">The saints on prayer</a></p>
+    <p class="small" style="margin-top:1.4rem">These are one monk's personal meditations, not Church teaching; the psalm text is never changed. Psalm numbers: most Bibles first, our choir book in parentheses. Psalm text: the Grail translation, which our choir sings, © 1963 The Grail (England). <a href="psalms/">All the meditations</a> · <a href="psalms/tips/">Tips for when prayer is hard</a> · <a href="quotes/">The saints on prayer</a></p>
   </div>
 </section>
 '''

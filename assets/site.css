@@ -583,3 +583,190 @@ img { border-radius: 0; }
   .colophon { gap: .9rem; } .colophon img { height: 3.1rem; } .colophon .crest { height: 3rem; }
   .colophon b { letter-spacing: .06em; } .door .door-mark { height: 3rem; top: 1rem; right: 1rem; }
 }
+
+/* ===== Oldest Conversation pages (pray/curious, christians, catholics, psalms, choir-book, quotes): made by _notes/tools/swu_css.py ===== */
+.swu { --surface: #fff; --rule: rgba(0,64,105,.2); --accent: var(--blue); --accent-2: var(--gold); --muted: var(--slate); --text: var(--ink); --heard: #1d4a6a;
+  --bg-2: var(--mist); --card-shadow: 0 14px 30px -22px rgba(1,37,61,.45); --jewel-1: var(--blue); --jewel-2: #8a4b4b; --jewel-3: var(--steel); --jewel-4: #7a6a1f; --link: var(--blue); --accent-ink: #fefefe; }
+.swu .sw-ornament { text-align: center; color: var(--accent); margin: 2.4rem 0; letter-spacing: 1em; font-size: 1rem; }
+.swu .sw-ornament::before { content: "✠"; letter-spacing: 0; }
+.swu .sw-intro p:first-of-type::first-letter, .swu .sw-dropcap::first-letter {
+  float: left; font-family: var(--serif); font-weight: 600; color: var(--accent);
+  font-size: 3.4em; line-height: .82; padding: .08em .1em 0 0;
+}
+.swu .sw-callout {
+  background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--accent);
+  padding: 1.1rem 1.2rem; border-radius: 6px; margin: 1.6rem 0; box-shadow: var(--card-shadow);
+}
+.swu .sw-callout > :last-child { margin-bottom: 0; }
+.swu .sw-callout h3:first-child, .swu .sw-callout h2:first-child { margin-top: 0; }
+.swu .sw-note { font-size: 1rem; color: var(--muted); border-top: 1px solid var(--rule); padding-top: .8rem; margin-top: 1.4rem; }
+.swu .sw-psalm {
+  margin: 1.2rem 0 .6rem; padding: 1rem 1.1rem; border: 0; border-radius: 6px;
+  background: var(--bg-2); position: relative;
+}
+.swu .sw-psalm p { margin: 0; font-size: 1.24rem; }
+.swu .sw-psalm footer { margin-top: .45rem; }
+.swu .sw-psalm footer::before { content: ""; }
+.swu .sw-heard { margin: .2rem 0 1.4rem 0; padding-left: 1.1rem; border-left: 2px dotted var(--accent); }
+.swu .sw-heard p { margin: .55rem 0; color: var(--heard); }
+.swu .sw-heard .sw-who { font-family: var(--serif); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); display: block; font-style: normal; font-weight: 600; }
+.swu .sw-heard i, .swu .sw-heard em { font-style: italic; }
+.swu .sw-heard p.voice { display: flex; gap: .8rem; align-items: flex-start; }
+.swu .sw-heard .sw-voice-img { flex: 0 0 3rem; width: 3rem; height: 3rem; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent); }
+.swu .sw-heard p.voice .sw-said { flex: 1; min-width: 0; }
+.swu .sw-heard p.voice.god .sw-who { color: var(--accent); }
+.swu .sw-heard p.voice.god i { font-size: 1.08em; }
+.swu .masthead .sw-freely { margin: .45rem auto 0; font-size: 1rem; }
+.swu .masthead .sw-freely-q { font-style: italic; }
+.swu .masthead .sw-freely-ref { color: var(--muted); font-size: .88em; white-space: nowrap; }
+.swu .sw-join-row { justify-content: center; margin: .2rem 0 .6rem; }
+.swu .sw-side-links { display: grid; gap: .7rem; margin: 1.5rem 0; }
+.swu .sw-side-links a { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .9rem 1.1rem;
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; text-decoration: none; color: var(--text); }
+.swu .sw-side-links a::after { content: "→"; color: var(--accent); }
+.swu .sw-side-links a:hover { border-color: var(--accent); }
+.swu .sw-ask {
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 1.2rem 1.2rem 1rem;
+  margin: 1.8rem 0; box-shadow: var(--card-shadow);
+}
+.swu .sw-ask .sw-q { margin: 0 0 .9rem; font-size: 1.4rem; color: var(--text); }
+.swu .sw-choices { display: flex; flex-wrap: wrap; gap: .6rem; }
+.swu .sw-choice {
+  font: inherit; font-size: 1.1rem; min-height: 50px; padding: .55rem 1.1rem; border-radius: 999px; cursor: pointer;
+  background: transparent; color: var(--text); border: 2px solid var(--rule);
+}
+.swu .sw-choice:hover { border-color: var(--accent); }
+.swu .sw-choice[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.swu .sw-reply { margin-top: 1rem; padding-top: .9rem; border-top: 1px dashed var(--rule); }
+.swu .sw-reply > :last-child { margin-bottom: 0; }
+.swu .sw-reply .sw-if { display: block; font-size: .85rem; color: var(--muted); font-style: italic; }
+.swu .js .sw-reply .sw-if { display: none; }
+.swu .sw-reply strong.big { font-size: 1.6rem; font-weight: 600; color: var(--accent); display: block; line-height: 1.2; }
+.swu .sw-skip-questions { display: none; font-size: 1rem; }
+.swu .js .sw-skip-questions { display: inline; }
+.swu details[open].sw-primer > summary::after, .swu details[open].sw-qa > summary::after { content: "−"; }
+.swu details.primer > .sw-inner, .swu details.qa > .sw-inner { padding: 0 1.1rem 1.1rem; }
+.swu .sw-tagline { font-style: italic; color: var(--accent); margin-top: 1rem; }
+.swu .sw-call { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 1.3rem 1.2rem .6rem; margin: 2rem 0; box-shadow: var(--card-shadow); }
+.swu .sw-call h3 { margin: 0 0 .2rem; font-size: 1.6rem; }
+.swu .sw-call h3 .sw-num { color: var(--muted); font-size: .7em; font-weight: 400; }
+.swu .sw-call .sw-mood { margin-bottom: .2rem; }
+.swu .sw-call .sw-mood.sorrow { color: var(--jewel-2); }
+.swu .sw-call .sw-mood.joy { color: var(--jewel-4); }
+.swu .sw-call .sw-mood.trust { color: var(--jewel-3); }
+.swu .sw-call .sw-mood.mercy { color: var(--jewel-1); }
+.swu .sw-call .sw-setting { color: var(--muted); font-size: 1.02rem; }
+.swu .sw-back-to-moods { font-size: .95rem; margin: .8rem 0 .6rem; text-align: right; }
+.swu .sw-back-to-moods a { color: var(--muted); }
+.swu .sw-call:target { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent), var(--card-shadow); }
+.swu .sw-exchange { background: var(--bg-2); border-radius: 8px; margin: 1.2rem 0; overflow: hidden; }
+.swu .sw-exchange .sw-psalm { margin: 0; background: transparent; border-radius: 0; }
+.swu .sw-exchange .sw-heard { margin: 0; padding: .5rem 1.1rem .8rem; border-left: 0; border-top: 1px dashed var(--rule); }
+.swu .sw-exchange .sw-heard .sw-voice-img { flex-basis: 3.4rem; width: 3.4rem; height: 3.4rem; }
+@media (min-width: 44rem) {
+  .swu .sw-exchange { display: grid; grid-template-columns: 1fr 1.15fr; align-items: stretch; }
+  .swu .sw-exchange .sw-heard {
+    border-top: 0; border-left: 1px dashed var(--accent);
+    padding: .8rem 1.1rem .8rem 0; display: flex; flex-direction: column; justify-content: center;
+  }
+  .swu .sw-exchange .sw-heard p.voice { margin-left: -1.7rem; }
+}
+@media (min-width: 62rem) {
+  .swu .sw-call { margin-left: -5rem; margin-right: -5rem; }
+}
+.swu .sw-mood-picker { margin: 1.6rem 0; }
+.swu .sw-mood-picker h2 { margin: 0 0 .3rem; }
+.swu .sw-mood-picker p { margin: 0 0 1rem; }
+.swu .sw-mood-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .6rem; }
+@media (min-width: 36rem) {
+  .swu .sw-mood-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.swu .sw-mood-chip {
+  display: flex; flex-direction: column; justify-content: center; gap: .1rem; min-height: 4.2rem;
+  padding: .7rem .9rem; border-radius: 8px; text-decoration: none; color: var(--text);
+  background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--accent);
+  box-shadow: var(--card-shadow); transition: transform .12s ease, border-color .12s ease;
+}
+.swu .sw-mood-chip:hover, .swu .sw-mood-chip:focus-visible { transform: translateY(-2px); border-color: var(--accent); text-decoration: none; }
+.swu .sw-mood-chip .sw-mood-word { font-size: 1.12rem; line-height: 1.25; font-weight: 500; }
+.swu .sw-mood-chip .sw-mood-ps { font-size: .85rem; color: var(--muted); }
+.swu .sw-label-meditation { display: inline-block; font-size: .85rem; color: var(--muted); border: 1px solid var(--rule); border-radius: 999px; padding: .1rem .7rem; margin-bottom: .6rem; }
+.swu .schedule .sw-what { display: block; font-size: .95rem; color: var(--muted); }
+.swu .sw-tip {
+  position: relative; margin: 2rem 0 1.2rem; padding: 1.5rem 1.2rem .6rem 1.2rem;
+  background: var(--surface); border: 2px solid var(--accent); border-radius: 12px;
+}
+.swu .sw-tip-badge {
+  position: absolute; top: -1.05rem; left: 1rem; display: inline-flex; align-items: center; gap: .35rem;
+  font-family: var(--serif); font-weight: 600; font-size: .85rem; letter-spacing: .14em; text-transform: uppercase;
+  background: var(--accent); color: var(--accent-ink); padding: .3rem .8rem .3rem .45rem; border-radius: 999px;
+  box-shadow: var(--card-shadow);
+}
+.swu .sw-tip-badge::before {
+  content: "✚"; display: inline-grid; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: 50%;
+  background: var(--accent-ink); color: var(--accent); font-size: .8rem; letter-spacing: 0;
+}
+.swu .sw-tip-q { margin: .2rem 0 .5rem; font-size: 1.3rem; color: var(--text); }
+.swu .sw-tip p { font-size: 1.05rem; }
+.swu .sw-tip blockquote { margin: .8rem 0; }
+.swu .sw-tip-more { text-align: right; font-size: .98rem; margin: .4rem 0 .6rem; }
+.swu .sw-tip:target { box-shadow: 0 0 0 3px var(--accent); }
+.swu .sw-call .sw-tip { margin-top: 1.8rem; }
+.swu .sw-quote {
+  position: relative; margin: 2.2rem 0 1.4rem; padding: 1.6rem 1.3rem .7rem;
+  background: var(--bg-2); border-radius: 12px; border-top: 4px solid var(--accent);
+}
+.swu .sw-quote-badge {
+  position: absolute; top: -1.05rem; left: 1rem; display: inline-flex; align-items: center; gap: .35rem;
+  font-family: var(--serif); font-weight: 600; font-size: .85rem; letter-spacing: .14em; text-transform: uppercase;
+  background: var(--surface); color: var(--accent); border: 2px solid var(--accent);
+  padding: .25rem .8rem .25rem .45rem; border-radius: 999px;
+}
+.swu .sw-quote-badge::before {
+  content: "\201C"; display: inline-grid; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: 50%;
+  background: var(--accent); color: var(--accent-ink); font-family: Georgia, serif; font-size: 1.3rem; line-height: 1; padding-top: .35rem; letter-spacing: 0;
+}
+.swu .sw-quote blockquote { margin: 0; padding: 0; border: 0; }
+.swu .sw-quote blockquote p { font-size: 1.3rem; font-style: italic; line-height: 1.5; margin: 0 0 .6rem; }
+.swu .sw-quote figcaption { font-size: .95rem; color: var(--muted); }
+.swu .sw-quote-who { color: var(--text); font-weight: 500; }
+.swu .sw-quote-more { text-align: right; font-size: .98rem; margin: .5rem 0 .4rem; }
+.swu .sw-quote:target { box-shadow: 0 0 0 3px var(--accent); }
+.swu .sw-book-scan { margin: 1.4rem 0; }
+.swu .sw-book-scan img { display: block; width: 100%; max-width: 30rem; height: auto; margin: 0 auto; background: #fff; padding: .8rem; border-radius: 6px; box-shadow: var(--card-shadow); }
+.swu .sw-book-scan figcaption { text-align: center; font-size: .9rem; color: var(--muted); margin-top: .45rem; }
+.swu .wrap { width: min(46rem, 100% - 2 * var(--gut)); }
+.swu .wrap-wide { width: min(64rem, 100% - 2 * var(--gut)); }
+.swu { padding-block: clamp(2.5rem, 6vw, 4.5rem); font-size: 1.1rem; }
+.swu h2 { font: 400 clamp(1.5rem, 2.6vw, 2rem)/1.25 var(--serif); color: var(--blue); margin: 2.6rem 0 1rem; }
+.swu h3 { font: 400 1.3rem/1.3 var(--serif); color: var(--blue); }
+.swu p { margin: 0 0 1.1rem; }
+.swu a { color: var(--blue); text-decoration-color: var(--gold); }
+.swu .btn { text-decoration: none; }
+.swu .btn-ink { color: #fefefe; }
+.swu .btn-line { color: var(--blue); }
+.swu .btn-row { margin-top: 1.4rem; }
+.swu img { max-width: 100%; height: auto; }
+.swu .sw-art img, .swu .sw-book-scan img { width: 100%; }
+.swu figure { margin: 2rem 0; }
+.swu figcaption { font-size: .92rem; color: var(--slate); margin-top: .6rem; }
+.swu blockquote { margin: 1.4rem 0; padding: .2rem 0 .2rem 1.2rem; border-left: 3px solid var(--gold); }
+.swu blockquote footer, .swu .cite { font-size: .92rem; color: var(--slate); }
+.swu .sw-psalm { font-family: var(--italic); font-style: italic; }
+.swu .sw-psalm p { font-size: 1.2rem; }
+.swu .sw-ask, .swu .sw-call, .swu .sw-tip, .swu .sw-quote { border-top: 3px solid var(--blue); border-radius: 0; }
+.swu .sw-choice { border-radius: 2px; font: 600 .78rem/1.3 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--blue); border-color: rgba(0,64,105,.3); }
+.swu .sw-choice[aria-pressed="true"] { background: var(--blue); color: #fefefe; border-color: var(--blue); }
+.swu .sw-q { font-family: var(--serif); font-weight: 400; color: var(--blue); }
+.swu details.sw-primer, .swu details.sw-qa { border-radius: 0; }
+.swu details.sw-primer.sw-suggested { border-left: 3px solid var(--gold); }
+.swu .sw-ornament::before { content: ""; display: block; width: 1.8rem; height: 1.9rem; margin: 0 auto; background: url("img/brand/cross-light.svg") center / contain no-repeat; }
+.swu .sw-ornament { letter-spacing: 0; }
+.swu .sw-callout { border-left: 3px solid var(--gold); }
+.credit { font-size: .82rem; color: var(--slate); margin: .7rem 0 0; }
+.swu-back { padding-bottom: clamp(2rem, 5vw, 4rem); }
+.page-hero-plain { min-height: 16rem; background: var(--grad); }
+.page-hero-plain::before { display: none; }
+.deeper-cards { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 64em) { .deeper-cards { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 48em) { .deeper-cards { grid-template-columns: 1fr; } }
