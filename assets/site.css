@@ -92,10 +92,10 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .header .wrap { display: flex; align-items: center; gap: 1.5rem; min-height: 4.6rem; }
 .brand { display: flex; align-items: center; gap: .8rem; text-decoration: none; margin-right: auto; }
 .brand img { width: 1.95rem; height: auto; }
-.brand-name { font: 700 1.05rem/1 var(--caps); letter-spacing: .08em; text-transform: uppercase; color: var(--blue); }
+.brand-name { font: 700 1.05rem/1 var(--caps); letter-spacing: .08em; text-transform: uppercase; color: #000; }
 .brand-sub { display: block; font: 400 .66rem/1.2 var(--serif); letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-top: .3rem; }
 .nav { display: flex; align-items: center; gap: 1.6rem; }
-.nav a { text-decoration: none; font: 400 .98rem/1.4 var(--serif); letter-spacing: .06em; color: var(--blue); padding-block: .4rem; border-bottom: 1px solid transparent; }
+.nav a { text-decoration: none; font: 400 .98rem/1.4 var(--serif); letter-spacing: .06em; color: #000; padding-block: .4rem; border-bottom: 1px solid transparent; }
 .nav a:hover, .nav a[aria-current="page"] { border-bottom-color: var(--gold); }
 .nav .btn { color: #fff; border-bottom: 0; padding-inline: 1.2rem; min-height: 2.5rem; }
 .menu-btn { display: none; width: 2.75rem; height: 2.75rem; place-items: center; border: 1px solid var(--line); border-radius: 50%; }
