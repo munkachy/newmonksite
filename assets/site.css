@@ -4,20 +4,20 @@
    Page-specific styles go at the END of this file under a comment with the page's name (see PLAN.md). */
 
 :root {
-  --paper: #f7f2e8;
-  --paper-2: #efe7d7;
-  --ink: #1d1b17;
-  --ink-soft: #4a463e;
-  --muted: #6b665c;
+  --paper: #f5f7f9;
+  --paper-2: #e6edf2;
+  --ink: #01253d;
+  --ink-soft: #34505f;
+  --muted: #4c7080;
   --night: #01253d;
   --night-2: #004069;
   --gold: #d8b95c;          /* decoration and text on dark only */
-  --gold-ink: #7a5b16;      /* gold dark enough for text on cream */
+  --gold-ink: #004069;      /* gold dark enough for text on cream */
   --blue: #004069;          /* style guide navy */
   --gold-grad: linear-gradient(180deg, #ecd9a0 0%, #d8b95c 55%, #b8963f 100%);
   --green: #3c6a4e;         /* crest green */
   --red: #9b2226;           /* crest red */
-  --line: rgba(29, 27, 23, .14);
+  --line: rgba(1,37,61, .14);
   --serif: "Libre Baskerville", Georgia, "Times New Roman", serif;
   --italic: "Libre Baskerville", Georgia, "Times New Roman", serif;
   --caps: "Libre Baskerville", Georgia, serif;
@@ -47,7 +47,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .narrow { width: min(46rem, 100% - 2 * var(--gut)); margin-inline: auto; }
 .sec { padding-block: var(--sec); }
 .sec-tight { padding-block: calc(var(--sec) * .6); }
-.on-dark { background: var(--night); color: #efe9dc; }
+.on-dark { background: var(--night); color: #f5f7f9; }
 .on-stone { background: var(--paper-2); }
 
 /* ---------- Type ---------- */
@@ -61,7 +61,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .h-sm { font-size: clamp(1.2rem, 1.8vw, 1.45rem); }
 .h-xl em, .h-lg em, .h-md em { font-style: italic; }
 .lead { font-size: clamp(1.15rem, 1.5vw, 1.32rem); line-height: 1.65; color: var(--ink-soft); }
-.on-dark .lead, .hero .lead, .page-hero .lead { color: rgba(239, 233, 220, .9); }
+.on-dark .lead, .hero .lead, .page-hero .lead { color: rgba(245,247,249, .9); }
 .prose p + p { margin-top: 1.1em; }
 .prose a { color: var(--gold-ink); }
 .on-dark .prose a { color: var(--gold); }
@@ -84,7 +84,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .more:hover .ic { transform: translateX(3px); }
 
 /* ---------- Utility line and header ---------- */
-.util { background: var(--night); color: rgba(239, 233, 220, .82); font-size: .85rem; }
+.util { background: var(--night); color: rgba(245,247,249, .82); font-size: .85rem; }
 .util .wrap { display: flex; flex-wrap: wrap; gap: .3rem 1.4rem; justify-content: flex-end; padding-block: .45rem; }
 .util b { color: #fff; font-weight: 600; }
 .util a { color: var(--gold); text-decoration: none; }
@@ -138,7 +138,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .split.flip > :first-child { order: 2; }
 .split figure img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 4px; }
 .split figcaption, .credit { font-size: .8rem; color: var(--muted); margin-top: .6rem; }
-.on-dark .credit, .on-dark figcaption { color: rgba(239,233,220,.6); }
+.on-dark .credit, .on-dark figcaption { color: rgba(245,247,249,.6); }
 .quote { margin-top: 2rem; padding-left: 1.4rem; border-left: 2px solid var(--gold); font-family: var(--serif); font-size: 1.45rem; line-height: 1.4; font-style: italic; }
 
 /* ---------- Monks at work strip ---------- */
@@ -170,7 +170,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .now > div { background: var(--night-2); padding: 1.6rem 1.8rem; }
 .now small { display: block; font: 600 .74rem/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-bottom: .7rem; }
 .now b { display: block; font: 400 2rem/1.1 var(--serif); color: #fff; }
-.now span { display: block; color: rgba(239,233,220,.75); margin-top: .35rem; font-size: .98rem; }
+.now span { display: block; color: rgba(245,247,249,.75); margin-top: .35rem; font-size: .98rem; }
 .hours { width: 100%; border-collapse: collapse; margin-top: 2.5rem; font-size: 1rem; }
 .hours th, .hours td { text-align: left; padding: .75rem .9rem; border-bottom: 1px solid rgba(255,255,255,.12); }
 .hours thead th { font: 600 .74rem/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
@@ -192,7 +192,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .teaser img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 3px; }
 
 /* ---------- Footer ---------- */
-.footer { background: var(--night); color: rgba(239, 233, 220, .78); padding-block: 4.5rem 2.5rem; font-size: .98rem; }
+.footer { background: var(--night); color: rgba(245,247,249, .78); padding-block: 4.5rem 2.5rem; font-size: .98rem; }
 .footer a { text-decoration: none; }
 .footer a:hover { color: #fff; text-decoration: underline; }
 .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.5rem; }
@@ -200,7 +200,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .foot-brand b { display: block; font: 400 1.8rem/1.1 var(--caps); letter-spacing: .05em; color: #fff; margin-bottom: .6rem; }
 .footer h3 { font: 400 .8rem/1 var(--serif); letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.1rem; }
 .footer li + li { margin-top: .45rem; }
-.foot-base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 3.5rem; padding-top: 1.6rem; border-top: 1px solid rgba(255,255,255,.12); font-size: .86rem; color: rgba(239,233,220,.55); }
+.foot-base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 3.5rem; padding-top: 1.6rem; border-top: 1px solid rgba(255,255,255,.12); font-size: .86rem; color: rgba(245,247,249,.55); }
 .motto { font-family: var(--serif); font-style: italic; font-size: 1.1rem; color: var(--gold); }
 
 /* ---------- Gentle rise-in (content is visible without JS) ---------- */
@@ -252,7 +252,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .relic-all summary { cursor: pointer; font-weight: 600; color: var(--gold-ink); }
 .thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(5.5rem, 1fr)); gap: .5rem; margin-top: 1rem; }
 .thumbs img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 2px; }
-.altar-slot { min-height: 22rem; display: grid; place-items: center; text-align: center; padding: 2rem; border: 1px dashed rgba(29,27,23,.35); border-radius: 4px; background: var(--paper-2); color: var(--muted); }
+.altar-slot { min-height: 22rem; display: grid; place-items: center; text-align: center; padding: 2rem; border: 1px dashed rgba(1,37,61,.35); border-radius: 4px; background: var(--paper-2); color: var(--muted); }
 .altar-slot p { margin-top: .8rem; font-family: var(--serif); font-size: 1.3rem; font-style: italic; }
 @media (max-width: 48em) { .relic { grid-template-columns: 1fr; } }
 
@@ -264,7 +264,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .makers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 2.5rem; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.12); }
 .makers li { background: var(--night); padding: 1.6rem 1.5rem; }
 .makers b { display: block; font: 400 1.55rem/1.15 var(--serif); color: #fff; margin-bottom: .6rem; }
-.makers span { color: rgba(239,233,220,.78); font-size: .98rem; }
+.makers span { color: rgba(245,247,249,.78); font-size: .98rem; }
 .works { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(1.5rem, 3vw, 2.5rem); margin-top: 3rem; }
 .work { display: grid; grid-template-columns: 11rem 1fr; gap: 1.4rem; align-items: start; scroll-margin-top: 6rem; }
 .work img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 3px; }
@@ -349,7 +349,7 @@ img[data-full]:hover { transform: scale(1.06); }
 .lightbox[hidden] { display: none; }
 .lightbox figure { margin: 0; max-width: min(56rem, 100%); text-align: center; }
 .lightbox img { max-width: 100%; max-height: 78vh; width: auto; height: auto; margin: 0 auto; border-radius: 4px; box-shadow: 0 10px 40px rgba(0,0,0,.5); }
-.lightbox figcaption { color: #efe9dc; font: 400 1.3rem/1.3 var(--serif); margin-top: .9rem; }
+.lightbox figcaption { color: #f5f7f9; font: 400 1.3rem/1.3 var(--serif); margin-top: .9rem; }
 .lightbox-close { position: absolute; top: 1rem; right: 1rem; width: 2.75rem; height: 2.75rem; display: grid; place-items: center; border-radius: 50%; background: rgba(255,255,255,.15); color: #fff; }
 /* ---- History page: eras ---- */
 .era { display: grid; grid-template-columns: 16rem 1fr; gap: clamp(1.5rem, 4vw, 4rem); padding: 2.5rem 0; border-top: 1px solid var(--line); }
