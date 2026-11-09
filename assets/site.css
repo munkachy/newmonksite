@@ -770,3 +770,9 @@ img { border-radius: 0; }
 .deeper-cards { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 64em) { .deeper-cards { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 48em) { .deeper-cards { grid-template-columns: 1fr; } }
+
+/* The hens: a wide picture, so the whole run shows */
+.work-wide { grid-column: 1 / -1; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); align-items: center; gap: clamp(1.4rem, 3vw, 2.5rem); }
+.work-wide img { aspect-ratio: 3 / 2; }
+@media (max-width: 64em) { .work-wide { grid-template-columns: 1fr; } }
+@media (max-width: 48em) { .work.work-wide { grid-template-columns: 1fr; } }
