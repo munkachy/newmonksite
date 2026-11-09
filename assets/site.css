@@ -777,3 +777,35 @@ img { border-radius: 0; }
 @media (max-width: 64em) { .work-wide { grid-template-columns: 1fr; } }
 @media (max-width: 48em) { .work.work-wide { grid-template-columns: 1fr; } }
 
+
+/* ---- Phone and tablet menu: a navy page of its own, the guide's reversed logo, large serif titles with a line under each,
+   the cross and shield at the foot ---- */
+@media (max-width: 64em) {
+  .nav { background: var(--grad); justify-content: flex-start; align-items: stretch; gap: 0; padding: 6.4rem var(--gut) 2rem; }
+  .nav::before { content: ""; position: absolute; top: 1.35rem; left: var(--gut); width: 12rem; height: 2.7rem; background: url("img/brand/logo-horizontal-abbey-dark.svg") left center / contain no-repeat; }
+  .nav::after { content: ""; display: block; flex: none; height: 3rem; margin-top: auto; padding-top: 2.4rem; box-sizing: content-box;
+    background: url("img/brand/cross-dark.svg") left bottom / auto 3rem no-repeat, url("img/crest.png") right bottom / auto 3rem no-repeat,
+      linear-gradient(rgba(216,185,92,.55), rgba(216,185,92,.55)) 4rem calc(100% - 1.5rem) / calc(100% - 7rem) 1px no-repeat; }
+  .nav a:not(.btn) { position: relative; display: block; padding: 1.15rem 2.4rem 1.15rem 0; border-bottom: 1px solid rgba(216,185,92,.28);
+    font: 400 clamp(1.7rem, 6.4vw, 2.3rem)/1.15 var(--serif); letter-spacing: 0; text-transform: none; color: #fefefe; }
+  .nav a:not(.btn):first-of-type { border-top: 1px solid rgba(216,185,92,.28); }
+  .nav a:not(.btn)::after { content: attr(data-sub); display: block; margin-top: .45rem; font: 600 .66rem/1.3 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--sky); }
+  .nav a:not(.btn)::before { content: "\2192"; position: absolute; right: .2rem; top: 50%; transform: translateY(-50%); font: 400 1.3rem/1 var(--sans); color: var(--gold); transition: transform .2s; }
+  .nav a:not(.btn):hover::before, .nav a:not(.btn):focus-visible::before { transform: translate(4px, -50%); }
+  .nav a[aria-current="page"]:not(.btn) { color: var(--gold); border-bottom-color: rgba(216,185,92,.28); }
+  .nav .btn { align-self: stretch; justify-content: center; margin-top: 1.8rem; min-height: 3.4rem; font: 600 .82rem/1 var(--sans); letter-spacing: .2em;
+    background: var(--gold); color: var(--deep); border: 0; }
+  .nav .btn .ic { color: var(--deep); }
+  .menu-open .menu-btn { color: #fefefe; border-color: rgba(216,185,92,.6); background: rgba(1,37,61,.35); }
+  .menu-open .nav > * { animation: navIn .45s cubic-bezier(.2,.7,.2,1) both; }
+  .menu-open .nav > :nth-child(2) { animation-delay: .05s; } .menu-open .nav > :nth-child(3) { animation-delay: .1s; }
+  .menu-open .nav > :nth-child(4) { animation-delay: .15s; } .menu-open .nav > :nth-child(5) { animation-delay: .2s; }
+}
+@keyframes navIn { from { opacity: 0; transform: translateY(12px); } }
+@media (prefers-reduced-motion: reduce) { .menu-open .nav > * { animation: none; } }
+@media (max-width: 64em) {
+  .menu-open .menu-btn { position: fixed; top: 1rem; right: var(--gut); }
+  .nav::before { top: 1rem; height: 2.75rem; }
+  .nav { padding-top: 5.6rem; }
+  .menu-open #bugdrop-host { display: none; }
+}
