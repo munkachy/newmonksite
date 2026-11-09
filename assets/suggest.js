@@ -1,7 +1,7 @@
 /* "Suggest a change": a floating button for the monks, Fr. Paschal and anyone who wants to give feedback.
    It takes a picture of what the person is looking at, then sends their note and the picture to a small function that
    opens an issue on GitHub (munkachy/newmonksite, label "suggestion"). Set the function's address in ENDPOINT
-   (or window.SUGGEST_URL); with no address the button does not appear. Setup: _notes/suggest/README.md. */
+   (or window.SUGGEST_URL); with no address the button does not appear. The function is a Google Apps Script (_notes/suggest/suggest.gs). Setup: _notes/suggest/README.md. */
 (function () {
   "use strict";
   var ENDPOINT = "";
