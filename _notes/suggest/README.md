@@ -1,26 +1,14 @@
-# "Suggest a change" button
+# "Suggest a change" button (BugDrop)
 
-A floating button on every abbey-site page (`assets/suggest.js`). It takes a picture of what the person was looking at
-(html2canvas, in their browser), asks what they would change, and sends the note and picture to a small **Google Apps Script**
-(`suggest.gs` here; no server, no Supabase). The script saves the picture in a Google Drive folder and opens an issue on
-GitHub (munkachy/newmonksite, label `suggestion`) with the note, the page link, the screen size and the picture. Anyone can use
-it (the monks, Fr. Paschal, a visitor): no account needed. If GitHub is down, the note is emailed to the script's owner.
+Every page ends with BugDrop's widget (https://bugdrop.dev, MIT, hosted free on Cloudflare by its makers):
 
-## To switch it on (about five minutes)
-1. **GitHub token.** github.com > Settings > Developer settings > Fine-grained tokens > Generate. Repository access: only
-   `munkachy/newmonksite`. Permissions: **Issues: Read and write** (nothing else). Copy it once.
-2. **The script.** script.google.com > New project, name it "Abbey suggestions", paste all of `suggest.gs`. Project Settings (gear) >
-   Script properties > Add `GITHUB_TOKEN` with the token. Never put the token anywhere else.
-3. **Publish it.** Deploy > New deployment > gear > Web app. Execute as **Me**, who has access **Anyone**. Deploy, then allow the
-   permissions (Drive, external requests, mail). Copy the web app address (ends in `/exec`).
-4. Give the address to Claude, who puts it in `ENDPOINT` at the top of `assets/suggest.js` and publishes. With no address the button does not appear.
+    <script src="https://bugdrop.neonwatty.workers.dev/widget.v1.59.1.js" data-repo="munkachy/newmonksite" data-show-name="true" data-label="Suggest a change" data-position="bottom-right" data-color="#004069"></script>
 
-## Reading the suggestions
-`gh issue list --label suggestion`, or the Issues tab on GitHub; each issue has the note, a link to the page and the screenshot
-(the pictures are in the Drive folder "Abbey site suggestions (screenshots)"). Tell Claude "look at the suggestions" and it reads them,
-makes the changes and closes each issue when done.
+Anyone (no login) taps the button, writes a note, optionally gives a name, and BugDrop opens an issue in munkachy/newmonksite
+(labels `bugdrop` plus Bug / Feature / Question) with a screenshot taken in their browser. Screenshots are stored in this repo on
+the branch `bugdrop-screenshots` (folder `.bugdrop/`), which the site never serves. Suggestions are public, like the repo.
 
-## Notes
-- The screenshot is of the visible part of the page, taken in the visitor's browser before the box opens. The sticky top bar and
-  the background video are not always drawn exactly; the page address, screen size and scroll position are in the issue.
-- Anyone who knows the address could send a note, so there is a hidden spam trap and a limit of 40 an hour for the whole site.
+Needs the BugDrop GitHub App installed on this repo only (github.com/marketplace/bugdrop-in-app-feedback-to-github-issues >
+Only select repositories > munkachy/newmonksite). The app can write issues and repository contents; uninstall it to switch the
+button off for good (and remove the script line). Limits: 10 sends per visitor per 15 minutes, 50 per hour for the site.
+Do not add async/defer to the tag. To read them: the Issues tab, label `bugdrop`.
