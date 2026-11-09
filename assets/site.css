@@ -809,3 +809,5 @@ img { border-radius: 0; }
   .nav { padding-top: 5.6rem; }
   .menu-open #bugdrop-host { display: none; }
 }
+/* The hero's still picture sits behind the video, so a screenshot taken for "Suggest a change" (which leaves videos out) still shows it */
+.hero-media { background: var(--deep) url("img/film-33.jpg") center / cover no-repeat; }
