@@ -563,3 +563,23 @@ img { border-radius: 0; }
   .brand-name { font-size: .88rem; letter-spacing: .06em; }
   .brand-sub { display: none; }
 }
+
+/* Cross and shield together: a rule with the official cross on the left and the abbey's shield on the right (ends every page),
+   the same pair as a colophon at the top of the footer, and one mark on each of the two doors (shield: Grotto, cross: school) */
+.pair-rule { display: flex; align-items: center; gap: 1.4rem; padding-block: clamp(2.5rem, 5vw, 4rem); }
+.pair-rule img { height: 3.4rem; width: auto; flex: none; }
+.pair-rule .crest { height: 3.2rem; }
+.pair-rule span { flex: 1; height: 5px; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold); }
+.colophon { display: flex; align-items: center; justify-content: center; gap: clamp(1.2rem, 4vw, 3rem); text-align: center; padding-bottom: 3rem; margin-bottom: 3.2rem; border-bottom: 1px solid rgba(216,185,92,.3); }
+.colophon img { height: 4.6rem; width: auto; flex: none; }
+.colophon .crest { height: 4.4rem; }
+.colophon p { margin: 0; }
+.colophon b { display: block; font: 700 clamp(.95rem, 2.2vw, 1.25rem)/1.3 var(--serif); letter-spacing: .1em; text-transform: uppercase; color: #fefefe; }
+.colophon span { display: block; margin-top: .6rem; font: italic 400 1.15rem/1 var(--serif); color: var(--gold); }
+.door .door-mark { position: absolute; inset: auto; top: 1.3rem; right: 1.3rem; width: auto; height: 3.6rem; z-index: 2; transition: none; filter: drop-shadow(0 2px 8px rgba(1,37,61,.55)); }
+.door:hover .door-mark { transform: none; }
+@media (max-width: 48em) {
+  .pair-rule { gap: .9rem; } .pair-rule img { height: 2.5rem; } .pair-rule .crest { height: 2.4rem; }
+  .colophon { gap: .9rem; } .colophon img { height: 3.1rem; } .colophon .crest { height: 3rem; }
+  .colophon b { letter-spacing: .06em; } .door .door-mark { height: 3rem; top: 1rem; right: 1rem; }
+}
