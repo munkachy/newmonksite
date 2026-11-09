@@ -1,5 +1,6 @@
 /* St. Bernard Abbey: shared styles. Plain CSS, no build step. Colours from the abbey crest (blue, green, gold, red)
-   on cream paper; headings in Cormorant Garamond, text in Source Sans 3 (Google Fonts, linked in each page).
+   on cream paper. Restyled from the Ave Maria Grotto sign (Nov 2026): navy and gold, headings in Marcellus (the sign's
+   flared capitals), italics in Cormorant Garamond, text in Source Sans 3 (Google Fonts, linked in each page).
    Page-specific styles go at the END of this file under a comment with the page's name (see PLAN.md). */
 
 :root {
@@ -8,15 +9,18 @@
   --ink: #1d1b17;
   --ink-soft: #4a463e;
   --muted: #6b665c;
-  --night: #15191d;
-  --night-2: #1f252a;
+  --night: #16203a;
+  --night-2: #223056;
   --gold: #c9a24a;          /* decoration and text on dark only */
   --gold-ink: #7a5b16;      /* gold dark enough for text on cream */
-  --blue: #1f3d73;          /* crest blue */
+  --blue: #2e4170;          /* sign navy */
+  --gold-grad: linear-gradient(180deg, #ecd594 0%, #c39a47 52%, #98722f 100%);
   --green: #3c6a4e;         /* crest green */
   --red: #9b2226;           /* crest red */
   --line: rgba(29, 27, 23, .14);
-  --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --serif: "Marcellus", "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --italic: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --caps: "Marcellus SC", "Marcellus", Georgia, serif;
   --sans: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
   --max: 78rem;
   --gut: clamp(1.25rem, 4vw, 3rem);
@@ -47,14 +51,14 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .on-stone { background: var(--paper-2); }
 
 /* ---------- Type ---------- */
-.eyebrow { font: 600 .78rem/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--gold-ink); margin-bottom: 1.25rem; display: flex; align-items: center; gap: .85rem; }
-.eyebrow::before { content: ""; width: 2rem; height: 1px; background: currentColor; }
+.eyebrow { font: 400 .82rem/1 var(--serif); letter-spacing: .2em; text-transform: uppercase; color: var(--gold-ink); margin-bottom: 1.25rem; display: flex; align-items: center; gap: .85rem; }
+.eyebrow::before { content: ""; width: 2.2rem; height: 3px; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold); }
 .on-dark .eyebrow, .hero .eyebrow, .page-hero .eyebrow, .film .eyebrow { color: var(--gold); }
-.h-xl, .h-lg, .h-md, .h-sm { font-family: var(--serif); font-weight: 400; line-height: 1.04; letter-spacing: -.005em; }
-.h-xl { font-size: clamp(3rem, 7.4vw, 6.4rem); font-weight: 300; }
-.h-lg { font-size: clamp(2.5rem, 5vw, 4.3rem); font-weight: 300; }
-.h-md { font-size: clamp(1.9rem, 3.2vw, 2.7rem); }
-.h-sm { font-size: clamp(1.45rem, 2.2vw, 1.8rem); font-weight: 500; }
+.h-xl, .h-lg, .h-md, .h-sm { font-family: var(--serif); font-weight: 400; line-height: 1.1; letter-spacing: .005em; }
+.h-xl { font-size: clamp(2.7rem, 6.4vw, 5.6rem); }
+.h-lg { font-size: clamp(2.2rem, 4.4vw, 3.8rem); }
+.h-md { font-size: clamp(1.7rem, 2.9vw, 2.4rem); }
+.h-sm { font-size: clamp(1.4rem, 2.1vw, 1.7rem); }
 .h-xl em, .h-lg em, .h-md em { font-style: italic; }
 .lead { font-size: clamp(1.15rem, 1.5vw, 1.32rem); line-height: 1.65; color: var(--ink-soft); }
 .on-dark .lead, .hero .lead, .page-hero .lead { color: rgba(239, 233, 220, .9); }
@@ -67,10 +71,10 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 
 /* ---------- Buttons ---------- */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: .55rem; min-height: 2.9rem; padding: .7rem 1.45rem; border-radius: 999px; font: 600 .98rem/1 var(--sans); letter-spacing: .02em; text-decoration: none; white-space: nowrap; transition: background .2s, color .2s, border-color .2s; }
-.btn-gold { background: var(--gold); color: var(--night); }
-.btn-gold:hover { background: #dbb867; }
-.btn-ink { background: var(--ink); color: var(--paper); }
-.btn-ink:hover { background: #38342c; }
+.btn-gold { background: var(--gold-grad); color: var(--night); }
+.btn-gold:hover { filter: brightness(1.08); }
+.btn-ink { background: var(--blue); color: #fff; box-shadow: inset 0 0 0 1px rgba(201,162,74,.55); }
+.btn-ink:hover { background: var(--night-2); }
 .btn-line { border: 1px solid currentColor; }
 .btn-line:hover { background: rgba(127, 127, 127, .12); }
 .btn-row { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
@@ -84,23 +88,23 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .util .wrap { display: flex; flex-wrap: wrap; gap: .3rem 1.4rem; justify-content: flex-end; padding-block: .45rem; }
 .util b { color: #fff; font-weight: 600; }
 .util a { color: var(--gold); text-decoration: none; }
-.header { position: sticky; top: 0; z-index: 40; background: var(--paper); border-bottom: 1px solid var(--line); }
+.header { position: sticky; top: 0; z-index: 40; background: var(--paper); border-bottom: 1px solid var(--gold); box-shadow: 0 3px 0 -2px var(--paper), 0 4px 0 -2px var(--gold); }
 .header .wrap { display: flex; align-items: center; gap: 1.5rem; min-height: 4.6rem; }
 .brand { display: flex; align-items: center; gap: .8rem; text-decoration: none; margin-right: auto; }
 .brand img { width: 1.95rem; height: auto; }
-.brand-name { font: 500 1.42rem/1 var(--serif); letter-spacing: .01em; }
-.brand-sub { display: block; font: 600 .66rem/1.2 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-top: .3rem; }
+.brand-name { font: 400 1.38rem/1 var(--caps); letter-spacing: .06em; color: var(--blue); }
+.brand-sub { display: block; font: 400 .66rem/1.2 var(--serif); letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-top: .3rem; }
 .nav { display: flex; align-items: center; gap: 1.6rem; }
-.nav a { text-decoration: none; font-size: .98rem; font-weight: 500; padding-block: .4rem; border-bottom: 1px solid transparent; }
+.nav a { text-decoration: none; font: 400 .98rem/1.4 var(--serif); letter-spacing: .06em; color: var(--blue); padding-block: .4rem; border-bottom: 1px solid transparent; }
 .nav a:hover, .nav a[aria-current="page"] { border-bottom-color: var(--gold); }
-.nav .btn { border-bottom: 0; padding-inline: 1.2rem; min-height: 2.5rem; }
+.nav .btn { color: #fff; border-bottom: 0; padding-inline: 1.2rem; min-height: 2.5rem; }
 .menu-btn { display: none; width: 2.75rem; height: 2.75rem; place-items: center; border: 1px solid var(--line); border-radius: 50%; }
 .menu-btn .ic { width: 1.3rem; height: 1.3rem; }
 
 /* ---------- Hero (home) ---------- */
 .hero { position: relative; min-height: min(92vh, 56rem); display: flex; align-items: flex-end; color: #fff; overflow: hidden; background: var(--night); }
 .hero-media, .hero-media video, .hero-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10, 12, 14, .82) 0%, rgba(10, 12, 14, .35) 45%, rgba(10, 12, 14, .15) 100%); }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(12, 17, 34, .82) 0%, rgba(12, 17, 34, .35) 45%, rgba(12, 17, 34, .15) 100%); }
 .hero .wrap { position: relative; z-index: 1; padding-block: clamp(6rem, 14vh, 9rem) clamp(3rem, 8vh, 5rem); }
 .hero .h-xl { max-width: 15ch; }
 .hero .lead { max-width: 38rem; margin-top: 1.4rem; }
@@ -112,7 +116,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 /* Page hero (inner pages) */
 .page-hero { position: relative; color: #fff; background: var(--night); min-height: 26rem; display: flex; align-items: flex-end; overflow: hidden; }
 .page-hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .5; }
-.page-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,12,14,.75), rgba(10,12,14,0) 70%); }
+.page-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(12,17,34,.75), rgba(12,17,34,0) 70%); }
 .page-hero .wrap { z-index: 1; }
 .page-hero .wrap { position: relative; padding-block: 8rem 3.5rem; }
 .page-hero .lead { max-width: 40rem; margin-top: 1rem; }
@@ -121,7 +125,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .twin { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem, 2.5vw, 2rem); margin-top: 3rem; }
 .door { position: relative; display: flex; flex-direction: column; justify-content: flex-end; min-height: clamp(26rem, 44vw, 36rem); color: #fff; text-decoration: none; overflow: hidden; border-radius: 4px; background: var(--night); }
 .door img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .8s ease; }
-.door::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,12,14,.94) 0%, rgba(10,12,14,.78) 38%, rgba(10,12,14,.15) 72%); }
+.door::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(12,17,34,.94) 0%, rgba(12,17,34,.78) 38%, rgba(12,17,34,.15) 72%); }
 .door:hover img { transform: scale(1.03); }
 .door-text { position: relative; z-index: 1; padding: clamp(1.5rem, 3vw, 2.5rem); }
 .door-text .h-md { margin-bottom: .6rem; }
@@ -193,8 +197,8 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .footer a:hover { color: #fff; text-decoration: underline; }
 .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.5rem; }
 .foot-brand img { width: 3.2rem; margin-bottom: 1.2rem; }
-.foot-brand b { display: block; font: 400 1.8rem/1.1 var(--serif); color: #fff; margin-bottom: .6rem; }
-.footer h3 { font: 600 .74rem/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.1rem; }
+.foot-brand b { display: block; font: 400 1.8rem/1.1 var(--caps); letter-spacing: .05em; color: #fff; margin-bottom: .6rem; }
+.footer h3 { font: 400 .8rem/1 var(--serif); letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.1rem; }
 .footer li + li { margin-top: .45rem; }
 .foot-base { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin-top: 3.5rem; padding-top: 1.6rem; border-top: 1px solid rgba(255,255,255,.12); font-size: .86rem; color: rgba(239,233,220,.55); }
 .motto { font-family: var(--serif); font-style: italic; font-size: 1.1rem; color: var(--gold); }
@@ -341,7 +345,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 /* ---- Lightbox for the archive faces ---- */
 img[data-full] { cursor: zoom-in; transition: transform .2s; }
 img[data-full]:hover { transform: scale(1.06); }
-.lightbox { position: fixed; inset: 0; z-index: 100; background: rgba(10, 12, 14, .92); display: grid; place-items: center; padding: 3.5rem 1rem 1.5rem; cursor: zoom-out; }
+.lightbox { position: fixed; inset: 0; z-index: 100; background: rgba(12, 17, 34, .92); display: grid; place-items: center; padding: 3.5rem 1rem 1.5rem; cursor: zoom-out; }
 .lightbox[hidden] { display: none; }
 .lightbox figure { margin: 0; max-width: min(56rem, 100%); text-align: center; }
 .lightbox img { max-width: 100%; max-height: 78vh; width: auto; height: auto; margin: 0 auto; border-radius: 4px; box-shadow: 0 10px 40px rgba(0,0,0,.5); }
@@ -411,3 +415,16 @@ a.xl:hover { text-decoration-color: currentColor; }
 .wander-card b { font: 600 1.3rem/1.2 var(--serif); color: var(--blue); }
 .wander-card b::after { content: " →"; }
 .wander-card span { font-size: .95rem; color: var(--ink-soft); line-height: 1.45; }
+
+
+/* ---- Ave Maria Grotto sign: navy, gold double rules, the flared cross (assets/img/cross.svg) ---- */
+.h-xl em, .h-lg em, .h-md em, .latin, .twin-note, .quote, .motto, .altar-slot p, .words blockquote, .pull, p.reply { font-family: var(--italic); }
+.h-xl em, .h-lg em, .h-md em { font-size: 1.06em; }
+.cross { display: block; width: 1.9rem; height: 1.9rem; background: url("img/cross.svg") center / contain no-repeat; }
+.foot-brand .cross { width: 2.6rem; height: 2.6rem; margin-bottom: 1rem; }
+.foot-brand img { display: none; }
+.rule-cross { display: flex; align-items: center; gap: 1rem; color: var(--gold); margin-block: 1.6rem; }
+.rule-cross::before, .rule-cross::after { content: ""; flex: 1; height: 3px; border-top: 1px solid currentColor; border-bottom: 1px solid currentColor; }
+.rule-cross .cross { width: 1.6rem; height: 1.6rem; }
+.util { border-bottom: 1px solid rgba(201,162,74,.45); }
+.footer { border-top: 3px double var(--gold); }
