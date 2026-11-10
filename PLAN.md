@@ -225,3 +225,21 @@ end of it under a comment with your page's name, or in a `<style>` block in your
 - 3 Nov 2026 (Br. Augustine): Fr. Bede learned tailoring at St. Bede Abbey, Peru, Illinois, from two laywomen: on his card and on work/.
 
 - 9 Nov 2026: The Oldest Conversation (munkachy/sing-with-us) is now part of this site: pray/curious/ (+ open-questions/), christians/, catholics/, psalms/ (+ tips/), choir-book/, quotes/, made by `_notes/tools/swu_import.py` and `swu_css.py` (styles under `.swu`, script `assets/swu.js`); pray/ has a "Go deeper" section, and no page links out to sing-with-us any more. Left out: its about, visit (times are on pray/) and oblates (monastery/#oblates) pages, and the psalter page itself. Review marks and comments are stripped; the source's open decisions (its CONTENT-TODO.md) and the Grail permission still apply.
+
+- 9-10 Nov 2026 (session with the user): **the St. Bernard Brand Guide (9.10.2024)** now drives the look: navy #004069, gold #D8B95C,
+  white background (#FEFEFE; bands #F5F7F9; the user rejected beige, light blue and cream), Libre Baskerville headings, Noto Sans text,
+  tracked-caps labels with a hairline, rectangular buttons, slate (#537889) top bar and history band, navy gradients, gold frames on heroes.
+  The guide's own logos (vectors cut from the PDF, `_notes/tools/brand/`) are in `assets/img/brand/`. Header: official cross, "St. Bernard
+  Abbey" title, the abbey's crest on the right (the user asked for both). Cross and shield together: a gold rule ending every page, the footer
+  colophon ("St. Bernard Abbey & Preparatory School", Ora et labora), shield on the Grotto door and cross on the school door. Header title and
+  menu in black. Phone/tablet menu: a navy page with the reversed logo, large serif titles with a short note under each (data-sub), gold Give.
+  Home: "At a glance" band (1891, 1892, 1934, 125, 5x). Home intro (user's wording choices): "...we teach in our prep school, practice the
+  crafts our German founders brought with them, and turn our hands to whatever needs doing, from the Grotto to the bakery to the farm, and
+  everything in between." No furniture; the school is co-ed. Tiles: "Ordinary men / Everyday holiness" (was Men fully alive), "Scholars /
+  Scientists, historians and printers" (was Scribes; other options offered: "Learning, science and books", "Faith and learning").
+  The hens: wide photo of the run (DSC08497); all the hens were lost to predators, so the caption only says the flock "has had a hard season,
+  and the coop is waiting for its next hens" (the user wanted it vague). Update it when new hens come.
+  The Oldest Conversation (munkachy/sing-with-us) is now part of this site under pray/ (see the entry above); no links out to it.
+  "Suggest a change": BugDrop (see `_notes/suggest/README.md`); the user installed the BugDrop GitHub App on this repo; tested 9 Nov
+  (issue #2, closed). Suggestions arrive as issues labeled `bugdrop`; "look at the suggestions" = read them, make the changes, close them.
+  Publishing: see README "Publishing"; GitHub's Pages deploy hung three times on 9 Nov; batch edits into one push.
